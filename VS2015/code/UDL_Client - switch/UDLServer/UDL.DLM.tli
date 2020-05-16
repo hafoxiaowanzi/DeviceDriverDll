@@ -1,0 +1,621 @@
+// Created by Microsoft (R) C/C++ Compiler Version 12.00.9782.0 (8d7a13e8).
+//
+// UDL.DLM.tli
+//
+// Wrapper implementations for Win32 type library ..\\bin\\UDL.DLM.dll
+// compiler-generated file created 07/20/15 at 13:34:20 - DO NOT EDIT!
+
+#pragma once
+
+//
+// interface IEngineMgr wrapper method implementations
+//
+
+inline _bstr_t IEngineMgr::GetGetVersion ( ) {
+    BSTR _result;
+    HRESULT _hr = get_GetVersion(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline void IEngineMgr::PutGetVersion ( _bstr_t pVal ) {
+    HRESULT _hr = put_GetVersion(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline _bstr_t IEngineMgr::GetGetLastMessage ( ) {
+    BSTR _result;
+    HRESULT _hr = get_GetLastMessage(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline void IEngineMgr::PutGetLastMessage ( _bstr_t pVal ) {
+    HRESULT _hr = put_GetLastMessage(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline HRESULT IEngineMgr::OpenEngine ( ) {
+    HRESULT _hr = raw_OpenEngine();
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT IEngineMgr::LoadConfiguration ( _bstr_t FileName ) {
+    HRESULT _hr = raw_LoadConfiguration(FileName);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT IEngineMgr::RegisterUDL ( ) {
+    HRESULT _hr = raw_RegisterUDL();
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+//
+// interface IITLSInterface wrapper method implementations
+//
+
+inline HRESULT IITLSInterface::SetTLSWavelength ( long lChIndex, double dblWL ) {
+    HRESULT _hr = raw_SetTLSWavelength(lChIndex, dblWL);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT IITLSInterface::SetTLSSourcePower ( long lChIndex, double dblPW ) {
+    HRESULT _hr = raw_SetTLSSourcePower(lChIndex, dblPW);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT IITLSInterface::SetTLSCoherenceControl ( long lChIndex, long bEnable ) {
+    HRESULT _hr = raw_SetTLSCoherenceControl(lChIndex, bEnable);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT IITLSInterface::SetTLSSourceUnit ( long lChIndex, long lUnit ) {
+    HRESULT _hr = raw_SetTLSSourceUnit(lChIndex, lUnit);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT IITLSInterface::SetTLSParameters ( long lChIndex, long lLowSSE, double dblPower, double dblWavelength ) {
+    HRESULT _hr = raw_SetTLSParameters(lChIndex, lLowSSE, dblPower, dblWavelength);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT IITLSInterface::SetTLSOutputEnable ( long lChIndex, long bEnable ) {
+    HRESULT _hr = raw_SetTLSOutputEnable(lChIndex, bEnable);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT IITLSInterface::CloseTLSDevice ( long lChIndex ) {
+    HRESULT _hr = raw_CloseTLSDevice(lChIndex);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline _bstr_t IITLSInterface::GetLastMessage ( ) {
+    BSTR _result;
+    HRESULT _hr = get_LastMessage(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+//
+// interface IIPMInterface wrapper method implementations
+//
+
+inline HRESULT IIPMInterface::GetUnit ( long lChan, long * pVal ) {
+    HRESULT _hr = raw_GetUnit(lChan, pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT IIPMInterface::SetUnit ( long lChan, long newVal ) {
+    HRESULT _hr = raw_SetUnit(lChan, newVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT IIPMInterface::GetAverageTime ( long lChan, double * pVal ) {
+    HRESULT _hr = raw_GetAverageTime(lChan, pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT IIPMInterface::SetAverageTime ( long lChan, double newVal ) {
+    HRESULT _hr = raw_SetAverageTime(lChan, newVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT IIPMInterface::GetWavelength ( long lChan, double * pVal ) {
+    HRESULT _hr = raw_GetWavelength(lChan, pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT IIPMInterface::SetWavelength ( long lChan, double newVal ) {
+    HRESULT _hr = raw_SetWavelength(lChan, newVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT IIPMInterface::GetPower ( long lChan, double * pVal ) {
+    HRESULT _hr = raw_GetPower(lChan, pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT IIPMInterface::GetRangeMode ( long lChan, long * pVal ) {
+    HRESULT _hr = raw_GetRangeMode(lChan, pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT IIPMInterface::SetRangeMode ( long lChan, long newVal ) {
+    HRESULT _hr = raw_SetRangeMode(lChan, newVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT IIPMInterface::SetParameters ( long lChan, long bAutoRange, double dblWL, double dblAvgTime, double dblPMRange ) {
+    HRESULT _hr = raw_SetParameters(lChan, bAutoRange, dblWL, dblAvgTime, dblPMRange);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT IIPMInterface::SetZero ( long lChan ) {
+    HRESULT _hr = raw_SetZero(lChan);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline _bstr_t IIPMInterface::GetLastMessage ( ) {
+    BSTR _result;
+    HRESULT _hr = get_LastMessage(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline HRESULT IIPMInterface::CloseDevice ( long lChan ) {
+    HRESULT _hr = raw_CloseDevice(lChan);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+//
+// interface IIVOAInterface wrapper method implementations
+//
+
+inline HRESULT IIVOAInterface::CloseVOADevice ( long lChIndex ) {
+    HRESULT _hr = raw_CloseVOADevice(lChIndex);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT IIVOAInterface::ResetVOADevice ( long lChIndex ) {
+    HRESULT _hr = raw_ResetVOADevice(lChIndex);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT IIVOAInterface::SetVOAWavelength ( long lChIndex, double dblWL ) {
+    HRESULT _hr = raw_SetVOAWavelength(lChIndex, dblWL);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT IIVOAInterface::GetVOAWavelength ( long lChIndex, double * pVal ) {
+    HRESULT _hr = raw_GetVOAWavelength(lChIndex, pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT IIVOAInterface::SetVOAAttenuation ( long lChIndex, double dblAtten ) {
+    HRESULT _hr = raw_SetVOAAttenuation(lChIndex, dblAtten);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT IIVOAInterface::GetVOAAttenuation ( long lChIndex, double * pVal ) {
+    HRESULT _hr = raw_GetVOAAttenuation(lChIndex, pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT IIVOAInterface::SetVOAEnableOutput ( long lChIndex, long bEanble ) {
+    HRESULT _hr = raw_SetVOAEnableOutput(lChIndex, bEanble);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT IIVOAInterface::SetVOAInputOffset ( long lChIndex, double dblOffset ) {
+    HRESULT _hr = raw_SetVOAInputOffset(lChIndex, dblOffset);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT IIVOAInterface::GetVOAStatus ( long lChIndex, long * pVal ) {
+    HRESULT _hr = raw_GetVOAStatus(lChIndex, pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline _bstr_t IIVOAInterface::GetLastMessage ( ) {
+    BSTR _result;
+    HRESULT _hr = get_LastMessage(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+//
+// interface IIOSAInterface wrapper method implementations
+//
+
+inline HRESULT IIOSAInterface::CloseDevice ( long lChIndex ) {
+    HRESULT _hr = raw_CloseDevice(lChIndex);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT IIOSAInterface::ResetDevice ( long lChIndex ) {
+    HRESULT _hr = raw_ResetDevice(lChIndex);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT IIOSAInterface::SetOSALocalCtrl ( long lChIndex ) {
+    HRESULT _hr = raw_SetOSALocalCtrl(lChIndex);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT IIOSAInterface::SetOSARBW ( long lChIndex, double dblRBW ) {
+    HRESULT _hr = raw_SetOSARBW(lChIndex, dblRBW);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT IIOSAInterface::GetOSARBW ( long lChIndex, double * pVal ) {
+    HRESULT _hr = raw_GetOSARBW(lChIndex, pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT IIOSAInterface::InitOSAAmpTest ( long lChIndex, double dblStartWL, double dblStopWL, double dblRBW ) {
+    HRESULT _hr = raw_InitOSAAmpTest(lChIndex, dblStartWL, dblStopWL, dblRBW);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT IIOSAInterface::MeasureSource ( long lChIndex ) {
+    HRESULT _hr = raw_MeasureSource(lChIndex);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT IIOSAInterface::MeasureAmplifier ( long lChIndex, long bScanSrcOnly ) {
+    HRESULT _hr = raw_MeasureAmplifier(lChIndex, bScanSrcOnly);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT IIOSAInterface::GetOSAChannelCount ( long lChIndex, long * pVal ) {
+    HRESULT _hr = raw_GetOSAChannelCount(lChIndex, pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT IIOSAInterface::SetOSAAmpOffset ( long lChIndex, double dblSourceOffset, double dblAmpOffset ) {
+    HRESULT _hr = raw_SetOSAAmpOffset(lChIndex, dblSourceOffset, dblAmpOffset);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT IIOSAInterface::GetOSAAmpOffset ( long lChIndex, double * pdblSourceOffSet, double * pdblAmpOffset ) {
+    HRESULT _hr = raw_GetOSAAmpOffset(lChIndex, pdblSourceOffSet, pdblAmpOffset);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT IIOSAInterface::GetOSAEDFAResult ( long lChIndex, double * pdblSumSrcSigPwr, double * pdblSumAmpSigPwr, double * pdblSumGain ) {
+    HRESULT _hr = raw_GetOSAEDFAResult(lChIndex, pdblSumSrcSigPwr, pdblSumAmpSigPwr, pdblSumGain);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT IIOSAInterface::GetOSAEDFAChResult ( long lChIndex, long * pwChCount, double * pdblChWL, double * pdblSrcpwr, double * pdblChGain, double * pdblChNF, double * pdblChAse, double * pdbGainFlatness, double * pdblMaxNF, double * pdblMaxGain, double * pdblMinGain ) {
+    HRESULT _hr = raw_GetOSAEDFAChResult(lChIndex, pwChCount, pdblChWL, pdblSrcpwr, pdblChGain, pdblChNF, pdblChAse, pdbGainFlatness, pdblMaxNF, pdblMaxGain, pdblMinGain);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT IIOSAInterface::InitOSASingleSweep ( long lChIndex, double dblStartWL, double dblStopWL, double dblRBW, long lSweepPointCount ) {
+    HRESULT _hr = raw_InitOSASingleSweep(lChIndex, dblStartWL, dblStopWL, dblRBW, lSweepPointCount);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT IIOSAInterface::RunOSASweep ( long lChIndex, double * pdblWL, double * pdblPower, _bstr_t szSelTrace ) {
+    HRESULT _hr = raw_RunOSASweep(lChIndex, pdblWL, pdblPower, szSelTrace);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT IIOSAInterface::GetOSASweepData ( long lChIndex, double * pdblWL, double * pdblPower, _bstr_t szSelTrace ) {
+    HRESULT _hr = raw_GetOSASweepData(lChIndex, pdblWL, pdblPower, szSelTrace);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT IIOSAInterface::SetOSACalibration ( long lChIndex, long lCalibrationType ) {
+    HRESULT _hr = raw_SetOSACalibration(lChIndex, lCalibrationType);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT IIOSAInterface::SaveOSADataToPC ( long lChIndex, _bstr_t lpSavePath, _bstr_t lpDataType, _bstr_t lpFileType, _bstr_t szSelTrace ) {
+    HRESULT _hr = raw_SaveOSADataToPC(lChIndex, lpSavePath, lpDataType, lpFileType, szSelTrace);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline _bstr_t IIOSAInterface::GetLastMessage ( ) {
+    BSTR _result;
+    HRESULT _hr = get_LastMessage(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline HRESULT IIOSAInterface::GetChannelWaveLens ( long lChanIndex, double * pdblWL, unsigned long * pdwlChanneCount ) {
+    HRESULT _hr = raw_GetChannelWaveLens(lChanIndex, pdblWL, pdwlChanneCount);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT IIOSAInterface::GetChannelNF ( long lChIndex, double * pdblNF, unsigned long * pdwChannelCount ) {
+    HRESULT _hr = raw_GetChannelNF(lChIndex, pdblNF, pdwChannelCount);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT IIOSAInterface::GetChannelGain ( long lChIndex, double * pdblGain, unsigned long * pdwChannelCount ) {
+    HRESULT _hr = raw_GetChannelGain(lChIndex, pdblGain, pdwChannelCount);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT IIOSAInterface::GetChannelSNR ( long lChIndex, double * pdblSNR, unsigned long * pdwChannelCount ) {
+    HRESULT _hr = raw_GetChannelSNR(lChIndex, pdblSNR, pdwChannelCount);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT IIOSAInterface::GetChannelSourcePower ( long lChIndex, double * pdblSourcePower, unsigned long * pdwChannelCount ) {
+    HRESULT _hr = raw_GetChannelSourcePower(lChIndex, pdblSourcePower, pdwChannelCount);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT IIOSAInterface::GetOSAZoomValue ( long lChIndex, double dbWLNM, double dbBWNM, double * pdbGetValue ) {
+    HRESULT _hr = raw_GetOSAZoomValue(lChIndex, dbWLNM, dbBWNM, pdbGetValue);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT IIOSAInterface::GetOSASingleSweepPoint ( long lChIndex, long * pVal ) {
+    HRESULT _hr = raw_GetOSASingleSweepPoint(lChIndex, pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+//
+// interface IIPolInterface wrapper method implementations
+//
+
+inline HRESULT IIPolInterface::ClosePolDevice ( long lChIndex ) {
+    HRESULT _hr = raw_ClosePolDevice(lChIndex);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT IIPolInterface::ResetPolDevice ( long lChIndex ) {
+    HRESULT _hr = raw_ResetPolDevice(lChIndex);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT IIPolInterface::GetPolCurrentPOSPolarizer ( long lChIndex, double * pdblAlphaP, double * pdblAlphaQ, double * pdblAlphaH ) {
+    HRESULT _hr = raw_GetPolCurrentPOSPolarizer(lChIndex, pdblAlphaP, pdblAlphaQ, pdblAlphaH);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT IIPolInterface::SetPolALL ( long lChIndex, double alphaP, double alphaQ, double alp ) {
+    HRESULT _hr = raw_SetPolALL(lChIndex, alphaP, alphaQ, alp);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT IIPolInterface::SetPolDiagonalAngles ( long lChIndex, double AlphaPMax, double Wavelength ) {
+    HRESULT _hr = raw_SetPolDiagonalAngles(lChIndex, AlphaPMax, Wavelength);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT IIPolInterface::SetPolHorizontalAngles ( long lChIndex, double AlphaPMax, double Wavelength ) {
+    HRESULT _hr = raw_SetPolHorizontalAngles(lChIndex, AlphaPMax, Wavelength);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT IIPolInterface::SetPolPOSHalf ( long lChIndex, double alpha ) {
+    HRESULT _hr = raw_SetPolPOSHalf(lChIndex, alpha);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT IIPolInterface::SetPolPOSPolarizer ( long lChIndex, double alpha ) {
+    HRESULT _hr = raw_SetPolPOSPolarizer(lChIndex, alpha);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT IIPolInterface::SetPolPOSQuarter ( long lChIndex, double alpha ) {
+    HRESULT _hr = raw_SetPolPOSQuarter(lChIndex, alpha);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT IIPolInterface::SetPolRightHandCircularAngles ( long lChIndex, double AlphaPMax, double Wavelength ) {
+    HRESULT _hr = raw_SetPolRightHandCircularAngles(lChIndex, AlphaPMax, Wavelength);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT IIPolInterface::SetPolVerticalAngles ( long lChIndex, double AlphaPMax, double Wavelength ) {
+    HRESULT _hr = raw_SetPolVerticalAngles(lChIndex, AlphaPMax, Wavelength);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline _bstr_t IIPolInterface::GetLastMessage ( ) {
+    BSTR _result;
+    HRESULT _hr = get_LastMessage(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+//
+// interface IScanInterface wrapper method implementations
+//
+
+inline HRESULT IScanInterface::PrepareScan ( long lTLSChIndex, long lpScanParam ) {
+    HRESULT _hr = raw_PrepareScan(lTLSChIndex, lpScanParam);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT IScanInterface::ExecuteScan ( long lTLSChIndex, long lpScanRawDataPtr ) {
+    HRESULT _hr = raw_ExecuteScan(lTLSChIndex, lpScanRawDataPtr);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT IScanInterface::ReleaseScan ( long lTLSChIndex ) {
+    HRESULT _hr = raw_ReleaseScan(lTLSChIndex);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT IScanInterface::DoScanRef ( long lTLSChIndex, long lpScanRawData ) {
+    HRESULT _hr = raw_DoScanRef(lTLSChIndex, lpScanRawData);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT IScanInterface::DoScan ( long lTLSChIndex, long lpScanRawData ) {
+    HRESULT _hr = raw_DoScan(lTLSChIndex, lpScanRawData);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT IScanInterface::GetCalILResult ( long lpScanResult ) {
+    HRESULT _hr = raw_GetCalILResult(lpScanResult);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT IScanInterface::GetCalILAndPDLResult ( long lpScanResult ) {
+    HRESULT _hr = raw_GetCalILAndPDLResult(lpScanResult);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT IScanInterface::ReleaseAllocStruct ( long lpStructPtr ) {
+    HRESULT _hr = raw_ReleaseAllocStruct(lpStructPtr);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline _bstr_t IScanInterface::GetLastMessage ( ) {
+    BSTR _result;
+    HRESULT _hr = get_LastMessage(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+//
+// interface IChamberInterface wrapper method implementations
+//
+
+inline HRESULT IChamberInterface::CloseChamberDevice ( long lChIndex ) {
+    HRESULT _hr = raw_CloseChamberDevice(lChIndex);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT IChamberInterface::SetChamberRunStop ( long lChIndex ) {
+    HRESULT _hr = raw_SetChamberRunStop(lChIndex);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT IChamberInterface::SetChamberRunStart ( long lChIndex ) {
+    HRESULT _hr = raw_SetChamberRunStart(lChIndex);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT IChamberInterface::SetChamberSetPoint ( long lChIndex, double dbSetPoint ) {
+    HRESULT _hr = raw_SetChamberSetPoint(lChIndex, dbSetPoint);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT IChamberInterface::GetChamberSetPoint ( long lChIndex, double * dbSetPoint ) {
+    HRESULT _hr = raw_GetChamberSetPoint(lChIndex, dbSetPoint);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT IChamberInterface::GetChamberCurrentTemp ( long lChIndex, double * dbCurrTemp ) {
+    HRESULT _hr = raw_GetChamberCurrentTemp(lChIndex, dbCurrTemp);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline _bstr_t IChamberInterface::GetLastMessage ( ) {
+    BSTR _result;
+    HRESULT _hr = get_LastMessage(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+//
+// interface IIComDevInterface wrapper method implementations
+//
+
+inline HRESULT IIComDevInterface::WriteBuffer ( long lChIndex, _bstr_t pBuffer, unsigned long dwBufferSize ) {
+    HRESULT _hr = raw_WriteBuffer(lChIndex, pBuffer, dwBufferSize);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT IIComDevInterface::ReadBuffer ( long lChIndex, BSTR * pBuffer, unsigned long dwBufferSize ) {
+    HRESULT _hr = raw_ReadBuffer(lChIndex, pBuffer, dwBufferSize);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT IIComDevInterface::get_LastMessage ( BSTR * pVal ) {
+    HRESULT _hr = raw_get_LastMessage(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}

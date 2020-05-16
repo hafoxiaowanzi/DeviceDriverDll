@@ -1,0 +1,26 @@
+HKCR
+{
+	UDLServer.EngineMgr.1 = s 'EngineMgr Class'
+	{
+		CLSID = s '{B73F2E4C-A43F-48BB-BA61-E25B4D2B96AF}'
+	}
+	UDLServer.EngineMgr = s 'EngineMgr Class'
+	{
+		CLSID = s '{B73F2E4C-A43F-48BB-BA61-E25B4D2B96AF}'
+		CurVer = s 'UDLServer.EngineMgr.1'
+	}
+	NoRemove CLSID
+	{
+		ForceRemove {B73F2E4C-A43F-48BB-BA61-E25B4D2B96AF} = s 'EngineMgr Class'
+		{
+			ProgID = s 'UDLServer.EngineMgr.1'
+			VersionIndependentProgID = s 'UDLServer.EngineMgr'
+			ForceRemove 'Programmable'
+			InprocServer32 = s '%MODULE%'
+			{
+				val ThreadingModel = s 'Apartment'
+			}
+			'TypeLib' = s '{7FA750BF-178D-475A-9AA1-DEB556BB0E95}'
+		}
+	}
+}

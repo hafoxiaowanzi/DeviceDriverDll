@@ -1,0 +1,388 @@
+// UDLServer.idl : IDL source for UDLServer.dll
+//
+
+// This file will be processed by the MIDL tool to
+// produce the type library (UDLServer.tlb) and marshalling code.
+
+import "oaidl.idl";
+import "ocidl.idl";
+
+
+
+/////////////////////////////////////////////////////////////////
+//////
+/////////////////////////////////////////////////////////////////
+
+    typedef 
+    [ 
+        uuid(C21871A0-33EB-11D4-A13A-BE2573A1120F), 
+        version(1.0),
+
+        helpstring("Scan Parameter for UDL")
+    ]
+    struct ScanParam {
+        
+        [helpstring("Whether PDL")]                    BOOL    m_bDoPDL;    
+		[helpstring("Poc Channel Index")]              int     m_nPDocChIndex; 
+	    [helpstring("PDL Type")]                       int     m_nPDLType;
+		[helpstring("Speed of the variable")]          int     m_nSpeed;
+		[helpstring("AvgTime of the variable")]        int     m_nAvgTime;
+		[helpstring("Scan Times of the variable")]     int     m_dwNumberOfScan;
+		[helpstring("Scan Channels of the variable")]  int     m_dwChannelNumber;
+		[helpstring("Scan High cfg of the variable")]  int     m_dwChannelCfgHigh;
+		[helpstring("Scan Low cfg of the variable")]   int     m_dwChannelCfgLow;
+		[helpstring("Scan Point of the variable")]     int     m_dwSampleCount;
+		[helpstring("Scan TLS Power")]	               double  m_dblTLSPower;      
+	    [helpstring("Scan PM Power")]                  double  m_dblPWMPower; 
+		[helpstring("PDL Angle")]                      double  m_dbAlphaAngle;  
+		[helpstring("Start WL of the variable")]       double     m_dblStartWL;
+		[helpstring("Stop WL of the variable")]        double     m_dblStopWL;
+		[helpstring("Step WL of the variable")]        double     m_dblStepSize;
+    }stSetScanParam;
+/////////////////////////////////////////////////////////////////////////////////
+///////
+/////////////////////////////////////////////////////////////////////////////////
+
+    typedef 
+    [
+        uuid(C218719F-33EB-11D4-A13A-BE2573A1120F), 
+        version(1.0),
+
+        helpstring("Scan Return Result For UDL")
+    ]
+    struct Op816XRawData {
+
+        [helpstring("array of scan wl")]    
+                double*  m_pdblWavelengthArray;
+        [helpstring("array of scan power")]    
+                DWORD*  m_pdwDataArrayAddr;
+    }stGetOp816XRawData;
+////////////////////////////////////////////////////////////////////////////////////
+///////
+/////////////////////////////////////////////////////////////////////////////////////////
+	[
+		object,
+		uuid(9CEBB9DF-8EE5-42E8-BC16-38D0D22267A7),
+		dual,
+		helpstring("IEngineMgr Interface"),
+		pointer_default(unique)
+	]
+	interface IEngineMgr : IDispatch
+	{
+		[propget, id(1), helpstring("property GetVersion")] HRESULT GetVersion([out, retval] BSTR *pVal);
+		[propput, id(1), helpstring("property GetVersion")] HRESULT GetVersion([in] BSTR newVal);
+		[propget, id(2), helpstring("property GetLastMessage")] HRESULT GetLastMessage([out, retval] BSTR *pVal);
+		[propput, id(2), helpstring("property GetLastMessage")] HRESULT GetLastMessage([in] BSTR newVal);
+		[id(3), helpstring("method OpenEngine")] HRESULT OpenEngine();
+		[id(4), helpstring("method LoadConfiguration")] HRESULT LoadConfiguration([in] BSTR FileName);
+		[id(5), helpstring("method RegisterUDL")] HRESULT RegisterUDL();
+		[id(6), helpstring("method SetUDLNET")] HRESULT SetUDLNET([in]BOOL bIsNet);
+		[id(7), helpstring("method ConnectToServer")] HRESULT ConnectToServer([in] BSTR pstrIPAddress);
+	};
+
+[
+	uuid(7FA750BF-178D-475A-9AA1-DEB556BB0E95),
+	version(1.0),
+	helpstring("UDLServer 1.0 Type Library")
+]
+library UDLSERVERLib
+{
+	importlib("stdole32.tlb");
+	importlib("stdole2.tlb");
+
+	[
+		uuid(F34AE487-9066-4F9E-AF71-7C1CBA2E9692),
+		helpstring("_IEngineMgrEvents Interface")
+	]
+	dispinterface _IEngineMgrEvents
+	{
+		properties:
+		methods:
+	};
+
+	[
+		uuid(B73F2E4C-A43F-48BB-BA61-E25B4D2B96AF),
+		helpstring("EngineMgr Class")
+	]
+	coclass EngineMgr
+	{
+		[default] interface IEngineMgr;
+		[default, source] dispinterface _IEngineMgrEvents;
+	};
+	[
+		uuid(CDF068AB-A4F9-45FC-8742-C1272FC4F1B0),
+		helpstring("_IEnginePtrEvents Interface")
+	]
+	dispinterface _IEnginePtrEvents
+	{
+		properties:
+		methods:
+	};
+	[
+		object,
+		uuid(0B50A5FA-6D5A-46D3-BA2B-3608FEF0976A),
+		dual,
+		helpstring("IITLSInterface Interface"),
+		pointer_default(unique)
+	]
+	interface IITLSInterface : IDispatch
+	{
+		[id(1), helpstring("method SetTLSWavelength")] HRESULT SetTLSWavelength([in] long lChIndex,[in] double dblWL);
+		[id(3), helpstring("method SetTLSSourcePower")] HRESULT SetTLSSourcePower([in] long lChIndex,[in] double dblPW);
+		[id(4), helpstring("method SetTLSCoherenceControl")] HRESULT SetTLSCoherenceControl([in] long lChIndex,[in] BOOL bEnable);
+		[id(5), helpstring("method SetTLSSourceUnit")] HRESULT SetTLSSourceUnit([in]long lChIndex,[in] long lUnit);
+		[id(6), helpstring("method SetTLSParameters")] HRESULT SetTLSParameters([in]long lChIndex,[in]long lLowSSE,[in]double dblPower,[in] double dblWavelength);
+		[id(7), helpstring("method SetTLSOutputEnable")] HRESULT SetTLSOutputEnable([in]long lChIndex,[in] BOOL bEnable);
+		[id(8), helpstring("method CloseTLSDevice")] HRESULT CloseTLSDevice([in] long lChIndex);
+		[propget, id(9), helpstring("property LastMessage")] HRESULT LastMessage([out, retval] BSTR *pVal);
+	};
+	[
+		object,
+		uuid(A078CFDE-41C1-45D2-ADC9-20E8B128996B),
+		dual,
+		helpstring("IIPMInterface Interface"),
+		pointer_default(unique)
+	]
+	interface IIPMInterface : IDispatch
+	{
+		[id(1), helpstring("method GetUnit")] HRESULT GetUnit([in]long lChan, [out] long *pVal);
+		[id(2), helpstring("method SetUnit")] HRESULT SetUnit([in]long lChan, [in] long newVal);
+		[id(3), helpstring("method GetAverageTime")] HRESULT GetAverageTime([in]long lChan, [out] double *pVal);
+		[id(4), helpstring("method SetAverageTime")] HRESULT SetAverageTime([in]long lChan, [in] double newVal);
+		[id(5), helpstring("method GetWavelength")] HRESULT GetWavelength([in]long lChan, [out] double *pVal);
+		[id(6), helpstring("method SetWavelength")] HRESULT SetWavelength([in]long lChan, [in] double newVal);
+		[id(7), helpstring("method GetPower")] HRESULT GetPower([in]long lChan, [out] double *pVal);
+		[id(8), helpstring("method GetRangeMode")] HRESULT GetRangeMode([in]long lChan, [out] long *pVal);
+		[id(9), helpstring("method SetRangeMode")] HRESULT SetRangeMode([in]long lChan, [in] long newVal);
+		[id(10), helpstring("method SetParameters")] HRESULT SetParameters([in]long lChan,[in]BOOL bAutoRange,[in]double dblWL,[in]double dblAvgTime,[in]double dblPMRange);
+		[id(11), helpstring("method SetZero")] HRESULT SetZero([in]long lChan);
+		[propget, id(12), helpstring("property LastMessage")] HRESULT LastMessage([out, retval] BSTR *pVal);
+		[id(13), helpstring("method CloseDevice")] HRESULT CloseDevice([in]long lChan);
+		[id(14), helpstring("method SetPMMaxMinPowerStart")] HRESULT SetPMMaxMinPowerStart([in]long lChan);
+		[id(15), helpstring("method GetPMMaxMinPower")] HRESULT GetPMMaxMinPower([in]long lChIndex,[out]double *pdbGetMax,[out]double *pdbGetMin);
+		[id(16), helpstring("method SetPMMaxMinPowerStop")] HRESULT SetPMMaxMinPowerStop([in] long lChan);
+		[id(17), helpstring("method SetPMPowerOffset")] HRESULT SetPMPowerOffset([in]long lChan,[in] double newVal);
+	//	[id(10), helpstring("method GetPMDeviceInfo")] HRESULT GetPMDeviceInfo([in]long lChIndex,[out]char* pstrDescription);
+	};
+	[
+		object,
+		uuid(A1B84183-A9EF-41D9-A894-D008CBB0D5E4),
+		dual,
+		helpstring("IIVOAInterface Interface"),
+		pointer_default(unique)
+	]
+	interface IIVOAInterface : IDispatch
+	{
+		[id(1), helpstring("method CloseVOADevice")] HRESULT CloseVOADevice([in]long lChIndex);
+		[id(2), helpstring("method ResetVOADevice")] HRESULT ResetVOADevice([in]long lChIndex);
+		[id(3), helpstring("method SetVOAWavelength")] HRESULT SetVOAWavelength([in] long lChIndex,[in]double dblWL);
+		[id(4), helpstring("method GetVOAWavelength")] HRESULT GetVOAWavelength([in]long lChIndex, [out] double *pVal);
+		[id(5), helpstring("method SetVOAAttenuation")] HRESULT SetVOAAttenuation([in]long lChIndex,[in]double dblAtten);
+		[id(6), helpstring("method GetVOAAttenuation")] HRESULT GetVOAAttenuation([in]long lChIndex, [out] double *pVal);
+		[id(7), helpstring("method SetVOAEnableOutput")] HRESULT SetVOAEnableOutput([in]long lChIndex,[in]BOOL bEanble);
+		[id(8), helpstring("method SetVOAInputOffset")] HRESULT SetVOAInputOffset([in]long lChIndex,[in] double dblOffset);
+		[id(9), helpstring("method GetVOAStatus")] HRESULT GetVOAStatus([in] long lChIndex, [out] long *pVal);
+		[propget, id(10), helpstring("property LastMessage")] HRESULT LastMessage([out, retval] BSTR *pVal);
+	};
+
+	[
+		object,
+		uuid(104889A9-452E-419F-85E0-EA5AEB72DBCA),
+		dual,
+		helpstring("IIOSAInterface Interface"),
+		pointer_default(unique)
+	]
+	interface IIOSAInterface : IDispatch
+	{
+		[id(1), helpstring("method CloseDevice")] HRESULT CloseDevice([in]long lChIndex);
+		[id(2), helpstring("method ResetDevice")] HRESULT ResetDevice([in]long lChIndex);
+		[id(3), helpstring("method SetOSALocalCtrl")] HRESULT SetOSALocalCtrl([in]long lChIndex);
+		[id(4), helpstring("method SetOSARBW")] HRESULT SetOSARBW([in] long lChIndex,[in]double dblRBW);
+		[id(5), helpstring("method GetOSARBW")] HRESULT GetOSARBW([in]long lChIndex, [out] double *pVal);
+		[id(6), helpstring("method InitOSAAmpTest")] HRESULT InitOSAAmpTest([in]long lChIndex,[in] double dblStartWL,[in] double dblStopWL,[in] double dblRBW);
+		[id(7), helpstring("method MeasureSource")] HRESULT MeasureSource([in]long lChIndex);
+		[id(8), helpstring("method MeasureAmplifier")] HRESULT MeasureAmplifier([in]long lChIndex,[in]BOOL bScanSrcOnly);
+		[id(9), helpstring("method GetOSAChannelCount")] HRESULT GetOSAChannelCount([in]long lChIndex, [out] long *pVal);
+		[id(10), helpstring("method SetOSAAmpOffset")] HRESULT SetOSAAmpOffset([in]long lChIndex,[in]double dblSourceOffset,[in]double dblAmpOffset);
+		[id(11), helpstring("method GetOSAAmpOffset")] HRESULT GetOSAAmpOffset([in]long lChIndex,[out]double*pdblSourceOffSet,[out]double* pdblAmpOffset);
+		[id(12), helpstring("method GetOSAEDFAResult")] HRESULT GetOSAEDFAResult([in]long lChIndex,[out] double* pdblSumSrcSigPwr,[out]double* pdblSumAmpSigPwr,[out]double* pdblSumGain);
+		[id(13), helpstring("method GetOSAEDFAChResult")] HRESULT GetOSAEDFAChResult([in]long lChIndex,[out]long *pwChCount, [out]double *pdblChWL,[out] double *pdblSrcpwr,[out] double *pdblChGain,[out] double *pdblChNF, [out]double *pdblChAse, [out] double* pdbGainFlatness,[out]double*pdblMaxNF,[out]double* pdblMaxGain,[out] double* pdblMinGain);
+		[id(14), helpstring("method InitOSASingleSweep")] HRESULT InitOSASingleSweep([in]long lChIndex,[in] double dblStartWL,[in] double dblStopWL,[in] double dblRBW,[in]long lSweepPointCount);
+		[id(15), helpstring("method RunOSASweep")] HRESULT RunOSASweep([in]long lChIndex,[out]double *pdblWL,[out]double* pdblPower,[in] BSTR szSelTrace);
+		[id(16), helpstring("method GetOSASweepData")] HRESULT GetOSASweepData([in]long lChIndex,[out]double* pdblWL,[out]double * pdblPower,[in]BSTR szSelTrace);
+		[id(17), helpstring("method SetOSACalibration")] HRESULT SetOSACalibration([in]long lChIndex,[in]long lCalibrationType);
+		[id(18), helpstring("method SaveOSADataToPC")] HRESULT SaveOSADataToPC([in]long lChIndex,[in]BSTR lpSavePath,[in]BSTR lpDataType,[in]BSTR  lpFileType,[in]BSTR szSelTrace);
+		[propget, id(19), helpstring("property LastMessage")] HRESULT LastMessage([out, retval] BSTR *pVal);
+		[id(20), helpstring("method GetChannelWaveLens")] HRESULT GetChannelWaveLens([in]long lChanIndex,[out]double* pdblWL,[out]DWORD* pdwlChanneCount);
+		[id(21), helpstring("method GetChannelNF")] HRESULT GetChannelNF([in]long lChIndex,[out]double* pdblNF,[out]DWORD* pdwChannelCount);
+		[id(22), helpstring("method GetChannelGain")] HRESULT GetChannelGain([in]long lChIndex,[out]double* pdblGain,[out]DWORD* pdwChannelCount);
+		[id(23), helpstring("method GetChannelSNR")] HRESULT GetChannelSNR([in]long lChIndex,[out]double* pdblSNR,[out]DWORD* pdwChannelCount);
+		[id(24), helpstring("method GetChannelSourcePower")] HRESULT GetChannelSourcePower([in]long lChIndex,[out]double* pdblSourcePower,[out]DWORD* pdwChannelCount);
+		[id(25), helpstring("method GetOSAZoomValue")] HRESULT GetOSAZoomValue([in]long lChIndex,[in]double dbWLNM,[in]double dbBWNM,[out]double* pdbGetValue);
+		[id(26), helpstring("method GetOSASingleSweepPoint")] HRESULT GetOSASingleSweepPoint([in] long lChIndex,[out] long* pVal);	   
+		[id(27), helpstring("method InitWDMTest")] HRESULT InitOSAWDMTest([in]long lChIndex,[in]double dblStartWL,[in]double dblStopWL,[in]double dblRBW);
+		[id(28), helpstring("method MeasureWDM")] HRESULT MeasureOSAWDM([in]long lChIndex);
+		
+		[id(29), helpstring("InitOSARepeatSweep")] HRESULT InitOSARepeatSweep([in] LONG lChIndex, [in] DOUBLE dblStartWL, [in] DOUBLE dblStopWL, [in] DOUBLE dblRBW, [in] LONG lSweepPointCount);
+	};
+	[
+		object,
+		uuid(AF1A856A-F3E6-4461-9DC4-F1F87EA61F37),
+		dual,
+		helpstring("IIPolInterface Interface"),
+		pointer_default(unique)
+	]
+	interface IIPolInterface : IDispatch
+	{
+		[id(1), helpstring("method ClosePolDevice")] HRESULT ClosePolDevice([in] long lChIndex);
+		[id(2), helpstring("method ResetPolDevice")] HRESULT ResetPolDevice([in]long lChIndex);
+		[id(3), helpstring("method GetPolCurrentPOSPolarizer")] HRESULT GetPolCurrentPOSPolarizer([in]long lChIndex,[out]double *pdblAlphaP,[out]double *pdblAlphaQ,[out]double *pdblAlphaH);
+		[id(4), helpstring("method SetPolALL")] HRESULT SetPolALL([in]long lChIndex,[in]double alphaP,[in]double alphaQ,[in]double alp);
+		[id(6), helpstring("method SetPolDiagonalAngles")] HRESULT SetPolDiagonalAngles([in]long lChIndex,[in]double AlphaPMax,[in]double Wavelength);
+		[id(7), helpstring("method SetPolHorizontalAngles")] HRESULT SetPolHorizontalAngles([in]long lChIndex,[in]double AlphaPMax,[in]double Wavelength);
+		[id(8), helpstring("method SetPolPOSHalf")] HRESULT SetPolPOSHalf([in]long lChIndex,[in]double alpha);
+		[id(9), helpstring("method SetPolPOSPolarizer")] HRESULT SetPolPOSPolarizer([in]long lChIndex,[in]double alpha);
+		[id(10), helpstring("method SetPolPOSQuarter")] HRESULT SetPolPOSQuarter([in]long lChIndex,[in]double alpha);
+		[id(11), helpstring("method SetPolRightHandCircularAngles")] HRESULT SetPolRightHandCircularAngles([in]long lChIndex,[in]double AlphaPMax,[in]double Wavelength);
+		[id(12), helpstring("method SetPolVerticalAngles")] HRESULT SetPolVerticalAngles([in]long lChIndex,[in]double AlphaPMax,[in]double Wavelength);
+		[propget, id(13), helpstring("property LastMessage")] HRESULT LastMessage([out, retval] BSTR *pVal);
+	};
+	[
+		object,
+		uuid(7CDE6BE4-4B5C-46DC-99C5-1B680178713F),
+		dual,
+		helpstring("IScanInterface Interface"),
+		pointer_default(unique)
+	]
+	interface IScanInterface : IDispatch
+	{
+		[id(1), helpstring("method PrepareScan")] HRESULT PrepareScan([in]long lTLSChIndex,[in]long lpScanParam);
+		[id(2), helpstring("method ExecuteScan")] HRESULT ExecuteScan([in]long lTLSChIndex,[in]long lpScanRawDataPtr);
+		[id(3), helpstring("method ReleaseScan")] HRESULT ReleaseScan([in]long lTLSChIndex);
+		[id(4), helpstring("method DoScanRef")] HRESULT DoScanRef([in]long lTLSChIndex,[in]long lpScanRawData);
+		[id(5), helpstring("method DoScan")] HRESULT DoScan([in]long lTLSChIndex,[in]long lpScanRawData);
+		[id(6), helpstring("method GetCalILResult")] HRESULT GetCalILResult([in]long lpScanResult);
+		[id(7), helpstring("method GetCalILAndPDLResult")] HRESULT GetCalILAndPDLResult([in]long  lpScanResult);
+		[id(8), helpstring("method ReleaseAllocStruct")] HRESULT ReleaseAllocStruct([in]long lpStructPtr);
+		[propget, id(9), helpstring("property LastMessage")] HRESULT LastMessage([out, retval] BSTR *pVal);
+	};
+	[
+		object,
+		uuid(89A6FDE2-516B-4432-AF08-1DCE005D0B1E),
+		dual,
+		helpstring("IChamberInterface Interface"),
+		pointer_default(unique)
+	]
+	interface IChamberInterface : IDispatch
+	{
+		[id(1), helpstring("method CloseChamberDevice")] HRESULT CloseChamberDevice([in]long lChIndex);
+		[id(2), helpstring("method SetChamberRunStop")] HRESULT SetChamberRunStop([in]long lChIndex);
+		[id(3), helpstring("method SetChamberRunStart")] HRESULT SetChamberRunStart([in]long lChIndex);
+		[id(4), helpstring("method SetChamberSetPoint")] HRESULT SetChamberSetPoint([in]long lChIndex,[in]double dbSetPoint);
+		[id(5), helpstring("method GetChamberSetPoint")] HRESULT GetChamberSetPoint([in]long lChIndex,[out]double* dbSetPoint);
+		[id(6), helpstring("method GetChamberCurrentTemp")] HRESULT GetChamberCurrentTemp([in]long lChIndex,[out]double* dbCurrTemp);
+		[propget, id(7), helpstring("property LastMessage")] HRESULT LastMessage([out, retval] BSTR *pVal);
+	};
+	[
+		object,
+		uuid(309343A5-A079-4F81-9DA2-FE2D0538DC2D),
+		dual,
+		helpstring("IIComDevInterface Interface"),
+		pointer_default(unique)
+	]
+	interface IIComDevInterface : IDispatch
+	{
+		[id(1), helpstring("method WriteBuffer")] HRESULT WriteBuffer([in]long lChIndex,[in]BSTR pBuffer,[in]DWORD dwBufferSize);
+		[id(2), helpstring("method ReadBuffer")] HRESULT ReadBuffer([in]long lChIndex,[out]BSTR* pBuffer,[in]DWORD dwBufferSize);
+	//	[id(3), helpstring("method get_LastMessage")] HRESULT get_LastMessage([out]BSTR * pVal);
+		[id(4), helpstring("method CloseSerial")] HRESULT CloseSerial([in]long lChIndex);
+		[id(5), helpstring("method OpenSerial")] HRESULT OpenSerial([in]long lChIndex);
+		[propget, id(6), helpstring("property LastMessage")] HRESULT LastMessage([out, retval] BSTR *pVal);
+	};
+	[
+		object,
+		uuid(BE62156F-2AF7-4DD0-BB5E-AAE25A0B4BFA),
+		dual,
+		helpstring("IISwitchBoxInterface Interface"),
+		pointer_default(unique)
+	]
+	interface IISwitchBoxInterface : IDispatch
+	{
+		[id(1), helpstring("method OpenSwitchDevice")] HRESULT OpenSwitchDevice([in]long lChIndex);
+		[id(2), helpstring("method CloseSwitchDevice")] HRESULT CloseSwitchDevice([in]long lChIndex);
+		[id(3), helpstring("method SwitchPort2Port")] HRESULT SwitchPort2Port([in]int lChIndex,[in]int nInputPort, [in]int nOutputPort);
+		[propget, id(4), helpstring("property LastMessage")] HRESULT LastMessage([out, retval] BSTR *pVal);
+	};
+	[
+		uuid(82E74FAE-D809-47C0-8CD3-7F653CBB4FD8),
+		helpstring("ITLSInterface Class")
+	]
+	coclass ITLSInterface
+	{
+		[default] interface IITLSInterface;
+	};
+	[
+		uuid(2AA6F3FA-6507-49DF-8791-971F31301992),
+		helpstring("IPMInterface Class")
+	]
+	coclass IPMInterface
+	{
+		[default] interface IIPMInterface;
+	};
+	[
+		uuid(E5B0D9E8-E9F9-4C14-9E48-A60C4EC74252),
+		helpstring("IVOAInterface Class")
+	]
+	coclass IVOAInterface
+	{
+		[default] interface IIVOAInterface;
+	};
+	[
+		uuid(B4E0C31C-404B-41A6-843C-64770AA349B0),
+		helpstring("IOSAInterface Class")
+	]
+	coclass IOSAInterface
+	{
+		[default] interface IIOSAInterface;
+	};
+	[
+		uuid(17B09D77-2E06-4678-98E3-23DFEA8262F9),
+		helpstring("IPolInterface Class")
+	]
+	coclass IPolInterface
+	{
+		[default] interface IIPolInterface;
+	};
+	[
+		uuid(5B3B1877-867F-4742-B3D7-302F08CE032B),
+		helpstring("ScanInterface Class")
+	]
+	coclass ScanInterface
+	{
+		[default] interface IScanInterface;
+	};
+	[
+		uuid(90321366-D7CC-4F21-94F4-756CA1DB1B34),
+		helpstring("ChamberInterface Class")
+	]
+	coclass ChamberInterface
+	{
+		[default] interface IChamberInterface;
+	};
+	[
+		uuid(CB4F7BD8-2FC4-40C9-8F8F-C2FF01E5EA63),
+		helpstring("IComDevInterface Class")
+	]
+	coclass IComDevInterface
+	{
+		[default] interface IIComDevInterface;
+	};
+	[
+		uuid(4885F744-A490-42F0-8FAF-7F0F5B90FBC6),
+		helpstring("ISwitchBoxInterface Class")
+	]
+	coclass ISwitchBoxInterface
+	{
+		[default] interface IISwitchBoxInterface;
+	};
+};

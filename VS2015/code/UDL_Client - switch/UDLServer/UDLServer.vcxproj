@@ -1,0 +1,561 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release MinDependency|Win32">
+      <Configuration>Release MinDependency</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release MinSize|Win32">
+      <Configuration>Release MinSize</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Template|Win32">
+      <Configuration>Template</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Unicode Debug|Win32">
+      <Configuration>Unicode Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Unicode Release MinDependency|Win32">
+      <Configuration>Unicode Release MinDependency</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Unicode Release MinSize|Win32">
+      <Configuration>Unicode Release MinSize</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <SccProjectName />
+    <SccLocalPath />
+    <Keyword>AtlProj</Keyword>
+    <ProjectGuid>{8A668E28-C3BD-4331-A0A2-F91CECCC7986}</ProjectGuid>
+    <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Template|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Unicode Release MinDependency|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v140</PlatformToolset>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <CharacterSet>Unicode</CharacterSet>
+    <UseOfAtl>Static</UseOfAtl>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v140_xp</PlatformToolset>
+    <UseOfMfc>Dynamic</UseOfMfc>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release MinSize|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v140_xp</PlatformToolset>
+    <UseOfMfc>Static</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <UseOfAtl>Dynamic</UseOfAtl>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Unicode Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v140</PlatformToolset>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Unicode Release MinSize|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v140</PlatformToolset>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <CharacterSet>Unicode</CharacterSet>
+    <UseOfAtl>Dynamic</UseOfAtl>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release MinDependency|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v140_xp</PlatformToolset>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <UseOfAtl>Static</UseOfAtl>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Template|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Unicode Release MinDependency|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.Cpp.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.Cpp.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release MinSize|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.Cpp.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Unicode Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.Cpp.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Unicode Release MinSize|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.Cpp.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release MinDependency|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.Cpp.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release MinDependency|Win32'">
+    <OutDir>.\ReleaseMinDependency\</OutDir>
+    <IntDir>.\ReleaseMinDependency\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Unicode Release MinSize|Win32'">
+    <OutDir>.\ReleaseUMinSize\</OutDir>
+    <IntDir>.\ReleaseUMinSize\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Unicode Debug|Win32'">
+    <OutDir>.\DebugU\</OutDir>
+    <IntDir>.\DebugU\</IntDir>
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release MinSize|Win32'">
+    <OutDir>.\../lib\</OutDir>
+    <IntDir>.\ReleaseMinSize\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>.\Debug\</OutDir>
+    <IntDir>.\Debug\</IntDir>
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Unicode Release MinDependency|Win32'">
+    <OutDir>.\ReleaseUMinDependency\</OutDir>
+    <IntDir>.\ReleaseUMinDependency\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release MinDependency|Win32'">
+    <ClCompile>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <InlineFunctionExpansion>Default</InlineFunctionExpansion>
+      <StringPooling>true</StringPooling>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <Optimization>MinSpace</Optimization>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AssemblerListingLocation>.\ReleaseMinDependency\</AssemblerListingLocation>
+      <PrecompiledHeaderOutputFile>.\ReleaseMinDependency\UDLServer.pch</PrecompiledHeaderOutputFile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
+      <ObjectFileName>.\ReleaseMinDependency\</ObjectFileName>
+      <ProgramDataBaseFileName>.\ReleaseMinDependency\</ProgramDataBaseFileName>
+      <AdditionalIncludeDirectories>C:\Program Files %28x86%29\IVI Foundation\VISA\WinNT\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ForceConformanceInForLoopScope>false</ForceConformanceInForLoopScope>
+    </ClCompile>
+    <Midl>
+      <TypeLibraryName>.\ReleaseMinDependency\UDLServer.tlb</TypeLibraryName>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0804</Culture>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>.\ReleaseMinDependency\UDLServer.bsc</OutputFile>
+    </Bscmake>
+    <Link>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <LinkDLL>true</LinkDLL>
+      <SubSystem>Windows</SubSystem>
+      <OutputFile>../bin/UDL.DLM.dll </OutputFile>
+      <ImportLibrary>.\ReleaseMinDependency\UDL.DLM.lib</ImportLibrary>
+      <DelayLoadDLLs>mtxex.dll;%(DelayLoadDLLs)</DelayLoadDLLs>
+      <AdditionalDependencies>mtx.lib;delayimp.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <ModuleDefinitionFile>.\UDLServer.def</ModuleDefinitionFile>
+      <AdditionalLibraryDirectories>C:\Program Files %28x86%29\IVI Foundation\VISA\WinNT\lib\msc;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+    <CustomBuildStep>
+      <Command>regsvr32 /s /c "$(TargetPath)" 
+echo regsvr32 exec. time &gt; "$(OutDir)regsvr32.trg" 
+echo Execute mtxrereg.exe before using MTS components in MTS </Command>
+      <Message>Performing registration</Message>
+      <Outputs>$(OutDir)\regsvr32.trg;%(Outputs)</Outputs>
+    </CustomBuildStep>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Unicode Release MinSize|Win32'">
+    <ClCompile>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <InlineFunctionExpansion>Default</InlineFunctionExpansion>
+      <StringPooling>true</StringPooling>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <Optimization>MinSpace</Optimization>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AssemblerListingLocation>.\ReleaseUMinSize\</AssemblerListingLocation>
+      <PrecompiledHeaderOutputFile>.\ReleaseUMinSize\UDLServer.pch</PrecompiledHeaderOutputFile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
+      <ObjectFileName>.\ReleaseUMinSize\</ObjectFileName>
+      <ProgramDataBaseFileName>.\ReleaseUMinSize\</ProgramDataBaseFileName>
+    </ClCompile>
+    <Midl>
+      <TypeLibraryName>.\ReleaseUMinSize\UDLServer.tlb</TypeLibraryName>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0804</Culture>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>.\ReleaseUMinSize\UDLServer.bsc</OutputFile>
+    </Bscmake>
+    <Link>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <LinkDLL>true</LinkDLL>
+      <SubSystem>Windows</SubSystem>
+      <OutputFile>.\ReleaseUMinSize\UDLServer.dll</OutputFile>
+      <ImportLibrary>.\ReleaseUMinSize\UDLServer.lib</ImportLibrary>
+      <DelayLoadDLLs>mtxex.dll;%(DelayLoadDLLs)</DelayLoadDLLs>
+      <AdditionalDependencies>mtx.lib;mtxguid.lib;delayimp.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <ModuleDefinitionFile>.\UDLServer.def</ModuleDefinitionFile>
+    </Link>
+    <CustomBuildStep>
+      <Command>if "%OS%"=="" goto NOTNT 
+if not "%OS%"=="Windows_NT" goto NOTNT 
+regsvr32 /s /c "$(TargetPath)" 
+echo regsvr32 exec. time &gt; "$(OutDir)regsvr32.trg" 
+echo Execute mtxrereg.exe before using MTS components in MTS 
+goto end 
+:NOTNT 
+echo Warning : Cannot register Unicode DLL on Windows 95 
+:end </Command>
+      <Message>Performing registration</Message>
+      <Outputs>$(OutDir)\regsvr32.trg;%(Outputs)</Outputs>
+    </CustomBuildStep>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Unicode Debug|Win32'">
+    <ClCompile>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <InlineFunctionExpansion>Default</InlineFunctionExpansion>
+      <FunctionLevelLinking>false</FunctionLevelLinking>
+      <Optimization>Disabled</Optimization>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <WarningLevel>Level3</WarningLevel>
+      <MinimalRebuild>true</MinimalRebuild>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AssemblerListingLocation>.\DebugU\</AssemblerListingLocation>
+      <PrecompiledHeaderOutputFile>.\DebugU\UDLServer.pch</PrecompiledHeaderOutputFile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
+      <ObjectFileName>.\DebugU\</ObjectFileName>
+      <ProgramDataBaseFileName>.\DebugU\</ProgramDataBaseFileName>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+    </ClCompile>
+    <Midl>
+      <TypeLibraryName>.\DebugU\UDLServer.tlb</TypeLibraryName>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0804</Culture>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>.\DebugU\UDLServer.bsc</OutputFile>
+    </Bscmake>
+    <Link>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <LinkDLL>true</LinkDLL>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <OutputFile>.\DebugU\UDLServer.dll</OutputFile>
+      <ImportLibrary>.\DebugU\UDLServer.lib</ImportLibrary>
+      <DelayLoadDLLs>mtxex.dll;%(DelayLoadDLLs)</DelayLoadDLLs>
+      <AdditionalDependencies>mtx.lib;mtxguid.lib;delayimp.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <ModuleDefinitionFile>.\UDLServer.def</ModuleDefinitionFile>
+    </Link>
+    <CustomBuildStep>
+      <Command>if "%OS%"=="" goto NOTNT 
+if not "%OS%"=="Windows_NT" goto NOTNT 
+regsvr32 /s /c "$(TargetPath)" 
+echo regsvr32 exec. time &gt; "$(OutDir)regsvr32.trg" 
+echo Execute mtxrereg.exe before using MTS components in MTS 
+goto end 
+:NOTNT 
+echo Warning : Cannot register Unicode DLL on Windows 95 
+:end </Command>
+      <Message>Performing registration</Message>
+      <Outputs>$(OutDir)\regsvr32.trg;%(Outputs)</Outputs>
+    </CustomBuildStep>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release MinSize|Win32'">
+    <ClCompile>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <InlineFunctionExpansion>Default</InlineFunctionExpansion>
+      <StringPooling>true</StringPooling>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <Optimization>MinSpace</Optimization>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AssemblerListingLocation>.\ReleaseMinSize\</AssemblerListingLocation>
+      <BrowseInformation>true</BrowseInformation>
+      <PrecompiledHeaderOutputFile>.\ReleaseMinSize\UDLServer.pch</PrecompiledHeaderOutputFile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
+      <ObjectFileName>.\ReleaseMinSize\</ObjectFileName>
+      <ProgramDataBaseFileName>.\ReleaseMinSize\</ProgramDataBaseFileName>
+      <AdditionalIncludeDirectories>C:\Program Files %28x86%29\IVI Foundation\VISA\WinNT\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ForceConformanceInForLoopScope>false</ForceConformanceInForLoopScope>
+    </ClCompile>
+    <Midl>
+      <TypeLibraryName>.\../lib\UDLServer.tlb</TypeLibraryName>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0804</Culture>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>.\../lib\UDLServer.bsc</OutputFile>
+    </Bscmake>
+    <Link>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <LinkDLL>true</LinkDLL>
+      <SubSystem>Windows</SubSystem>
+      <OutputFile>../bin/UDL.DLM.dll </OutputFile>
+      <ImportLibrary>.\../lib\UDL.DLM.lib</ImportLibrary>
+      <ModuleDefinitionFile>.\UDLServer.def</ModuleDefinitionFile>
+      <AdditionalLibraryDirectories>C:\Program Files %28x86%29\IVI Foundation\VISA\WinNT\lib\msc;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+    <CustomBuildStep>
+      <Command>regsvr32 /s /c "$(TargetPath)" 
+echo regsvr32 exec. time &gt; "$(OutDir)regsvr32.trg" 
+echo Execute mtxrereg.exe before using MTS components in MTS </Command>
+      <Message>Performing registration</Message>
+      <Outputs>$(OutDir)\regsvr32.trg;%(Outputs)</Outputs>
+    </CustomBuildStep>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <InlineFunctionExpansion>Default</InlineFunctionExpansion>
+      <FunctionLevelLinking>false</FunctionLevelLinking>
+      <Optimization>Disabled</Optimization>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <WarningLevel>Level3</WarningLevel>
+      <MinimalRebuild>true</MinimalRebuild>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AssemblerListingLocation>.\Debug\</AssemblerListingLocation>
+      <BrowseInformation>true</BrowseInformation>
+      <PrecompiledHeaderOutputFile>.\Debug\UDLServer.pch</PrecompiledHeaderOutputFile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
+      <ObjectFileName>.\Debug\</ObjectFileName>
+      <ProgramDataBaseFileName>.\Debug\</ProgramDataBaseFileName>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <AdditionalIncludeDirectories>C:\Program Files %28x86%29\IVI Foundation\VISA\WinNT\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ForceConformanceInForLoopScope>false</ForceConformanceInForLoopScope>
+    </ClCompile>
+    <Midl>
+      <TypeLibraryName>.\Debug\UDLServer.tlb</TypeLibraryName>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0804</Culture>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>.\Debug\UDLServer.bsc</OutputFile>
+    </Bscmake>
+    <Link>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <LinkDLL>true</LinkDLL>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <OutputFile>../bin/UDL.DLM.dll</OutputFile>
+      <ImportLibrary>.\Debug\UDL.DLM.lib</ImportLibrary>
+      <ModuleDefinitionFile>.\UDLServer.def</ModuleDefinitionFile>
+      <AdditionalLibraryDirectories>C:\Program Files %28x86%29\IVI Foundation\VISA\WinNT\lib\msc;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+    <CustomBuildStep>
+      <Command>regsvr32 /s /c "$(TargetPath)" 
+echo regsvr32 exec. time &gt; "$(OutDir)regsvr32.trg" 
+echo Execute mtxrereg.exe before using MTS components in MTS </Command>
+      <Message>Performing registration</Message>
+      <Outputs>$(OutDir)\regsvr32.trg;%(Outputs)</Outputs>
+    </CustomBuildStep>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Unicode Release MinDependency|Win32'">
+    <ClCompile>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <InlineFunctionExpansion>Default</InlineFunctionExpansion>
+      <StringPooling>true</StringPooling>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <Optimization>MinSpace</Optimization>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AssemblerListingLocation>.\ReleaseUMinDependency\</AssemblerListingLocation>
+      <BrowseInformation>true</BrowseInformation>
+      <PrecompiledHeaderOutputFile>.\ReleaseUMinDependency\UDLServer.pch</PrecompiledHeaderOutputFile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
+      <ObjectFileName>.\ReleaseUMinDependency\</ObjectFileName>
+      <ProgramDataBaseFileName>.\ReleaseUMinDependency\</ProgramDataBaseFileName>
+      <AdditionalIncludeDirectories>C:\Program Files %28x86%29\IVI Foundation\VISA\WinNT\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ForceConformanceInForLoopScope>false</ForceConformanceInForLoopScope>
+    </ClCompile>
+    <Midl>
+      <TypeLibraryName>.\ReleaseUMinDependency\UDLServer.tlb</TypeLibraryName>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0804</Culture>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>.\ReleaseUMinDependency\UDLServer.bsc</OutputFile>
+    </Bscmake>
+    <Link>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <LinkDLL>true</LinkDLL>
+      <SubSystem>Windows</SubSystem>
+      <OutputFile>.\ReleaseUMinDependency\UDLServer.dll</OutputFile>
+      <ImportLibrary>.\ReleaseUMinDependency\UDLServer.lib</ImportLibrary>
+      <DelayLoadDLLs>mtxex.dll;%(DelayLoadDLLs)</DelayLoadDLLs>
+      <AdditionalDependencies>mtx.lib;mtxguid.lib;delayimp.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <ModuleDefinitionFile>.\UDLServer.def</ModuleDefinitionFile>
+      <AdditionalLibraryDirectories>C:\Program Files %28x86%29\IVI Foundation\VISA\WinNT\lib\msc;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+    <CustomBuildStep>
+      <Command>if "%OS%"=="" goto NOTNT 
+if not "%OS%"=="Windows_NT" goto NOTNT 
+regsvr32 /s /c "$(TargetPath)" 
+echo regsvr32 exec. time &gt; "$(OutDir)regsvr32.trg" 
+echo Execute mtxrereg.exe before using MTS components in MTS 
+goto end 
+:NOTNT 
+echo Warning : Cannot register Unicode DLL on Windows 95 
+:end </Command>
+      <Message>Performing registration</Message>
+      <Outputs>$(OutDir)\regsvr32.trg;%(Outputs)</Outputs>
+    </CustomBuildStep>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="AlgorithmFunction.cpp" />
+    <ClCompile Include="ChamberInterface.cpp" />
+    <ClCompile Include="DeviceManger.cpp" />
+    <ClCompile Include="EngineMgr.cpp" />
+    <ClCompile Include="IComDevInterface.cpp" />
+    <ClCompile Include="IOSAInterface.cpp" />
+    <ClCompile Include="IPMInterface.cpp" />
+    <ClCompile Include="IPolInterface.cpp" />
+    <ClCompile Include="ISwitchBoxInterface.cpp" />
+    <ClCompile Include="ITLSInterface.cpp" />
+    <ClCompile Include="IVOAInterface.cpp" />
+    <ClCompile Include="Markup.cpp" />
+    <ClCompile Include="ScanInterface.cpp" />
+    <ClCompile Include="StdAfx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release MinDependency|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release MinDependency|Win32'">stdafx.h</PrecompiledHeaderFile>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Unicode Release MinSize|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Unicode Release MinSize|Win32'">stdafx.h</PrecompiledHeaderFile>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Unicode Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Unicode Debug|Win32'">stdafx.h</PrecompiledHeaderFile>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release MinSize|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release MinSize|Win32'">stdafx.h</PrecompiledHeaderFile>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">stdafx.h</PrecompiledHeaderFile>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Unicode Release MinDependency|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Unicode Release MinDependency|Win32'">stdafx.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <ClCompile Include="UDLServer.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="ChamberInterface.rgs" />
+    <CustomBuild Include="CIPolInterface.rgs" />
+    <CustomBuild Include="EngineMgr.rgs" />
+    <CustomBuild Include="EnginePtr.rgs" />
+    <CustomBuild Include="IComDevInterface.rgs" />
+    <CustomBuild Include="IOSAInterface.rgs" />
+    <CustomBuild Include="IPMInterface.rgs" />
+    <CustomBuild Include="IPolInterface.rgs" />
+    <CustomBuild Include="ISwitchBoxInterface.rgs" />
+    <CustomBuild Include="ITLSInterface.rgs" />
+    <CustomBuild Include="IVOAInterface.rgs" />
+    <CustomBuild Include="ScanInterface.rgs" />
+    <CustomBuild Include="UDLServer.def" />
+  </ItemGroup>
+  <ItemGroup>
+    <Midl Include="UDLServer.idl">
+      <TypeLibraryName Condition="'$(Configuration)|$(Platform)'=='Unicode Release MinSize|Win32'">.\UDLServer.tlb</TypeLibraryName>
+      <HeaderFileName Condition="'$(Configuration)|$(Platform)'=='Unicode Release MinSize|Win32'">UDLServer.h</HeaderFileName>
+      <InterfaceIdentifierFileName Condition="'$(Configuration)|$(Platform)'=='Unicode Release MinSize|Win32'">UDLServer_i.c</InterfaceIdentifierFileName>
+      <GenerateStublessProxies Condition="'$(Configuration)|$(Platform)'=='Unicode Release MinSize|Win32'">true</GenerateStublessProxies>
+      <TypeLibraryName Condition="'$(Configuration)|$(Platform)'=='Unicode Debug|Win32'">.\UDLServer.tlb</TypeLibraryName>
+      <HeaderFileName Condition="'$(Configuration)|$(Platform)'=='Unicode Debug|Win32'">UDLServer.h</HeaderFileName>
+      <InterfaceIdentifierFileName Condition="'$(Configuration)|$(Platform)'=='Unicode Debug|Win32'">UDLServer_i.c</InterfaceIdentifierFileName>
+      <GenerateStublessProxies Condition="'$(Configuration)|$(Platform)'=='Unicode Debug|Win32'">true</GenerateStublessProxies>
+      <TypeLibraryName Condition="'$(Configuration)|$(Platform)'=='Release MinSize|Win32'">.\UDLServer.tlb</TypeLibraryName>
+      <HeaderFileName Condition="'$(Configuration)|$(Platform)'=='Release MinSize|Win32'">UDLServer.h</HeaderFileName>
+      <InterfaceIdentifierFileName Condition="'$(Configuration)|$(Platform)'=='Release MinSize|Win32'">UDLServer_i.c</InterfaceIdentifierFileName>
+      <GenerateStublessProxies Condition="'$(Configuration)|$(Platform)'=='Release MinSize|Win32'">true</GenerateStublessProxies>
+      <TypeLibraryName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\UDLServer.tlb</TypeLibraryName>
+      <HeaderFileName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">UDLServer.h</HeaderFileName>
+      <InterfaceIdentifierFileName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">UDLServer_i.c</InterfaceIdentifierFileName>
+      <GenerateStublessProxies Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</GenerateStublessProxies>
+      <TypeLibraryName Condition="'$(Configuration)|$(Platform)'=='Unicode Release MinDependency|Win32'">.\UDLServer.tlb</TypeLibraryName>
+      <HeaderFileName Condition="'$(Configuration)|$(Platform)'=='Unicode Release MinDependency|Win32'">UDLServer.h</HeaderFileName>
+      <InterfaceIdentifierFileName Condition="'$(Configuration)|$(Platform)'=='Unicode Release MinDependency|Win32'">UDLServer_i.c</InterfaceIdentifierFileName>
+      <GenerateStublessProxies Condition="'$(Configuration)|$(Platform)'=='Unicode Release MinDependency|Win32'">true</GenerateStublessProxies>
+    </Midl>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="UDLServer.rc">
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Release MinDependency|Win32'">$(OUTDIR);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Unicode Release MinSize|Win32'">$(OUTDIR);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Unicode Debug|Win32'">$(OUTDIR);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Release MinSize|Win32'">$(OUTDIR);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(OUTDIR);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Unicode Release MinDependency|Win32'">$(OUTDIR);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\include\AlgorithmFunction.h" />
+    <ClInclude Include="..\include\hearder.h" />
+    <ClInclude Include="..\PMUDL\PMControlDll.h" />
+    <ClInclude Include="ChamberInterface.h" />
+    <ClInclude Include="DeviceManger.h" />
+    <ClInclude Include="EngineMgr.h" />
+    <ClInclude Include="IComDevInterface.h" />
+    <ClInclude Include="IOSAInterface.h" />
+    <ClInclude Include="IPMInterface.h" />
+    <ClInclude Include="IPolInterface.h" />
+    <ClInclude Include="ISwitchBoxInterface.h" />
+    <ClInclude Include="ITLSInterface.h" />
+    <ClInclude Include="IVOAInterface.h" />
+    <ClInclude Include="Markup.h" />
+    <ClInclude Include="Resource.h" />
+    <ClInclude Include="ScanInterface.h" />
+    <ClInclude Include="StdAfx.h" />
+    <ClInclude Include="UDLServerCP.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="UDLVersionListVersionList.txt" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

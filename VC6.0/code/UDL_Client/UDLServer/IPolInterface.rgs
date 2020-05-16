@@ -1,0 +1,26 @@
+HKCR
+{
+	UDLServer.CIPolInterface.1 = s 'CIPolInterface Class'
+	{
+		CLSID = s '{17B09D77-2E06-4678-98E3-23DFEA8262F9}'
+	}
+	UDLServer.CIPolInterface = s 'CIPolInterface Class'
+	{
+		CLSID = s '{17B09D77-2E06-4678-98E3-23DFEA8262F9}'
+		CurVer = s 'UDLServer.CIPolInterface.1'
+	}
+	NoRemove CLSID
+	{
+		ForceRemove {17B09D77-2E06-4678-98E3-23DFEA8262F9} = s 'CIPolInterface Class'
+		{
+			ProgID = s 'UDLServer.CIPolInterface.1'
+			VersionIndependentProgID = s 'UDLServer.CIPolInterface'
+			ForceRemove 'Programmable'
+			InprocServer32 = s '%MODULE%'
+			{
+				val ThreadingModel = s 'Apartment'
+			}
+			'TypeLib' = s '{7FA750BF-178D-475A-9AA1-DEB556BB0E95}'
+		}
+	}
+}

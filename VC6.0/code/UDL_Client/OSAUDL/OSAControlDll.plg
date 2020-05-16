@@ -1,0 +1,241 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: OSAControlDll - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x804 /fo"Release/OSAUDL.res" /d "NDEBUG" "C:\Users\wwang89\OneDrive - kochind.com\WorkShop\Project\Platfrom\UDL\NetVersion\code\UDL_Client\OSAUDL\OSAUDL.rc"" 
+Creating temporary file "C:\Users\wwang89\AppData\Local\Temp\RSP9367.tmp" with contents
+[
+/nologo /MT /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_MBCS" /D "_USRDLL" /D "OSACONTROLDLL_EXPORTS" /FR"Release/" /Fp"Release/OSAControlDll.pch" /Yu"stdafx.h" /Fo"Release/" /Fd"Release/" /FD /c 
+"C:\Users\wwang89\OneDrive - kochind.com\WorkShop\Project\Platfrom\UDL\NetVersion\code\UDL_Client\OSAUDL\AgilentOSA.cpp"
+"C:\Users\wwang89\OneDrive - kochind.com\WorkShop\Project\Platfrom\UDL\NetVersion\code\UDL_Client\OSAUDL\CMyDefFileFormat.cpp"
+"C:\Users\wwang89\OneDrive - kochind.com\WorkShop\Project\Platfrom\UDL\NetVersion\code\UDL_Client\OSAUDL\OSA_AQ6317B.cpp"
+"C:\Users\wwang89\OneDrive - kochind.com\WorkShop\Project\Platfrom\UDL\NetVersion\code\UDL_Client\OSAUDL\OSA_AQ6370B.cpp"
+"C:\Users\wwang89\OneDrive - kochind.com\WorkShop\Project\Platfrom\UDL\NetVersion\code\UDL_Client\OSAUDL\OSA_Share.cpp"
+"C:\Users\wwang89\OneDrive - kochind.com\WorkShop\Project\Platfrom\UDL\NetVersion\code\UDL_Client\OSAUDL\OSAControl.cpp"
+"C:\Users\wwang89\OneDrive - kochind.com\WorkShop\Project\Platfrom\UDL\NetVersion\code\UDL_Client\OSAUDL\OSAControlDll.cpp"
+]
+Creating command line "cl.exe @C:\Users\wwang89\AppData\Local\Temp\RSP9367.tmp" 
+Creating temporary file "C:\Users\wwang89\AppData\Local\Temp\RSP9368.tmp" with contents
+[
+/nologo /MT /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_MBCS" /D "_USRDLL" /D "OSACONTROLDLL_EXPORTS" /FR"Release/" /Fp"Release/OSAControlDll.pch" /Yc"stdafx.h" /Fo"Release/" /Fd"Release/" /FD /c 
+"C:\Users\wwang89\OneDrive - kochind.com\WorkShop\Project\Platfrom\UDL\NetVersion\code\UDL_Client\OSAUDL\StdAfx.cpp"
+]
+Creating command line "cl.exe @C:\Users\wwang89\AppData\Local\Temp\RSP9368.tmp" 
+Creating temporary file "C:\Users\wwang89\AppData\Local\Temp\RSP9369.tmp" with contents
+[
+kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /nologo /dll /incremental:no /pdb:"../lib/UDL.OSA.pdb" /machine:I386 /out:"../bin/UDL.OSA.dll " /implib:"../lib/UDL.OSA.lib" 
+".\Release\AgilentOSA.obj"
+".\Release\CMyDefFileFormat.obj"
+".\Release\OSA_AQ6317B.obj"
+".\Release\OSA_AQ6370B.obj"
+".\Release\OSA_Share.obj"
+".\Release\OSAControl.obj"
+".\Release\OSAControlDll.obj"
+".\Release\StdAfx.obj"
+".\Release\OSAUDL.res"
+]
+Creating command line "link.exe @C:\Users\wwang89\AppData\Local\Temp\RSP9369.tmp"
+<h3>Output Window</h3>
+Compiling resources...
+Compiling...
+StdAfx.cpp
+Compiling...
+AgilentOSA.cpp
+C:\Users\wwang89\OneDrive - kochind.com\WorkShop\Project\Platfrom\UDL\NetVersion\code\UDL_Client\OSAUDL\AgilentOSA.cpp(2404) : warning C4101: 'szDataStream' : unreferenced local variable
+CMyDefFileFormat.cpp
+C:\Users\wwang89\OneDrive - kochind.com\WorkShop\Project\Platfrom\UDL\NetVersion\code\UDL_Client\OSAUDL\CMyDefFileFormat.cpp(61) : warning C4244: '=' : conversion from 'unsigned long' to 'unsigned char', possible loss of data
+C:\Users\wwang89\OneDrive - kochind.com\WorkShop\Project\Platfrom\UDL\NetVersion\code\UDL_Client\OSAUDL\CMyDefFileFormat.cpp(62) : warning C4244: '=' : conversion from 'unsigned long' to 'unsigned char', possible loss of data
+C:\Users\wwang89\OneDrive - kochind.com\WorkShop\Project\Platfrom\UDL\NetVersion\code\UDL_Client\OSAUDL\CMyDefFileFormat.cpp(63) : warning C4244: '=' : conversion from 'unsigned long' to 'unsigned char', possible loss of data
+C:\Users\wwang89\OneDrive - kochind.com\WorkShop\Project\Platfrom\UDL\NetVersion\code\UDL_Client\OSAUDL\CMyDefFileFormat.cpp(64) : warning C4244: '=' : conversion from 'unsigned long' to 'unsigned char', possible loss of data
+C:\Users\wwang89\OneDrive - kochind.com\WorkShop\Project\Platfrom\UDL\NetVersion\code\UDL_Client\OSAUDL\CMyDefFileFormat.cpp(67) : warning C4244: '=' : conversion from 'unsigned long' to 'unsigned char', possible loss of data
+C:\Users\wwang89\OneDrive - kochind.com\WorkShop\Project\Platfrom\UDL\NetVersion\code\UDL_Client\OSAUDL\CMyDefFileFormat.cpp(68) : warning C4244: '=' : conversion from 'unsigned long' to 'unsigned char', possible loss of data
+C:\Users\wwang89\OneDrive - kochind.com\WorkShop\Project\Platfrom\UDL\NetVersion\code\UDL_Client\OSAUDL\CMyDefFileFormat.cpp(69) : warning C4244: '=' : conversion from 'unsigned long' to 'unsigned char', possible loss of data
+C:\Users\wwang89\OneDrive - kochind.com\WorkShop\Project\Platfrom\UDL\NetVersion\code\UDL_Client\OSAUDL\CMyDefFileFormat.cpp(70) : warning C4244: '=' : conversion from 'unsigned long' to 'unsigned char', possible loss of data
+C:\Users\wwang89\OneDrive - kochind.com\WorkShop\Project\Platfrom\UDL\NetVersion\code\UDL_Client\OSAUDL\CMyDefFileFormat.cpp(73) : warning C4244: '=' : conversion from 'unsigned long' to 'unsigned char', possible loss of data
+C:\Users\wwang89\OneDrive - kochind.com\WorkShop\Project\Platfrom\UDL\NetVersion\code\UDL_Client\OSAUDL\CMyDefFileFormat.cpp(74) : warning C4244: '=' : conversion from 'unsigned long' to 'unsigned char', possible loss of data
+C:\Users\wwang89\OneDrive - kochind.com\WorkShop\Project\Platfrom\UDL\NetVersion\code\UDL_Client\OSAUDL\CMyDefFileFormat.cpp(75) : warning C4244: '=' : conversion from 'unsigned long' to 'unsigned char', possible loss of data
+C:\Users\wwang89\OneDrive - kochind.com\WorkShop\Project\Platfrom\UDL\NetVersion\code\UDL_Client\OSAUDL\CMyDefFileFormat.cpp(76) : warning C4244: '=' : conversion from 'unsigned long' to 'unsigned char', possible loss of data
+C:\Users\wwang89\OneDrive - kochind.com\WorkShop\Project\Platfrom\UDL\NetVersion\code\UDL_Client\OSAUDL\CMyDefFileFormat.cpp(315) : warning C4554: '<<' : check operator precedence for possible error; use parentheses to clarify precedence
+C:\Users\wwang89\OneDrive - kochind.com\WorkShop\Project\Platfrom\UDL\NetVersion\code\UDL_Client\OSAUDL\CMyDefFileFormat.cpp(471) : warning C4244: '=' : conversion from 'unsigned long' to 'unsigned char', possible loss of data
+C:\Users\wwang89\OneDrive - kochind.com\WorkShop\Project\Platfrom\UDL\NetVersion\code\UDL_Client\OSAUDL\CMyDefFileFormat.cpp(472) : warning C4244: '=' : conversion from 'unsigned long' to 'unsigned char', possible loss of data
+C:\Users\wwang89\OneDrive - kochind.com\WorkShop\Project\Platfrom\UDL\NetVersion\code\UDL_Client\OSAUDL\CMyDefFileFormat.cpp(473) : warning C4244: '=' : conversion from 'unsigned long' to 'unsigned char', possible loss of data
+C:\Users\wwang89\OneDrive - kochind.com\WorkShop\Project\Platfrom\UDL\NetVersion\code\UDL_Client\OSAUDL\CMyDefFileFormat.cpp(474) : warning C4244: '=' : conversion from 'unsigned long' to 'unsigned char', possible loss of data
+C:\Users\wwang89\OneDrive - kochind.com\WorkShop\Project\Platfrom\UDL\NetVersion\code\UDL_Client\OSAUDL\CMyDefFileFormat.cpp(481) : warning C4244: '=' : conversion from 'unsigned long' to 'unsigned char', possible loss of data
+C:\Users\wwang89\OneDrive - kochind.com\WorkShop\Project\Platfrom\UDL\NetVersion\code\UDL_Client\OSAUDL\CMyDefFileFormat.cpp(482) : warning C4244: '=' : conversion from 'unsigned long' to 'unsigned char', possible loss of data
+C:\Users\wwang89\OneDrive - kochind.com\WorkShop\Project\Platfrom\UDL\NetVersion\code\UDL_Client\OSAUDL\CMyDefFileFormat.cpp(483) : warning C4244: '=' : conversion from 'unsigned long' to 'unsigned char', possible loss of data
+C:\Users\wwang89\OneDrive - kochind.com\WorkShop\Project\Platfrom\UDL\NetVersion\code\UDL_Client\OSAUDL\CMyDefFileFormat.cpp(484) : warning C4244: '=' : conversion from 'unsigned long' to 'unsigned char', possible loss of data
+C:\Users\wwang89\OneDrive - kochind.com\WorkShop\Project\Platfrom\UDL\NetVersion\code\UDL_Client\OSAUDL\CMyDefFileFormat.cpp(491) : warning C4244: '=' : conversion from 'unsigned long' to 'unsigned char', possible loss of data
+C:\Users\wwang89\OneDrive - kochind.com\WorkShop\Project\Platfrom\UDL\NetVersion\code\UDL_Client\OSAUDL\CMyDefFileFormat.cpp(492) : warning C4244: '=' : conversion from 'unsigned long' to 'unsigned char', possible loss of data
+C:\Users\wwang89\OneDrive - kochind.com\WorkShop\Project\Platfrom\UDL\NetVersion\code\UDL_Client\OSAUDL\CMyDefFileFormat.cpp(493) : warning C4244: '=' : conversion from 'unsigned long' to 'unsigned char', possible loss of data
+C:\Users\wwang89\OneDrive - kochind.com\WorkShop\Project\Platfrom\UDL\NetVersion\code\UDL_Client\OSAUDL\CMyDefFileFormat.cpp(494) : warning C4244: '=' : conversion from 'unsigned long' to 'unsigned char', possible loss of data
+C:\Users\wwang89\OneDrive - kochind.com\WorkShop\Project\Platfrom\UDL\NetVersion\code\UDL_Client\OSAUDL\CMyDefFileFormat.cpp(573) : warning C4244: '=' : conversion from 'unsigned long' to 'unsigned char', possible loss of data
+C:\Users\wwang89\OneDrive - kochind.com\WorkShop\Project\Platfrom\UDL\NetVersion\code\UDL_Client\OSAUDL\CMyDefFileFormat.cpp(574) : warning C4244: '=' : conversion from 'unsigned long' to 'unsigned char', possible loss of data
+C:\Users\wwang89\OneDrive - kochind.com\WorkShop\Project\Platfrom\UDL\NetVersion\code\UDL_Client\OSAUDL\CMyDefFileFormat.cpp(575) : warning C4244: '=' : conversion from 'unsigned long' to 'unsigned char', possible loss of data
+C:\Users\wwang89\OneDrive - kochind.com\WorkShop\Project\Platfrom\UDL\NetVersion\code\UDL_Client\OSAUDL\CMyDefFileFormat.cpp(576) : warning C4244: '=' : conversion from 'unsigned long' to 'unsigned char', possible loss of data
+C:\Users\wwang89\OneDrive - kochind.com\WorkShop\Project\Platfrom\UDL\NetVersion\code\UDL_Client\OSAUDL\CMyDefFileFormat.cpp(583) : warning C4244: '=' : conversion from 'unsigned long' to 'unsigned char', possible loss of data
+C:\Users\wwang89\OneDrive - kochind.com\WorkShop\Project\Platfrom\UDL\NetVersion\code\UDL_Client\OSAUDL\CMyDefFileFormat.cpp(584) : warning C4244: '=' : conversion from 'unsigned long' to 'unsigned char', possible loss of data
+C:\Users\wwang89\OneDrive - kochind.com\WorkShop\Project\Platfrom\UDL\NetVersion\code\UDL_Client\OSAUDL\CMyDefFileFormat.cpp(585) : warning C4244: '=' : conversion from 'unsigned long' to 'unsigned char', possible loss of data
+C:\Users\wwang89\OneDrive - kochind.com\WorkShop\Project\Platfrom\UDL\NetVersion\code\UDL_Client\OSAUDL\CMyDefFileFormat.cpp(586) : warning C4244: '=' : conversion from 'unsigned long' to 'unsigned char', possible loss of data
+C:\Users\wwang89\OneDrive - kochind.com\WorkShop\Project\Platfrom\UDL\NetVersion\code\UDL_Client\OSAUDL\CMyDefFileFormat.cpp(628) : warning C4244: 'initializing' : conversion from 'long' to 'unsigned short', possible loss of data
+C:\Users\wwang89\OneDrive - kochind.com\WorkShop\Project\Platfrom\UDL\NetVersion\code\UDL_Client\OSAUDL\CMyDefFileFormat.cpp(636) : warning C4244: 'initializing' : conversion from 'long' to 'unsigned short', possible loss of data
+C:\Users\wwang89\OneDrive - kochind.com\WorkShop\Project\Platfrom\UDL\NetVersion\code\UDL_Client\OSAUDL\CMyDefFileFormat.cpp(644) : warning C4244: 'initializing' : conversion from 'long' to 'unsigned short', possible loss of data
+C:\Users\wwang89\OneDrive - kochind.com\WorkShop\Project\Platfrom\UDL\NetVersion\code\UDL_Client\OSAUDL\CMyDefFileFormat.cpp(652) : warning C4244: 'initializing' : conversion from 'long' to 'unsigned short', possible loss of data
+C:\Users\wwang89\OneDrive - kochind.com\WorkShop\Project\Platfrom\UDL\NetVersion\code\UDL_Client\OSAUDL\CMyDefFileFormat.cpp(660) : warning C4244: 'initializing' : conversion from 'long' to 'unsigned short', possible loss of data
+C:\Users\wwang89\OneDrive - kochind.com\WorkShop\Project\Platfrom\UDL\NetVersion\code\UDL_Client\OSAUDL\CMyDefFileFormat.cpp(668) : warning C4244: 'initializing' : conversion from 'long' to 'unsigned short', possible loss of data
+C:\Users\wwang89\OneDrive - kochind.com\WorkShop\Project\Platfrom\UDL\NetVersion\code\UDL_Client\OSAUDL\CMyDefFileFormat.cpp(676) : warning C4244: 'initializing' : conversion from 'long' to 'unsigned short', possible loss of data
+C:\Users\wwang89\OneDrive - kochind.com\WorkShop\Project\Platfrom\UDL\NetVersion\code\UDL_Client\OSAUDL\CMyDefFileFormat.cpp(445) : warning C4101: 'dwDataOffset' : unreferenced local variable
+C:\Users\wwang89\OneDrive - kochind.com\WorkShop\Project\Platfrom\UDL\NetVersion\code\UDL_Client\OSAUDL\CMyDefFileFormat.cpp(929) : warning C4244: '=' : conversion from 'unsigned long' to 'unsigned char', possible loss of data
+C:\Users\wwang89\OneDrive - kochind.com\WorkShop\Project\Platfrom\UDL\NetVersion\code\UDL_Client\OSAUDL\CMyDefFileFormat.cpp(930) : warning C4244: '=' : conversion from 'unsigned long' to 'unsigned char', possible loss of data
+C:\Users\wwang89\OneDrive - kochind.com\WorkShop\Project\Platfrom\UDL\NetVersion\code\UDL_Client\OSAUDL\CMyDefFileFormat.cpp(931) : warning C4244: '=' : conversion from 'unsigned long' to 'unsigned char', possible loss of data
+C:\Users\wwang89\OneDrive - kochind.com\WorkShop\Project\Platfrom\UDL\NetVersion\code\UDL_Client\OSAUDL\CMyDefFileFormat.cpp(932) : warning C4244: '=' : conversion from 'unsigned long' to 'unsigned char', possible loss of data
+C:\Users\wwang89\OneDrive - kochind.com\WorkShop\Project\Platfrom\UDL\NetVersion\code\UDL_Client\OSAUDL\CMyDefFileFormat.cpp(939) : warning C4244: '=' : conversion from 'unsigned long' to 'unsigned char', possible loss of data
+C:\Users\wwang89\OneDrive - kochind.com\WorkShop\Project\Platfrom\UDL\NetVersion\code\UDL_Client\OSAUDL\CMyDefFileFormat.cpp(940) : warning C4244: '=' : conversion from 'unsigned long' to 'unsigned char', possible loss of data
+C:\Users\wwang89\OneDrive - kochind.com\WorkShop\Project\Platfrom\UDL\NetVersion\code\UDL_Client\OSAUDL\CMyDefFileFormat.cpp(941) : warning C4244: '=' : conversion from 'unsigned long' to 'unsigned char', possible loss of data
+C:\Users\wwang89\OneDrive - kochind.com\WorkShop\Project\Platfrom\UDL\NetVersion\code\UDL_Client\OSAUDL\CMyDefFileFormat.cpp(942) : warning C4244: '=' : conversion from 'unsigned long' to 'unsigned char', possible loss of data
+C:\Users\wwang89\OneDrive - kochind.com\WorkShop\Project\Platfrom\UDL\NetVersion\code\UDL_Client\OSAUDL\CMyDefFileFormat.cpp(949) : warning C4244: '=' : conversion from 'unsigned long' to 'unsigned char', possible loss of data
+C:\Users\wwang89\OneDrive - kochind.com\WorkShop\Project\Platfrom\UDL\NetVersion\code\UDL_Client\OSAUDL\CMyDefFileFormat.cpp(950) : warning C4244: '=' : conversion from 'unsigned long' to 'unsigned char', possible loss of data
+C:\Users\wwang89\OneDrive - kochind.com\WorkShop\Project\Platfrom\UDL\NetVersion\code\UDL_Client\OSAUDL\CMyDefFileFormat.cpp(951) : warning C4244: '=' : conversion from 'unsigned long' to 'unsigned char', possible loss of data
+C:\Users\wwang89\OneDrive - kochind.com\WorkShop\Project\Platfrom\UDL\NetVersion\code\UDL_Client\OSAUDL\CMyDefFileFormat.cpp(952) : warning C4244: '=' : conversion from 'unsigned long' to 'unsigned char', possible loss of data
+C:\Users\wwang89\OneDrive - kochind.com\WorkShop\Project\Platfrom\UDL\NetVersion\code\UDL_Client\OSAUDL\CMyDefFileFormat.cpp(1031) : warning C4244: '=' : conversion from 'unsigned long' to 'unsigned char', possible loss of data
+C:\Users\wwang89\OneDrive - kochind.com\WorkShop\Project\Platfrom\UDL\NetVersion\code\UDL_Client\OSAUDL\CMyDefFileFormat.cpp(1032) : warning C4244: '=' : conversion from 'unsigned long' to 'unsigned char', possible loss of data
+C:\Users\wwang89\OneDrive - kochind.com\WorkShop\Project\Platfrom\UDL\NetVersion\code\UDL_Client\OSAUDL\CMyDefFileFormat.cpp(1033) : warning C4244: '=' : conversion from 'unsigned long' to 'unsigned char', possible loss of data
+C:\Users\wwang89\OneDrive - kochind.com\WorkShop\Project\Platfrom\UDL\NetVersion\code\UDL_Client\OSAUDL\CMyDefFileFormat.cpp(1034) : warning C4244: '=' : conversion from 'unsigned long' to 'unsigned char', possible loss of data
+C:\Users\wwang89\OneDrive - kochind.com\WorkShop\Project\Platfrom\UDL\NetVersion\code\UDL_Client\OSAUDL\CMyDefFileFormat.cpp(1041) : warning C4244: '=' : conversion from 'unsigned long' to 'unsigned char', possible loss of data
+C:\Users\wwang89\OneDrive - kochind.com\WorkShop\Project\Platfrom\UDL\NetVersion\code\UDL_Client\OSAUDL\CMyDefFileFormat.cpp(1042) : warning C4244: '=' : conversion from 'unsigned long' to 'unsigned char', possible loss of data
+C:\Users\wwang89\OneDrive - kochind.com\WorkShop\Project\Platfrom\UDL\NetVersion\code\UDL_Client\OSAUDL\CMyDefFileFormat.cpp(1043) : warning C4244: '=' : conversion from 'unsigned long' to 'unsigned char', possible loss of data
+C:\Users\wwang89\OneDrive - kochind.com\WorkShop\Project\Platfrom\UDL\NetVersion\code\UDL_Client\OSAUDL\CMyDefFileFormat.cpp(1044) : warning C4244: '=' : conversion from 'unsigned long' to 'unsigned char', possible loss of data
+C:\Users\wwang89\OneDrive - kochind.com\WorkShop\Project\Platfrom\UDL\NetVersion\code\UDL_Client\OSAUDL\CMyDefFileFormat.cpp(1086) : warning C4244: 'initializing' : conversion from 'long' to 'unsigned short', possible loss of data
+C:\Users\wwang89\OneDrive - kochind.com\WorkShop\Project\Platfrom\UDL\NetVersion\code\UDL_Client\OSAUDL\CMyDefFileFormat.cpp(1094) : warning C4244: 'initializing' : conversion from 'long' to 'unsigned short', possible loss of data
+C:\Users\wwang89\OneDrive - kochind.com\WorkShop\Project\Platfrom\UDL\NetVersion\code\UDL_Client\OSAUDL\CMyDefFileFormat.cpp(1102) : warning C4244: 'initializing' : conversion from 'long' to 'unsigned short', possible loss of data
+C:\Users\wwang89\OneDrive - kochind.com\WorkShop\Project\Platfrom\UDL\NetVersion\code\UDL_Client\OSAUDL\CMyDefFileFormat.cpp(1110) : warning C4244: 'initializing' : conversion from 'long' to 'unsigned short', possible loss of data
+C:\Users\wwang89\OneDrive - kochind.com\WorkShop\Project\Platfrom\UDL\NetVersion\code\UDL_Client\OSAUDL\CMyDefFileFormat.cpp(1118) : warning C4244: 'initializing' : conversion from 'long' to 'unsigned short', possible loss of data
+C:\Users\wwang89\OneDrive - kochind.com\WorkShop\Project\Platfrom\UDL\NetVersion\code\UDL_Client\OSAUDL\CMyDefFileFormat.cpp(1126) : warning C4244: 'initializing' : conversion from 'long' to 'unsigned short', possible loss of data
+C:\Users\wwang89\OneDrive - kochind.com\WorkShop\Project\Platfrom\UDL\NetVersion\code\UDL_Client\OSAUDL\CMyDefFileFormat.cpp(1134) : warning C4244: 'initializing' : conversion from 'long' to 'unsigned short', possible loss of data
+C:\Users\wwang89\OneDrive - kochind.com\WorkShop\Project\Platfrom\UDL\NetVersion\code\UDL_Client\OSAUDL\CMyDefFileFormat.cpp(903) : warning C4101: 'dwDataOffset' : unreferenced local variable
+C:\Users\wwang89\OneDrive - kochind.com\WorkShop\Project\Platfrom\UDL\NetVersion\code\UDL_Client\OSAUDL\CMyDefFileFormat.cpp(1560) : warning C4244: 'initializing' : conversion from 'double' to 'unsigned long', possible loss of data
+C:\Users\wwang89\OneDrive - kochind.com\WorkShop\Project\Platfrom\UDL\NetVersion\code\UDL_Client\OSAUDL\CMyDefFileFormat.cpp(1561) : warning C4244: 'initializing' : conversion from 'double' to 'unsigned long', possible loss of data
+C:\Users\wwang89\OneDrive - kochind.com\WorkShop\Project\Platfrom\UDL\NetVersion\code\UDL_Client\OSAUDL\CMyDefFileFormat.cpp(1562) : warning C4244: 'initializing' : conversion from 'double' to 'unsigned long', possible loss of data
+C:\Users\wwang89\OneDrive - kochind.com\WorkShop\Project\Platfrom\UDL\NetVersion\code\UDL_Client\OSAUDL\CMyDefFileFormat.cpp(1390) : warning C4101: 'dwDataOffset' : unreferenced local variable
+C:\Users\wwang89\OneDrive - kochind.com\WorkShop\Project\Platfrom\UDL\NetVersion\code\UDL_Client\OSAUDL\CMyDefFileFormat.cpp(1595) : warning C4244: '=' : conversion from 'unsigned long' to 'unsigned char', possible loss of data
+C:\Users\wwang89\OneDrive - kochind.com\WorkShop\Project\Platfrom\UDL\NetVersion\code\UDL_Client\OSAUDL\CMyDefFileFormat.cpp(1596) : warning C4244: '=' : conversion from 'unsigned long' to 'unsigned char', possible loss of data
+C:\Users\wwang89\OneDrive - kochind.com\WorkShop\Project\Platfrom\UDL\NetVersion\code\UDL_Client\OSAUDL\CMyDefFileFormat.cpp(1597) : warning C4244: '=' : conversion from 'unsigned long' to 'unsigned char', possible loss of data
+C:\Users\wwang89\OneDrive - kochind.com\WorkShop\Project\Platfrom\UDL\NetVersion\code\UDL_Client\OSAUDL\CMyDefFileFormat.cpp(1598) : warning C4244: '=' : conversion from 'unsigned long' to 'unsigned char', possible loss of data
+C:\Users\wwang89\OneDrive - kochind.com\WorkShop\Project\Platfrom\UDL\NetVersion\code\UDL_Client\OSAUDL\CMyDefFileFormat.cpp(1601) : warning C4244: '=' : conversion from 'unsigned long' to 'unsigned char', possible loss of data
+C:\Users\wwang89\OneDrive - kochind.com\WorkShop\Project\Platfrom\UDL\NetVersion\code\UDL_Client\OSAUDL\CMyDefFileFormat.cpp(1602) : warning C4244: '=' : conversion from 'unsigned long' to 'unsigned char', possible loss of data
+C:\Users\wwang89\OneDrive - kochind.com\WorkShop\Project\Platfrom\UDL\NetVersion\code\UDL_Client\OSAUDL\CMyDefFileFormat.cpp(1603) : warning C4244: '=' : conversion from 'unsigned long' to 'unsigned char', possible loss of data
+C:\Users\wwang89\OneDrive - kochind.com\WorkShop\Project\Platfrom\UDL\NetVersion\code\UDL_Client\OSAUDL\CMyDefFileFormat.cpp(1604) : warning C4244: '=' : conversion from 'unsigned long' to 'unsigned char', possible loss of data
+C:\Users\wwang89\OneDrive - kochind.com\WorkShop\Project\Platfrom\UDL\NetVersion\code\UDL_Client\OSAUDL\CMyDefFileFormat.cpp(1607) : warning C4244: '=' : conversion from 'unsigned long' to 'unsigned char', possible loss of data
+C:\Users\wwang89\OneDrive - kochind.com\WorkShop\Project\Platfrom\UDL\NetVersion\code\UDL_Client\OSAUDL\CMyDefFileFormat.cpp(1608) : warning C4244: '=' : conversion from 'unsigned long' to 'unsigned char', possible loss of data
+C:\Users\wwang89\OneDrive - kochind.com\WorkShop\Project\Platfrom\UDL\NetVersion\code\UDL_Client\OSAUDL\CMyDefFileFormat.cpp(1609) : warning C4244: '=' : conversion from 'unsigned long' to 'unsigned char', possible loss of data
+C:\Users\wwang89\OneDrive - kochind.com\WorkShop\Project\Platfrom\UDL\NetVersion\code\UDL_Client\OSAUDL\CMyDefFileFormat.cpp(1610) : warning C4244: '=' : conversion from 'unsigned long' to 'unsigned char', possible loss of data
+C:\Users\wwang89\OneDrive - kochind.com\WorkShop\Project\Platfrom\UDL\NetVersion\code\UDL_Client\OSAUDL\CMyDefFileFormat.cpp(1682) : warning C4244: '=' : conversion from 'unsigned long' to 'unsigned char', possible loss of data
+C:\Users\wwang89\OneDrive - kochind.com\WorkShop\Project\Platfrom\UDL\NetVersion\code\UDL_Client\OSAUDL\CMyDefFileFormat.cpp(1683) : warning C4244: '=' : conversion from 'unsigned long' to 'unsigned char', possible loss of data
+C:\Users\wwang89\OneDrive - kochind.com\WorkShop\Project\Platfrom\UDL\NetVersion\code\UDL_Client\OSAUDL\CMyDefFileFormat.cpp(1684) : warning C4244: '=' : conversion from 'unsigned long' to 'unsigned char', possible loss of data
+C:\Users\wwang89\OneDrive - kochind.com\WorkShop\Project\Platfrom\UDL\NetVersion\code\UDL_Client\OSAUDL\CMyDefFileFormat.cpp(1685) : warning C4244: '=' : conversion from 'unsigned long' to 'unsigned char', possible loss of data
+C:\Users\wwang89\OneDrive - kochind.com\WorkShop\Project\Platfrom\UDL\NetVersion\code\UDL_Client\OSAUDL\CMyDefFileFormat.cpp(1689) : warning C4244: '=' : conversion from 'unsigned long' to 'unsigned char', possible loss of data
+C:\Users\wwang89\OneDrive - kochind.com\WorkShop\Project\Platfrom\UDL\NetVersion\code\UDL_Client\OSAUDL\CMyDefFileFormat.cpp(1690) : warning C4244: '=' : conversion from 'unsigned long' to 'unsigned char', possible loss of data
+C:\Users\wwang89\OneDrive - kochind.com\WorkShop\Project\Platfrom\UDL\NetVersion\code\UDL_Client\OSAUDL\CMyDefFileFormat.cpp(1691) : warning C4244: '=' : conversion from 'unsigned long' to 'unsigned char', possible loss of data
+C:\Users\wwang89\OneDrive - kochind.com\WorkShop\Project\Platfrom\UDL\NetVersion\code\UDL_Client\OSAUDL\CMyDefFileFormat.cpp(1692) : warning C4244: '=' : conversion from 'unsigned long' to 'unsigned char', possible loss of data
+C:\Users\wwang89\OneDrive - kochind.com\WorkShop\Project\Platfrom\UDL\NetVersion\code\UDL_Client\OSAUDL\CMyDefFileFormat.cpp(1696) : warning C4244: '=' : conversion from 'unsigned long' to 'unsigned char', possible loss of data
+C:\Users\wwang89\OneDrive - kochind.com\WorkShop\Project\Platfrom\UDL\NetVersion\code\UDL_Client\OSAUDL\CMyDefFileFormat.cpp(1697) : warning C4244: '=' : conversion from 'unsigned long' to 'unsigned char', possible loss of data
+C:\Users\wwang89\OneDrive - kochind.com\WorkShop\Project\Platfrom\UDL\NetVersion\code\UDL_Client\OSAUDL\CMyDefFileFormat.cpp(1698) : warning C4244: '=' : conversion from 'unsigned long' to 'unsigned char', possible loss of data
+C:\Users\wwang89\OneDrive - kochind.com\WorkShop\Project\Platfrom\UDL\NetVersion\code\UDL_Client\OSAUDL\CMyDefFileFormat.cpp(1699) : warning C4244: '=' : conversion from 'unsigned long' to 'unsigned char', possible loss of data
+C:\Users\wwang89\OneDrive - kochind.com\WorkShop\Project\Platfrom\UDL\NetVersion\code\UDL_Client\OSAUDL\CMyDefFileFormat.cpp(1714) : warning C4101: 'pszErr' : unreferenced local variable
+C:\Users\wwang89\OneDrive - kochind.com\WorkShop\Project\Platfrom\UDL\NetVersion\code\UDL_Client\OSAUDL\CMyDefFileFormat.cpp(1799) : warning C4018: '<' : signed/unsigned mismatch
+C:\Users\wwang89\OneDrive - kochind.com\WorkShop\Project\Platfrom\UDL\NetVersion\code\UDL_Client\OSAUDL\CMyDefFileFormat.cpp(1825) : warning C4101: 'pszErr' : unreferenced local variable
+C:\Users\wwang89\OneDrive - kochind.com\WorkShop\Project\Platfrom\UDL\NetVersion\code\UDL_Client\OSAUDL\CMyDefFileFormat.cpp(1887) : warning C4244: '=' : conversion from 'unsigned long' to 'unsigned char', possible loss of data
+C:\Users\wwang89\OneDrive - kochind.com\WorkShop\Project\Platfrom\UDL\NetVersion\code\UDL_Client\OSAUDL\CMyDefFileFormat.cpp(1888) : warning C4244: '=' : conversion from 'unsigned long' to 'unsigned char', possible loss of data
+C:\Users\wwang89\OneDrive - kochind.com\WorkShop\Project\Platfrom\UDL\NetVersion\code\UDL_Client\OSAUDL\CMyDefFileFormat.cpp(1889) : warning C4244: '=' : conversion from 'unsigned long' to 'unsigned char', possible loss of data
+C:\Users\wwang89\OneDrive - kochind.com\WorkShop\Project\Platfrom\UDL\NetVersion\code\UDL_Client\OSAUDL\CMyDefFileFormat.cpp(1890) : warning C4244: '=' : conversion from 'unsigned long' to 'unsigned char', possible loss of data
+C:\Users\wwang89\OneDrive - kochind.com\WorkShop\Project\Platfrom\UDL\NetVersion\code\UDL_Client\OSAUDL\CMyDefFileFormat.cpp(1894) : warning C4244: '=' : conversion from 'unsigned long' to 'unsigned char', possible loss of data
+C:\Users\wwang89\OneDrive - kochind.com\WorkShop\Project\Platfrom\UDL\NetVersion\code\UDL_Client\OSAUDL\CMyDefFileFormat.cpp(1895) : warning C4244: '=' : conversion from 'unsigned long' to 'unsigned char', possible loss of data
+C:\Users\wwang89\OneDrive - kochind.com\WorkShop\Project\Platfrom\UDL\NetVersion\code\UDL_Client\OSAUDL\CMyDefFileFormat.cpp(1896) : warning C4244: '=' : conversion from 'unsigned long' to 'unsigned char', possible loss of data
+C:\Users\wwang89\OneDrive - kochind.com\WorkShop\Project\Platfrom\UDL\NetVersion\code\UDL_Client\OSAUDL\CMyDefFileFormat.cpp(1897) : warning C4244: '=' : conversion from 'unsigned long' to 'unsigned char', possible loss of data
+C:\Users\wwang89\OneDrive - kochind.com\WorkShop\Project\Platfrom\UDL\NetVersion\code\UDL_Client\OSAUDL\CMyDefFileFormat.cpp(1901) : warning C4244: '=' : conversion from 'unsigned long' to 'unsigned char', possible loss of data
+C:\Users\wwang89\OneDrive - kochind.com\WorkShop\Project\Platfrom\UDL\NetVersion\code\UDL_Client\OSAUDL\CMyDefFileFormat.cpp(1902) : warning C4244: '=' : conversion from 'unsigned long' to 'unsigned char', possible loss of data
+C:\Users\wwang89\OneDrive - kochind.com\WorkShop\Project\Platfrom\UDL\NetVersion\code\UDL_Client\OSAUDL\CMyDefFileFormat.cpp(1903) : warning C4244: '=' : conversion from 'unsigned long' to 'unsigned char', possible loss of data
+C:\Users\wwang89\OneDrive - kochind.com\WorkShop\Project\Platfrom\UDL\NetVersion\code\UDL_Client\OSAUDL\CMyDefFileFormat.cpp(1904) : warning C4244: '=' : conversion from 'unsigned long' to 'unsigned char', possible loss of data
+C:\Users\wwang89\OneDrive - kochind.com\WorkShop\Project\Platfrom\UDL\NetVersion\code\UDL_Client\OSAUDL\CMyDefFileFormat.cpp(1919) : warning C4101: 'pszErr' : unreferenced local variable
+C:\Users\wwang89\OneDrive - kochind.com\WorkShop\Project\Platfrom\UDL\NetVersion\code\UDL_Client\OSAUDL\CMyDefFileFormat.cpp(2004) : warning C4018: '<' : signed/unsigned mismatch
+C:\Users\wwang89\OneDrive - kochind.com\WorkShop\Project\Platfrom\UDL\NetVersion\code\UDL_Client\OSAUDL\CMyDefFileFormat.cpp(2030) : warning C4101: 'pszErr' : unreferenced local variable
+OSA_AQ6317B.cpp
+C:\Users\wwang89\OneDrive - kochind.com\WorkShop\Project\Platfrom\UDL\NetVersion\code\UDL_Client\OSAUDL\OSA_AQ6317B.cpp(1587) : warning C4101: 'szCmdString' : unreferenced local variable
+C:\Users\wwang89\OneDrive - kochind.com\WorkShop\Project\Platfrom\UDL\NetVersion\code\UDL_Client\OSAUDL\OSA_AQ6317B.cpp(1643) : warning C4101: 'dwBytesReturned' : unreferenced local variable
+C:\Users\wwang89\OneDrive - kochind.com\WorkShop\Project\Platfrom\UDL\NetVersion\code\UDL_Client\OSAUDL\OSA_AQ6317B.cpp(1640) : warning C4101: 'iBit' : unreferenced local variable
+C:\Users\wwang89\OneDrive - kochind.com\WorkShop\Project\Platfrom\UDL\NetVersion\code\UDL_Client\OSAUDL\OSA_AQ6317B.cpp(1644) : warning C4101: 'chFileName' : unreferenced local variable
+C:\Users\wwang89\OneDrive - kochind.com\WorkShop\Project\Platfrom\UDL\NetVersion\code\UDL_Client\OSAUDL\OSA_AQ6317B.cpp(1638) : warning C4101: 'pchBMPData' : unreferenced local variable
+C:\Users\wwang89\OneDrive - kochind.com\WorkShop\Project\Platfrom\UDL\NetVersion\code\UDL_Client\OSAUDL\OSA_AQ6317B.cpp(1639) : warning C4101: 'iBmpLength' : unreferenced local variable
+C:\Users\wwang89\OneDrive - kochind.com\WorkShop\Project\Platfrom\UDL\NetVersion\code\UDL_Client\OSAUDL\OSA_AQ6317B.cpp(1642) : warning C4101: 'dwSpareCount' : unreferenced local variable
+C:\Users\wwang89\OneDrive - kochind.com\WorkShop\Project\Platfrom\UDL\NetVersion\code\UDL_Client\OSAUDL\OSA_AQ6317B.cpp(1645) : warning C4101: 'hFile' : unreferenced local variable
+C:\Users\wwang89\OneDrive - kochind.com\WorkShop\Project\Platfrom\UDL\NetVersion\code\UDL_Client\OSAUDL\OSA_AQ6317B.cpp(1641) : warning C4101: 'iReadCount' : unreferenced local variable
+C:\Users\wwang89\OneDrive - kochind.com\WorkShop\Project\Platfrom\UDL\NetVersion\code\UDL_Client\OSAUDL\OSA_AQ6317B.cpp(1635) : warning C4101: 'chSend' : unreferenced local variable
+C:\Users\wwang89\OneDrive - kochind.com\WorkShop\Project\Platfrom\UDL\NetVersion\code\UDL_Client\OSAUDL\OSA_AQ6317B.cpp(1865) : warning C4101: 'szDataStream' : unreferenced local variable
+C:\Users\wwang89\OneDrive - kochind.com\WorkShop\Project\Platfrom\UDL\NetVersion\code\UDL_Client\OSAUDL\OSA_AQ6317B.cpp(2017) : warning C4101: 'szDataStream' : unreferenced local variable
+OSA_AQ6370B.cpp
+C:\Users\wwang89\OneDrive - kochind.com\WorkShop\Project\Platfrom\UDL\NetVersion\code\UDL_Client\OSAUDL\OSA_AQ6370B.cpp(2411) : warning C4101: 'szDataStream' : unreferenced local variable
+C:\Users\wwang89\OneDrive - kochind.com\WorkShop\Project\Platfrom\UDL\NetVersion\code\UDL_Client\OSAUDL\OSA_AQ6370B.cpp(2458) : warning C4101: 'szDataStream' : unreferenced local variable
+C:\Users\wwang89\OneDrive - kochind.com\WorkShop\Project\Platfrom\UDL\NetVersion\code\UDL_Client\OSAUDL\OSA_AQ6370B.cpp(2520) : warning C4101: 'szDataStream' : unreferenced local variable
+C:\Users\wwang89\OneDrive - kochind.com\WorkShop\Project\Platfrom\UDL\NetVersion\code\UDL_Client\OSAUDL\OSA_AQ6370B.cpp(3083) : warning C4101: 'szCmdString' : unreferenced local variable
+C:\Users\wwang89\OneDrive - kochind.com\WorkShop\Project\Platfrom\UDL\NetVersion\code\UDL_Client\OSAUDL\OSA_AQ6370B.cpp(3155) : warning C4101: 'szCmdString' : unreferenced local variable
+C:\Users\wwang89\OneDrive - kochind.com\WorkShop\Project\Platfrom\UDL\NetVersion\code\UDL_Client\OSAUDL\OSA_AQ6370B.cpp(3240) : warning C4101: 'szCmdString' : unreferenced local variable
+C:\Users\wwang89\OneDrive - kochind.com\WorkShop\Project\Platfrom\UDL\NetVersion\code\UDL_Client\OSAUDL\OSA_AQ6370B.cpp(3456) : warning C4101: 'token' : unreferenced local variable
+C:\Users\wwang89\OneDrive - kochind.com\WorkShop\Project\Platfrom\UDL\NetVersion\code\UDL_Client\OSAUDL\OSA_AQ6370B.cpp(3459) : warning C4101: 'szCmdString' : unreferenced local variable
+C:\Users\wwang89\OneDrive - kochind.com\WorkShop\Project\Platfrom\UDL\NetVersion\code\UDL_Client\OSAUDL\OSA_AQ6370B.cpp(3592) : warning C4101: 'token' : unreferenced local variable
+C:\Users\wwang89\OneDrive - kochind.com\WorkShop\Project\Platfrom\UDL\NetVersion\code\UDL_Client\OSAUDL\OSA_AQ6370B.cpp(3595) : warning C4101: 'szCmdString' : unreferenced local variable
+C:\Users\wwang89\OneDrive - kochind.com\WorkShop\Project\Platfrom\UDL\NetVersion\code\UDL_Client\OSAUDL\OSA_AQ6370B.cpp(4956) : warning C4101: 'szDataStream' : unreferenced local variable
+OSA_Share.cpp
+C:\Users\wwang89\OneDrive - kochind.com\WorkShop\Project\Platfrom\UDL\NetVersion\code\UDL_Client\OSAUDL\OSA_Share.cpp(1168) : warning C4101: 'szFileName' : unreferenced local variable
+C:\Users\wwang89\OneDrive - kochind.com\WorkShop\Project\Platfrom\UDL\NetVersion\code\UDL_Client\OSAUDL\OSA_Share.cpp(1165) : warning C4101: 'szTempBuffer' : unreferenced local variable
+C:\Users\wwang89\OneDrive - kochind.com\WorkShop\Project\Platfrom\UDL\NetVersion\code\UDL_Client\OSAUDL\OSA_Share.cpp(1267) : warning C4101: 'szFileName' : unreferenced local variable
+C:\Users\wwang89\OneDrive - kochind.com\WorkShop\Project\Platfrom\UDL\NetVersion\code\UDL_Client\OSAUDL\OSA_Share.cpp(1264) : warning C4101: 'szTempBuffer' : unreferenced local variable
+C:\Users\wwang89\OneDrive - kochind.com\WorkShop\Project\Platfrom\UDL\NetVersion\code\UDL_Client\OSAUDL\OSA_Share.cpp(1365) : warning C4101: 'szFileName' : unreferenced local variable
+C:\Users\wwang89\OneDrive - kochind.com\WorkShop\Project\Platfrom\UDL\NetVersion\code\UDL_Client\OSAUDL\OSA_Share.cpp(1474) : warning C4101: 'szTempBuffer' : unreferenced local variable
+C:\Users\wwang89\OneDrive - kochind.com\WorkShop\Project\Platfrom\UDL\NetVersion\code\UDL_Client\OSAUDL\OSA_Share.cpp(1571) : warning C4101: 'szTempBuffer' : unreferenced local variable
+C:\Users\wwang89\OneDrive - kochind.com\WorkShop\Project\Platfrom\UDL\NetVersion\code\UDL_Client\OSAUDL\OSA_Share.cpp(1826) : warning C4101: 'szFileName' : unreferenced local variable
+C:\Users\wwang89\OneDrive - kochind.com\WorkShop\Project\Platfrom\UDL\NetVersion\code\UDL_Client\OSAUDL\OSA_Share.cpp(1931) : warning C4101: 'szTempBuffer' : unreferenced local variable
+C:\Users\wwang89\OneDrive - kochind.com\WorkShop\Project\Platfrom\UDL\NetVersion\code\UDL_Client\OSAUDL\OSA_Share.cpp(2031) : warning C4101: 'szTempBuffer' : unreferenced local variable
+C:\Users\wwang89\OneDrive - kochind.com\WorkShop\Project\Platfrom\UDL\NetVersion\code\UDL_Client\OSAUDL\OSA_Share.cpp(2129) : warning C4101: 'szFileName' : unreferenced local variable
+C:\Users\wwang89\OneDrive - kochind.com\WorkShop\Project\Platfrom\UDL\NetVersion\code\UDL_Client\OSAUDL\OSA_Share.cpp(2310) : warning C4101: 'szCmdString' : unreferenced local variable
+C:\Users\wwang89\OneDrive - kochind.com\WorkShop\Project\Platfrom\UDL\NetVersion\code\UDL_Client\OSAUDL\OSA_Share.cpp(2489) : warning C4101: 'szCmdString' : unreferenced local variable
+C:\Users\wwang89\OneDrive - kochind.com\WorkShop\Project\Platfrom\UDL\NetVersion\code\UDL_Client\OSAUDL\OSA_Share.cpp(2602) : warning C4101: 'szFileName' : unreferenced local variable
+C:\Users\wwang89\OneDrive - kochind.com\WorkShop\Project\Platfrom\UDL\NetVersion\code\UDL_Client\OSAUDL\OSA_Share.cpp(2737) : warning C4101: 'dwBytesReturned' : unreferenced local variable
+C:\Users\wwang89\OneDrive - kochind.com\WorkShop\Project\Platfrom\UDL\NetVersion\code\UDL_Client\OSAUDL\OSA_Share.cpp(2734) : warning C4101: 'iBit' : unreferenced local variable
+C:\Users\wwang89\OneDrive - kochind.com\WorkShop\Project\Platfrom\UDL\NetVersion\code\UDL_Client\OSAUDL\OSA_Share.cpp(2738) : warning C4101: 'chFileName' : unreferenced local variable
+C:\Users\wwang89\OneDrive - kochind.com\WorkShop\Project\Platfrom\UDL\NetVersion\code\UDL_Client\OSAUDL\OSA_Share.cpp(2732) : warning C4101: 'pchBMPData' : unreferenced local variable
+C:\Users\wwang89\OneDrive - kochind.com\WorkShop\Project\Platfrom\UDL\NetVersion\code\UDL_Client\OSAUDL\OSA_Share.cpp(2733) : warning C4101: 'iBmpLength' : unreferenced local variable
+C:\Users\wwang89\OneDrive - kochind.com\WorkShop\Project\Platfrom\UDL\NetVersion\code\UDL_Client\OSAUDL\OSA_Share.cpp(2736) : warning C4101: 'dwSpareCount' : unreferenced local variable
+C:\Users\wwang89\OneDrive - kochind.com\WorkShop\Project\Platfrom\UDL\NetVersion\code\UDL_Client\OSAUDL\OSA_Share.cpp(2739) : warning C4101: 'hFile' : unreferenced local variable
+C:\Users\wwang89\OneDrive - kochind.com\WorkShop\Project\Platfrom\UDL\NetVersion\code\UDL_Client\OSAUDL\OSA_Share.cpp(2735) : warning C4101: 'iReadCount' : unreferenced local variable
+C:\Users\wwang89\OneDrive - kochind.com\WorkShop\Project\Platfrom\UDL\NetVersion\code\UDL_Client\OSAUDL\OSA_Share.cpp(2729) : warning C4101: 'chSend' : unreferenced local variable
+C:\Users\wwang89\OneDrive - kochind.com\WorkShop\Project\Platfrom\UDL\NetVersion\code\UDL_Client\OSAUDL\OSA_Share.cpp(2992) : warning C4101: 'szCmdString' : unreferenced local variable
+C:\Users\wwang89\OneDrive - kochind.com\WorkShop\Project\Platfrom\UDL\NetVersion\code\UDL_Client\OSAUDL\OSA_Share.cpp(2991) : warning C4101: 'szDataStream' : unreferenced local variable
+C:\Users\wwang89\OneDrive - kochind.com\WorkShop\Project\Platfrom\UDL\NetVersion\code\UDL_Client\OSAUDL\OSA_Share.cpp(3026) : warning C4101: 'szFileName' : unreferenced local variable
+C:\Users\wwang89\OneDrive - kochind.com\WorkShop\Project\Platfrom\UDL\NetVersion\code\UDL_Client\OSAUDL\OSA_Share.cpp(3142) : warning C4101: 'szFileName' : unreferenced local variable
+OSAControl.cpp
+OSAControlDll.cpp
+Generating Code...
+C:\Users\wwang89\OneDrive - kochind.com\WorkShop\Project\Platfrom\UDL\NetVersion\code\UDL_Client\OSAUDL\OSA_Share.cpp(2453) : fatal error C1001: INTERNAL COMPILER ERROR
+  (compiler file 'F:\9782\vc98\p2\src\P2\main.c', line 494)
+    Please choose the Technical Support command on the Visual C++
+    Help menu, or open the Technical Support help file for more information
+C:\Users\wwang89\OneDrive - kochind.com\WorkShop\Project\Platfrom\UDL\NetVersion\code\UDL_Client\OSAUDL\OSA_AQ6370B.cpp(3511) : fatal error C1001: INTERNAL COMPILER ERROR
+  (compiler file 'F:\9782\vc98\p2\src\P2\main.c', line 494)
+    Please choose the Technical Support command on the Visual C++
+    Help menu, or open the Technical Support help file for more information
+C:\Users\wwang89\OneDrive - kochind.com\WorkShop\Project\Platfrom\UDL\NetVersion\code\UDL_Client\OSAUDL\AgilentOSA.cpp(700) : fatal error C1001: INTERNAL COMPILER ERROR
+  (compiler file 'F:\9782\vc98\p2\src\P2\main.c', line 494)
+    Please choose the Technical Support command on the Visual C++
+    Help menu, or open the Technical Support help file for more information
+Error executing cl.exe.
+
+
+
+<h3>Results</h3>
+UDL.OSA.dll - 3 error(s), 166 warning(s)
+</pre>
+</body>
+</html>

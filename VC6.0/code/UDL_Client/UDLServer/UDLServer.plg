@@ -1,0 +1,117 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: UDLServer - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "midl.exe /tlb ".\UDLServer.tlb" /h "UDLServer.h" /iid "UDLServer_i.c" /Oicf "C:\Users\wwang89\OneDrive - kochind.com\WorkShop\Project\Platfrom\UDL\NetVersion\code\UDL_Client\UDLServer\UDLServer.idl""
+Creating command line "rc.exe /l 0x804 /fo"Debug/UDLServer.res" /d "_DEBUG" /d "_AFXDLL" "C:\Users\wwang89\OneDrive - kochind.com\WorkShop\Project\Platfrom\UDL\NetVersion\code\UDL_Client\UDLServer\UDLServer.rc"" 
+Creating temporary file "C:\Users\wwang89\AppData\Local\Temp\RSPEE48.tmp" with contents
+[
+/nologo /MDd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_WINDLL" /D "_AFXDLL" /FR"Debug/" /Fp"Debug/UDLServer.pch" /Yu"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"C:\Users\wwang89\OneDrive - kochind.com\WorkShop\Project\Platfrom\UDL\NetVersion\code\UDL_Client\UDLServer\AlgorithmFunction.cpp"
+"C:\Users\wwang89\OneDrive - kochind.com\WorkShop\Project\Platfrom\UDL\NetVersion\code\UDL_Client\UDLServer\ChamberInterface.cpp"
+"C:\Users\wwang89\OneDrive - kochind.com\WorkShop\Project\Platfrom\UDL\NetVersion\code\UDL_Client\UDLServer\DeviceManger.cpp"
+"C:\Users\wwang89\OneDrive - kochind.com\WorkShop\Project\Platfrom\UDL\NetVersion\code\UDL_Client\UDLServer\EngineMgr.cpp"
+"C:\Users\wwang89\OneDrive - kochind.com\WorkShop\Project\Platfrom\UDL\NetVersion\code\UDL_Client\UDLServer\IComDevInterface.cpp"
+"C:\Users\wwang89\OneDrive - kochind.com\WorkShop\Project\Platfrom\UDL\NetVersion\code\UDL_Client\UDLServer\IOSAInterface.cpp"
+"C:\Users\wwang89\OneDrive - kochind.com\WorkShop\Project\Platfrom\UDL\NetVersion\code\UDL_Client\UDLServer\IPMInterface.cpp"
+"C:\Users\wwang89\OneDrive - kochind.com\WorkShop\Project\Platfrom\UDL\NetVersion\code\UDL_Client\UDLServer\IPolInterface.cpp"
+"C:\Users\wwang89\OneDrive - kochind.com\WorkShop\Project\Platfrom\UDL\NetVersion\code\UDL_Client\UDLServer\ITLSInterface.cpp"
+"C:\Users\wwang89\OneDrive - kochind.com\WorkShop\Project\Platfrom\UDL\NetVersion\code\UDL_Client\UDLServer\IVOAInterface.cpp"
+"C:\Users\wwang89\OneDrive - kochind.com\WorkShop\Project\Platfrom\UDL\NetVersion\code\UDL_Client\UDLServer\Markup.cpp"
+"C:\Users\wwang89\OneDrive - kochind.com\WorkShop\Project\Platfrom\UDL\NetVersion\code\UDL_Client\UDLServer\ScanInterface.cpp"
+"C:\Users\wwang89\OneDrive - kochind.com\WorkShop\Project\Platfrom\UDL\NetVersion\code\UDL_Client\UDLServer\UDLServer.cpp"
+]
+Creating command line "cl.exe @C:\Users\wwang89\AppData\Local\Temp\RSPEE48.tmp" 
+Creating temporary file "C:\Users\wwang89\AppData\Local\Temp\RSPEE49.tmp" with contents
+[
+/nologo /MDd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_WINDLL" /D "_AFXDLL" /FR"Debug/" /Fp"Debug/UDLServer.pch" /Yc"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"C:\Users\wwang89\OneDrive - kochind.com\WorkShop\Project\Platfrom\UDL\NetVersion\code\UDL_Client\UDLServer\StdAfx.cpp"
+]
+Creating command line "cl.exe @C:\Users\wwang89\AppData\Local\Temp\RSPEE49.tmp" 
+Creating temporary file "C:\Users\wwang89\AppData\Local\Temp\RSPEE59.tmp" with contents
+[
+/nologo /subsystem:windows /dll /incremental:yes /pdb:"Debug/UDL.DLM.pdb" /debug /machine:I386 /def:".\UDLServer.def" /out:"../bin/UDL.DLM.dll" /implib:"Debug/UDL.DLM.lib" /pdbtype:sept 
+".\Debug\AlgorithmFunction.obj"
+".\Debug\ChamberInterface.obj"
+".\Debug\DeviceManger.obj"
+".\Debug\EngineMgr.obj"
+".\Debug\IComDevInterface.obj"
+".\Debug\IOSAInterface.obj"
+".\Debug\IPMInterface.obj"
+".\Debug\IPolInterface.obj"
+".\Debug\ITLSInterface.obj"
+".\Debug\IVOAInterface.obj"
+".\Debug\Markup.obj"
+".\Debug\ScanInterface.obj"
+".\Debug\StdAfx.obj"
+".\Debug\UDLServer.obj"
+".\Debug\UDLServer.res"
+]
+Creating command line "link.exe @C:\Users\wwang89\AppData\Local\Temp\RSPEE59.tmp"
+Creating temporary file "C:\Users\wwang89\AppData\Local\Temp\RSPEE5A.bat" with contents
+[
+@echo off
+regsvr32 /s /c "\Users\wwang89\OneDrive - kochind.com\WorkShop\Project\Platfrom\UDL\NetVersion\code\UDL_Client\bin\UDL.DLM.dll"
+echo regsvr32 exec. time > ".\Debug\regsvr32.trg"
+echo Execute mtxrereg.exe before using MTS components in MTS
+]
+Creating command line "C:\Users\wwang89\AppData\Local\Temp\RSPEE5A.bat"
+Creating Type Library...
+Microsoft (R) MIDL Compiler Version 5.01.0164  
+Copyright (c) Microsoft Corp 1991-1997. All rights reserved.
+Processing C:\Users\wwang89\OneDrive - kochind.com\WorkShop\Project\Platfrom\UDL\NetVersion\code\UDL_Client\UDLServer\UDLServer.idl
+UDLServer.idl
+Processing C:\USERS\WWANG89\PERSONAL\MICROSOFT VISUAL STUDIO\VC98\INCLUDE\oaidl.idl
+oaidl.idl
+Processing C:\USERS\WWANG89\PERSONAL\MICROSOFT VISUAL STUDIO\VC98\INCLUDE\objidl.idl
+objidl.idl
+Processing C:\USERS\WWANG89\PERSONAL\MICROSOFT VISUAL STUDIO\VC98\INCLUDE\unknwn.idl
+unknwn.idl
+Processing C:\USERS\WWANG89\PERSONAL\MICROSOFT VISUAL STUDIO\VC98\INCLUDE\wtypes.idl
+wtypes.idl
+Processing C:\USERS\WWANG89\PERSONAL\MICROSOFT VISUAL STUDIO\VC98\INCLUDE\ocidl.idl
+ocidl.idl
+Processing C:\USERS\WWANG89\PERSONAL\MICROSOFT VISUAL STUDIO\VC98\INCLUDE\oleidl.idl
+oleidl.idl
+Processing C:\USERS\WWANG89\PERSONAL\MICROSOFT VISUAL STUDIO\VC98\INCLUDE\servprov.idl
+servprov.idl
+Processing C:\USERS\WWANG89\PERSONAL\MICROSOFT VISUAL STUDIO\VC98\INCLUDE\urlmon.idl
+urlmon.idl
+Processing C:\USERS\WWANG89\PERSONAL\MICROSOFT VISUAL STUDIO\VC98\INCLUDE\msxml.idl
+msxml.idl
+Compiling resources...
+Compiling...
+StdAfx.cpp
+Compiling...
+AlgorithmFunction.cpp
+ChamberInterface.cpp
+DeviceManger.cpp
+EngineMgr.cpp
+IComDevInterface.cpp
+IOSAInterface.cpp
+IPMInterface.cpp
+IPolInterface.cpp
+ITLSInterface.cpp
+IVOAInterface.cpp
+Markup.cpp
+ScanInterface.cpp
+UDLServer.cpp
+Generating Code...
+Linking...
+   Creating library Debug/UDL.DLM.lib and object Debug/UDL.DLM.exp
+UDL.DLM.exp : warning LNK4070: /OUT:UDLServer.DLL directive in .EXP differs from output filename "../bin/UDL.DLM.dll"; ignoring directive
+<h3>Output Window</h3>
+Performing registration
+Execute mtxrereg.exe before using MTS components in MTS
+
+
+
+<h3>Results</h3>
+UDL.DLM.dll - 0 error(s), 1 warning(s)
+</pre>
+</body>
+</html>

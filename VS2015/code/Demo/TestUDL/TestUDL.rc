@@ -1,0 +1,351 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Chinese (P.R.C.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\TestUDL.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""l.chs\\afxres.rc""          // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\TestUDL.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG DISCARDABLE  0, 0, 235, 55
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "关于 TestUDL"
+FONT 9, "宋体"
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,20,20
+    LTEXT           "TestUDL 1.0 版",IDC_STATIC,40,10,119,8,SS_NOPREFIX
+    LTEXT           "版权所有 (C) 2014",IDC_STATIC,40,25,119,8
+    DEFPUSHBUTTON   "确定",IDOK,178,7,50,14,WS_GROUP
+END
+
+IDD_TESTUDL_DIALOG DIALOGEX 0, 0, 657, 475
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "TestUDL"
+FONT 9, "宋体"
+BEGIN
+    PUSHBUTTON      "打开设备",IDC_BTN_OPEN,12,9,50,21
+    EDITTEXT        IDC_EDIT_TLS_WAV,116,49,40,17,ES_AUTOHSCROLL
+    PUSHBUTTON      "设置波长",IDC_BTN_SETTING_WL,13,76,50,21
+    PUSHBUTTON      "读取功率计",IDC_BTN_READ_PM,301,148,53,20
+    LTEXT           "通道号",IDC_STATIC,15,126,25,8
+    EDITTEXT        IDC_EDIT_PM_CHANNEL,42,123,40,14,ES_AUTOHSCROLL
+    GROUPBOX        "激光器测试",IDC_STATIC,7,34,643,70
+    GROUPBOX        "功率计测试",IDC_STATIC,7,109,643,91
+    LTEXT           "通道号",IDC_STATIC,15,54,25,8
+    EDITTEXT        IDC_EDIT_TLS_CHANNEL,42,50,40,17,ES_AUTOHSCROLL
+    LTEXT           "波长",IDC_STATIC,97,53,17,8
+    PUSHBUTTON      "设置功率",IDC_BTN_TLS_POWER,78,76,50,21
+    PUSHBUTTON      "开启出光",IDC_BTN_TLS_ENABLE,267,76,50,21
+    PUSHBUTTON      "设置单位",IDC_BTN_TLS_UNIT,142,76,50,21
+    PUSHBUTTON      "设置各参数",IDC_BTN_TLS_PARAMETERS,204,76,50,21
+    LTEXT           "注意: 所有通道号都从0开始",IDC_STATIC,83,12,145,13
+    PUSHBUTTON      "设置波长",IDC_BTN_PM_WL,11,148,46,20
+    LTEXT           "波长",IDC_STATIC,94,126,17,8
+    EDITTEXT        IDC_EDIT_PM_WAV,113,122,40,17,ES_AUTOHSCROLL
+    PUSHBUTTON      "设置单位",IDC_BTN_PM_UNIT,63,148,45,20
+    PUSHBUTTON      "设置Range模式",IDC_BTN_PM_RANGE,116,148,59,20
+    PUSHBUTTON      "设置采样时间",IDC_BTN_PM_AVGTIME,184,147,55,20
+    PUSHBUTTON      "设置各参数",IDC_BTN_PM_PARAMTER,245,147,51,20
+    GROUPBOX        "VOA测试",IDC_STATIC,7,204,643,60
+    LTEXT           "通道号",IDC_STATIC,15,221,25,8
+    EDITTEXT        IDC_EDIT_VOA_CHANNEL,44,219,40,14,ES_AUTOHSCROLL
+    LTEXT           "设定值",IDC_STATIC,99,221,25,8
+    EDITTEXT        IDC_EDIT_VOA_VALUE,133,217,40,17,ES_AUTOHSCROLL
+    PUSHBUTTON      "设置波长",IDC_BTN_VOA_WL,122,238,45,20
+    PUSHBUTTON      "设置衰减",IDC_BTN_VOA_ATTEN,175,238,52,20
+    PUSHBUTTON      "读取波长",IDC_BTN_VOA_READ_WL,13,238,50,20
+    PUSHBUTTON      "读取衰减",IDC_BTN_VOA_READ_ATTEN,70,238,45,20
+    GROUPBOX        "OSA测试",IDC_STATIC,7,268,643,134
+    CONTROL         "开启Coherence模式",IDC_CHECK_OPENCOH,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,528,88,84,10
+    EDITTEXT        IDC_EDIT_TLS_POWER,203,50,40,17,ES_AUTOHSCROLL
+    LTEXT           "输出功率",IDC_STATIC,168,54,33,8
+    EDITTEXT        IDC_EDIT_TLS_UNIT,289,50,40,17,ES_AUTOHSCROLL
+    LTEXT           "功率单位",IDC_STATIC,254,54,33,8
+    PUSHBUTTON      "设置RBW",IDC_BTN_OSA_SETRBW,13,328,47,19
+    LTEXT           "通道号",IDC_STATIC,13,285,25,8
+    EDITTEXT        IDC_EDIT_OSA_CH,40,283,40,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "初始化放大",IDC_BTN_OSA_INIT,225,328,48,20
+    PUSHBUTTON      "重设设备",IDC_BTN_OSA_RESET,171,328,50,19
+    PUSHBUTTON      "关闭设备",IDC_BTN_OSA_CLOSE,118,328,50,19
+    PUSHBUTTON      "获得RBW",IDC_BTN_OSA_GETRBW,64,328,50,19
+    LTEXT           "RBW",IDC_STATIC,91,285,13,8
+    EDITTEXT        IDC_EDIT_OSA_RBW,107,283,40,14,ES_AUTOHSCROLL
+    LTEXT           "通道总数",IDC_STATIC,161,285,33,8
+    EDITTEXT        IDC_EDIT_OSA_CH_COUNT,196,283,27,14,ES_AUTOHSCROLL
+    LTEXT           "波长",IDC_STATIC,233,285,17,8
+    EDITTEXT        IDC_EDIT_OSA_WAV,252,283,40,14,ES_AUTOHSCROLL
+    LTEXT           "增益",IDC_STATIC,436,285,17,8
+    EDITTEXT        IDC_EDIT_OSA_GAIN,456,283,40,14,ES_AUTOHSCROLL
+    LTEXT           "源SNR",IDC_STATIC,14,308,21,8
+    EDITTEXT        IDC_EDIT_OSA_SNR,38,305,40,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "Local control模式",IDC_BTN_OSA_LCMODE,278,328,82,20
+    PUSHBUTTON      "扫源",IDC_BTN_OSA_SCAN,384,329,58,19
+    PUSHBUTTON      "扫放大",IDC_BTN_OSA_SCANZOOM,447,329,54,19
+    PUSHBUTTON      "获得通道NF",IDC_BTN_OSA_NF,278,353,50,20
+    LTEXT           "源功率",IDC_STATIC,508,286,25,8
+    EDITTEXT        IDC_EDIT_OSA_POWER,535,284,40,14,ES_AUTOHSCROLL
+    LTEXT           "放大偏移量",IDC_STATIC,171,308,41,8
+    EDITTEXT        IDC_EDIT_OSA_OFFSET,215,305,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_OSA_MSG,393,305,247,18,ES_AUTOHSCROLL
+    PUSHBUTTON      "获得通道数",IDC_BTN_OSA_CHCOUNT,13,353,48,19
+    PUSHBUTTON      "获得源功率",IDC_BTN_OSA_POWER,225,353,46,20
+    PUSHBUTTON      "获得源SNR",IDC_BTN_OSA_SNR,171,353,50,19
+    PUSHBUTTON      "获得增益",IDC_BTN_OSA_GAIN,118,353,50,19
+    PUSHBUTTON      "获得波长",IDC_BTN_OSA_WAV,64,353,50,19
+    PUSHBUTTON      "设置偏移量",IDC_BTN_OSA_SETOFFSET,507,329,49,20
+    PUSHBUTTON      "获得偏移量",IDC_BTN_OSA_GETOFFSET,565,330,50,19
+    PUSHBUTTON      "获得放大结果",IDC_BTN_OSA_ZOOM_RESULT,386,355,58,19
+    PUSHBUTTON      "获得通道放大结果",IDC_BTN_OSA_SCAN_RESULT,449,355,79,19
+    PUSHBUTTON      "扫描",IDC_BTN_OSA_RUN,66,377,48,19
+    PUSHBUTTON      "保存OSA数据到PC",IDC_BTN_OSA_SAVE,226,377,70,19
+    PUSHBUTTON      "OSA校准",IDC_BUTTON18,171,377,48,19
+    PUSHBUTTON      "扫描数据",IDC_BTN_OSA_GETDATAONCE,525,379,48,19,NOT 
+                    WS_VISIBLE | WS_DISABLED
+    PUSHBUTTON      "扫描数据",IDC_BTN_OSA_GETDATA,120,377,48,19
+    PUSHBUTTON      "获得返回结果消息字符串",IDC_BTN_OSA_MSG,535,353,105,19
+    PUSHBUTTON      "关闭设备",IDC_BTN_TLS_CLOSE,329,76,50,21
+    PUSHBUTTON      "返回结果消息字符串",IDC_BTN_TLS_MSG,398,75,92,21
+    EDITTEXT        IDC_EDIT_TLS_MSG,375,50,260,17,ES_AUTOHSCROLL
+    LTEXT           "结果消息",IDC_STATIC,340,54,33,8
+    LTEXT           "单位",IDC_STATIC,165,126,17,8
+    EDITTEXT        IDC_EDIT_PM_UNIT,185,122,26,17,ES_AUTOHSCROLL
+    LTEXT           "采样时间",IDC_STATIC,302,126,33,8
+    EDITTEXT        IDC_EDIT_PM_TIME,338,122,40,17,ES_AUTOHSCROLL
+    LTEXT           "功率",IDC_STATIC,390,126,17,8
+    EDITTEXT        IDC_EDIT_PM_POWER,408,122,32,17,ES_AUTOHSCROLL
+    LTEXT           "结果信息",IDC_STATIC,453,126,33,8
+    EDITTEXT        IDC_EDIT_PM_MSG,488,122,147,17,ES_AUTOHSCROLL
+    PUSHBUTTON      "清零",IDC_BTN_PM_ZERO,360,147,38,20
+    PUSHBUTTON      "获得返回结果信息字符串",IDC_BTN_PM_MSG,547,148,103,20
+    LTEXT           "返回结果信息",IDC_STATIC,292,220,49,8
+    EDITTEXT        IDC_EDIT_VOA_MSG,346,216,289,17,ES_AUTOHSCROLL
+    CONTROL         "VOA是否启用",IDC_CHECK_VOA_ENABLE,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,204,219,60,10
+    PUSHBUTTON      "设置偏移量",IDC_BTN_VOA_OFFSET,235,238,51,20
+    PUSHBUTTON      "关闭设备",IDC_BTN_VOA_CLOSE,295,238,45,20
+    PUSHBUTTON      "重置设备",IDC_BTN_VOA_RESET,349,238,45,20
+    PUSHBUTTON      "获得结果信息返回字符串",IDC_BTN_VOA_MSG,479,237,98,20
+    PUSHBUTTON      "获得当前VOA状态",IDC_BTN_VOA_STATE,402,238,69,20
+    CONTROL         "激光器开启状态",IDC_CHECK_OPEN,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,528,73,72,10
+    LTEXT           "Range模式",IDC_STATIC,225,126,37,8
+    EDITTEXT        IDC_EDIT_PM_RANGE,264,122,26,17,ES_AUTOHSCROLL
+    PUSHBUTTON      "获取Range模式",IDC_BTN_PM_RANGE2,63,176,59,20
+    EDITTEXT        IDC_EDIT_OSA_WAV2,304,283,40,14,ES_AUTOHSCROLL
+    LTEXT           "--",IDC_STATIC,293,286,8,8
+    LTEXT           "扫描点数",IDC_STATIC,356,285,33,8
+    EDITTEXT        IDC_EDIT_OSA_POINT,392,283,34,14,ES_AUTOHSCROLL
+    LTEXT           "返回数组或消息",IDC_STATIC,331,308,57,8
+    CONTROL         "自制放大",IDC_CHECK_OURZOOM,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,267,307,48,10
+    LTEXT           "源偏移量",IDC_STATIC,86,308,33,8
+    EDITTEXT        IDC_EDIT_OSA_SRCOFFSET,121,305,40,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "初始化扫描",IDC_BTN_OSA_INITSINGLESCAN,12,378,50,19
+    PUSHBUTTON      "关闭设备",IDC_BTN_CLOSE,405,147,45,20
+    GROUPBOX        "偏振控制器",IDC_STATIC,6,409,314,58
+    EDITTEXT        IDC_EDIT_POL_MSG,225,422,80,18,ES_AUTOHSCROLL
+    LTEXT           "返回数组或消息",IDC_STATIC,160,427,57,10
+    PUSHBUTTON      "设置全玻片角",IDC_BTN_POL_POLAZIER,15,442,59,19
+    PUSHBUTTON      "设置半玻片角",IDC_BTN_POL_POLAZIER2,80,442,59,19
+    PUSHBUTTON      "设置1/4片角",IDC_BTN_POL_POLAZIER3,145,442,59,19
+    EDITTEXT        IDC_EDIT_POL_ANGLE,109,423,40,14,ES_AUTOHSCROLL
+    LTEXT           "角度",IDC_STATIC,85,425,17,8
+    GROUPBOX        "循环箱控制",IDC_STATIC,330,409,320,58
+    EDITTEXT        IDC_EDIT_CHAMBER_TEMP,441,422,40,14,ES_AUTOHSCROLL
+    LTEXT           "温度",IDC_STATIC,415,425,17,8
+    EDITTEXT        IDC_EDIT_POL_MSG2,550,420,90,18,ES_AUTOHSCROLL
+    LTEXT           "返回数组或消息",IDC_STATIC,490,422,57,10
+    PUSHBUTTON      "设置温度",IDC_BTN_CHAMBER_SETTEP,335,442,59,19
+    PUSHBUTTON      "获得设置温度",IDC_BTN_CHAMBER_GETSETTEMP,405,442,59,19
+    PUSHBUTTON      "获得当前温度",IDC_BTN_CHAMBER_CURRENT_TEMP,480,442,59,
+                    19
+    EDITTEXT        IDC_EDIT_POL_CHANNEL,40,422,40,14,ES_AUTOHSCROLL
+    LTEXT           "通道号",IDC_STATIC,10,424,25,8
+    EDITTEXT        IDC_EDIT_CHAMBER_CHANNEL,365,422,40,14,ES_AUTOHSCROLL
+    LTEXT           "通道好",IDC_STATIC,340,425,25,8
+    PUSHBUTTON      "获得偏振角",IDC_BTN_POL_GetPOLAZIER,215,444,59,19
+    GROUPBOX        "其他串口设备",IDC_STATIC,250,5,260,30
+    PUSHBUTTON      "发送测试",IDC_BTN_COMTEST,300,15,50,14
+    PUSHBUTTON      "读取波长",IDC_BTN_PM_GETWL,11,175,45,20
+    PUSHBUTTON      "获取单位",IDC_BTN_PM_GETUNIT,132,175,45,20
+    PUSHBUTTON      "获取采样时间",IDC_BTN_PM_GETAVGTIME,186,175,59,20
+    PUSHBUTTON      "关闭",IDC_BTN_CLOSECOM,367,16,50,14
+    PUSHBUTTON      "打开",IDC_BTN_OPENCOM,427,15,50,14
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080404B0"
+        BEGIN
+            VALUE "CompanyName", "\0"
+            VALUE "FileDescription", "TestUDL Microsoft 基础类应用程序\0"
+            VALUE "FileVersion", "1, 0, 0, 1\0"
+            VALUE "InternalName", "TestUDL\0"
+            VALUE "LegalCopyright", "版权所有 (C) 2014\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "TestUDL.EXE\0"
+            VALUE "ProductName", "TestUDL 应用程序\0"
+            VALUE "ProductVersion", "1, 0, 0, 1\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 48
+    END
+
+    IDD_TESTUDL_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 650
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 468
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_ABOUTBOX            "关于 TestUDL(&A)..."
+END
+
+#endif    // Chinese (P.R.C.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE 4, 2
+#pragma code_page(936)
+#endif //_WIN32
+#include "res\TestUDL.rc2"  // non-Microsoft Visual C++ edited resources
+#include "l.chs\afxres.rc"          // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

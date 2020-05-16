@@ -1,0 +1,7 @@
+; VOAControlDll.def : Declares the module parameters for the DLL.
+
+LIBRARY      "VOAControlDll"
+DESCRIPTION  'VOAControlDll Windows Dynamic Link Library'
+
+EXPORTS
+    ; Explicit exports can go here

@@ -1,0 +1,26 @@
+HKCR
+{
+	UDLServer.ISwitchBoxInterface.1 = s 'ISwitchBoxInterface Class'
+	{
+		CLSID = s '{4885F744-A490-42F0-8FAF-7F0F5B90FBC6}'
+	}
+	UDLServer.ISwitchBoxInterface = s 'ISwitchBoxInterface Class'
+	{
+		CLSID = s '{4885F744-A490-42F0-8FAF-7F0F5B90FBC6}'
+		CurVer = s 'UDLServer.ISwitchBoxInterface.1'
+	}
+	NoRemove CLSID
+	{
+		ForceRemove {4885F744-A490-42F0-8FAF-7F0F5B90FBC6} = s 'ISwitchBoxInterface Class'
+		{
+			ProgID = s 'UDLServer.ISwitchBoxInterface.1'
+			VersionIndependentProgID = s 'UDLServer.ISwitchBoxInterface'
+			ForceRemove 'Programmable'
+			InprocServer32 = s '%MODULE%'
+			{
+				val ThreadingModel = s 'Apartment'
+			}
+			'TypeLib' = s '{7FA750BF-178D-475A-9AA1-DEB556BB0E95}'
+		}
+	}
+}

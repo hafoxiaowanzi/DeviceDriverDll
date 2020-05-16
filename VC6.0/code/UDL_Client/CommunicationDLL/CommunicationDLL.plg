@@ -1,0 +1,51 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: CommunicationDLL - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\Users\wwang89\AppData\Local\Temp\RSPD179.tmp" with contents
+[
+/nologo /MTd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_MBCS" /D "COMMUNICATIONDLL_EXPORTS" /Fp"Debug/CommunicationDLL.pch" /Yu"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"C:\Users\wwang89\OneDrive - kochind.com\WorkShop\Project\Platfrom\UDL\NetVersion\code\UDL_Client\CommunicationDLL\Comm.cpp"
+"C:\Users\wwang89\OneDrive - kochind.com\WorkShop\Project\Platfrom\UDL\NetVersion\code\UDL_Client\CommunicationDLL\Communication.cpp"
+"C:\Users\wwang89\OneDrive - kochind.com\WorkShop\Project\Platfrom\UDL\NetVersion\code\UDL_Client\CommunicationDLL\CommunicationDLL.cpp"
+"C:\Users\wwang89\OneDrive - kochind.com\WorkShop\Project\Platfrom\UDL\NetVersion\code\UDL_Client\CommunicationDLL\Gpib.cpp"
+"C:\Users\wwang89\OneDrive - kochind.com\WorkShop\Project\Platfrom\UDL\NetVersion\code\UDL_Client\CommunicationDLL\Lan.cpp"
+"C:\Users\wwang89\OneDrive - kochind.com\WorkShop\Project\Platfrom\UDL\NetVersion\code\UDL_Client\CommunicationDLL\Usb.cpp"
+]
+Creating command line "cl.exe @C:\Users\wwang89\AppData\Local\Temp\RSPD179.tmp" 
+Creating temporary file "C:\Users\wwang89\AppData\Local\Temp\RSPD17A.tmp" with contents
+[
+kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /nologo /dll /incremental:yes /pdb:"../lib/UDL.Communication.pdb" /debug /machine:I386 /out:"../bin/UDL.Communication.dll" /implib:"../lib/UDL.Communication.lib" /pdbtype:sept 
+".\Debug\Comm.obj"
+".\Debug\Communication.obj"
+".\Debug\CommunicationDLL.obj"
+".\Debug\Gpib.obj"
+".\Debug\Lan.obj"
+".\Debug\StdAfx.obj"
+".\Debug\Usb.obj"
+".\Debug\CommunicationDLL..res"
+]
+Creating command line "link.exe @C:\Users\wwang89\AppData\Local\Temp\RSPD17A.tmp"
+<h3>Output Window</h3>
+Compiling...
+Comm.cpp
+Communication.cpp
+CommunicationDLL.cpp
+Gpib.cpp
+Lan.cpp
+Usb.cpp
+Generating Code...
+Linking...
+   Creating library ../lib/UDL.Communication.lib and object ../lib/UDL.Communication.exp
+
+
+
+<h3>Results</h3>
+UDL.Communication.dll - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

@@ -1,0 +1,26 @@
+HKCR
+{
+	UDLServer.IVOAInterface.1 = s 'IVOAInterface Class'
+	{
+		CLSID = s '{E5B0D9E8-E9F9-4C14-9E48-A60C4EC74252}'
+	}
+	UDLServer.IVOAInterface = s 'IVOAInterface Class'
+	{
+		CLSID = s '{E5B0D9E8-E9F9-4C14-9E48-A60C4EC74252}'
+		CurVer = s 'UDLServer.IVOAInterface.1'
+	}
+	NoRemove CLSID
+	{
+		ForceRemove {E5B0D9E8-E9F9-4C14-9E48-A60C4EC74252} = s 'IVOAInterface Class'
+		{
+			ProgID = s 'UDLServer.IVOAInterface.1'
+			VersionIndependentProgID = s 'UDLServer.IVOAInterface'
+			ForceRemove 'Programmable'
+			InprocServer32 = s '%MODULE%'
+			{
+				val ThreadingModel = s 'Apartment'
+			}
+			'TypeLib' = s '{7FA750BF-178D-475A-9AA1-DEB556BB0E95}'
+		}
+	}
+}

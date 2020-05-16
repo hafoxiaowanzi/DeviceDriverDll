@@ -1,0 +1,49 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: PMControlDll - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\Users\wanxin\AppData\Local\Temp\RSP167B.tmp" with contents
+[
+/nologo /MT /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_MBCS" /D "PMCONTROLDLL_EXPORTS" /Fp"Release/PMControlDll.pch" /Yu"stdafx.h" /Fo"Release/" /Fd"Release/" /FD /c 
+"E:\Project\testgroup\UDLDriver\NetVersion\code\UDL_Client - switch\PMUDL\Op8163A.cpp"
+]
+Creating command line "cl.exe @C:\Users\wanxin\AppData\Local\Temp\RSP167B.tmp" 
+Creating temporary file "C:\Users\wanxin\AppData\Local\Temp\RSP167C.tmp" with contents
+[
+kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /nologo /dll /incremental:no /pdb:"../lib/UDL.PM.pdb" /machine:I386 /out:"../bin/UDL.PM.dll" /implib:"../lib/UDL.PM.lib" 
+".\Release\AQ2140.obj"
+".\Release\AQ2200_215.obj"
+".\Release\N7745PM.obj"
+".\Release\Op8153A.obj"
+".\Release\Op8163A.obj"
+".\Release\Oplink1830C.obj"
+".\Release\OplinkPM.obj"
+".\Release\PM1830C.obj"
+".\Release\PMControl.obj"
+".\Release\PMControlDll.obj"
+".\Release\PMJH.obj"
+".\Release\StdAfx.obj"
+".\Release\PMUDL.res"
+]
+Creating command line "link.exe @C:\Users\wanxin\AppData\Local\Temp\RSP167C.tmp"
+<h3>Output Window</h3>
+Compiling...
+Op8163A.cpp
+E:\Project\testgroup\UDLDriver\NetVersion\code\UDL_Client - switch\PMUDL\Op8163A.cpp(690) : warning C4101: 'dblTemp' : unreferenced local variable
+Linking...
+   Creating library ../lib/UDL.PM.lib and object ../lib/UDL.PM.exp
+LINK : warning LNK4089: all references to "ADVAPI32.dll" discarded by /OPT:REF
+LINK : warning LNK4089: all references to "SHELL32.dll" discarded by /OPT:REF
+LINK : warning LNK4089: all references to "comdlg32.dll" discarded by /OPT:REF
+
+
+
+<h3>Results</h3>
+UDL.PM.dll - 0 error(s), 4 warning(s)
+</pre>
+</body>
+</html>

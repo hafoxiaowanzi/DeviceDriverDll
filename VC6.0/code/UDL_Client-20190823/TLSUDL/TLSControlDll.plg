@@ -1,0 +1,82 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: TLSControlDll - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x804 /fo"Debug/TLSUDL.res" /d "_DEBUG" "C:\Users\wwang89\OneDrive - kochind.com\WorkShop\Project\Platfrom\UDL\NetVersion\code\UDL_Client\TLSUDL\TLSUDL.rc"" 
+Creating temporary file "C:\Users\wwang89\AppData\Local\Temp\RSPBCF1.tmp" with contents
+[
+/nologo /MTd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_MBCS" /D "TLSCONTROLDLL_EXPORTS" /Fp"Debug/TLSControlDll.pch" /Yu"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"C:\Users\wwang89\OneDrive - kochind.com\WorkShop\Project\Platfrom\UDL\NetVersion\code\UDL_Client\TLSUDL\AQ2200_136.cpp"
+"C:\Users\wwang89\OneDrive - kochind.com\WorkShop\Project\Platfrom\UDL\NetVersion\code\UDL_Client\TLSUDL\HP8168E.cpp"
+"C:\Users\wwang89\OneDrive - kochind.com\WorkShop\Project\Platfrom\UDL\NetVersion\code\UDL_Client\TLSUDL\iTLALaser.cpp"
+"C:\Users\wwang89\OneDrive - kochind.com\WorkShop\Project\Platfrom\UDL\NetVersion\code\UDL_Client\TLSUDL\Op816XCtl.cpp"
+"C:\Users\wwang89\OneDrive - kochind.com\WorkShop\Project\Platfrom\UDL\NetVersion\code\UDL_Client\TLSUDL\Op81960A.cpp"
+"C:\Users\wwang89\OneDrive - kochind.com\WorkShop\Project\Platfrom\UDL\NetVersion\code\UDL_Client\TLSUDL\SantecTLS.cpp"
+"C:\Users\wwang89\OneDrive - kochind.com\WorkShop\Project\Platfrom\UDL\NetVersion\code\UDL_Client\TLSUDL\TLSControl.cpp"
+"C:\Users\wwang89\OneDrive - kochind.com\WorkShop\Project\Platfrom\UDL\NetVersion\code\UDL_Client\TLSUDL\TLSControlDll.cpp"
+]
+Creating command line "cl.exe @C:\Users\wwang89\AppData\Local\Temp\RSPBCF1.tmp" 
+Creating temporary file "C:\Users\wwang89\AppData\Local\Temp\RSPBCF2.tmp" with contents
+[
+/nologo /MTd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_MBCS" /D "TLSCONTROLDLL_EXPORTS" /Fp"Debug/TLSControlDll.pch" /Yc"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"C:\Users\wwang89\OneDrive - kochind.com\WorkShop\Project\Platfrom\UDL\NetVersion\code\UDL_Client\TLSUDL\StdAfx.cpp"
+]
+Creating command line "cl.exe @C:\Users\wwang89\AppData\Local\Temp\RSPBCF2.tmp" 
+Creating temporary file "C:\Users\wwang89\AppData\Local\Temp\RSPBCF3.tmp" with contents
+[
+kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /nologo /dll /incremental:yes /pdb:"../lib/UDL.TLS.pdb" /debug /machine:I386 /out:"../bin/UDL.TLS.dll" /implib:"../lib/UDL.TLS.lib" /pdbtype:sept 
+".\Debug\AQ2200_136.obj"
+".\Debug\HP8168E.obj"
+".\Debug\iTLALaser.obj"
+".\Debug\Op816XCtl.obj"
+".\Debug\Op81960A.obj"
+".\Debug\SantecTLS.obj"
+".\Debug\StdAfx.obj"
+".\Debug\TLSControl.obj"
+".\Debug\TLSControlDll.obj"
+".\Debug\TLSUDL.res"
+]
+Creating command line "link.exe @C:\Users\wwang89\AppData\Local\Temp\RSPBCF3.tmp"
+<h3>Output Window</h3>
+Compiling resources...
+Compiling...
+StdAfx.cpp
+Compiling...
+AQ2200_136.cpp
+C:\Users\wwang89\OneDrive - kochind.com\WorkShop\Project\Platfrom\UDL\NetVersion\code\UDL_Client\TLSUDL\AQ2200_136.cpp(269) : warning C4101: 'chSendBuf' : unreferenced local variable
+C:\Users\wwang89\OneDrive - kochind.com\WorkShop\Project\Platfrom\UDL\NetVersion\code\UDL_Client\TLSUDL\AQ2200_136.cpp(291) : warning C4101: 'chSendBuf' : unreferenced local variable
+C:\Users\wwang89\OneDrive - kochind.com\WorkShop\Project\Platfrom\UDL\NetVersion\code\UDL_Client\TLSUDL\AQ2200_136.cpp(365) : warning C4101: 'chSendBuf' : unreferenced local variable
+HP8168E.cpp
+C:\Users\wwang89\OneDrive - kochind.com\WorkShop\Project\Platfrom\UDL\NetVersion\code\UDL_Client\TLSUDL\HP8168E.cpp(88) : warning C4101: 'chReadBuf' : unreferenced local variable
+C:\Users\wwang89\OneDrive - kochind.com\WorkShop\Project\Platfrom\UDL\NetVersion\code\UDL_Client\TLSUDL\HP8168E.cpp(190) : warning C4101: 'chSendBuf' : unreferenced local variable
+C:\Users\wwang89\OneDrive - kochind.com\WorkShop\Project\Platfrom\UDL\NetVersion\code\UDL_Client\TLSUDL\HP8168E.cpp(566) : warning C4101: 'chSendBuf' : unreferenced local variable
+C:\Users\wwang89\OneDrive - kochind.com\WorkShop\Project\Platfrom\UDL\NetVersion\code\UDL_Client\TLSUDL\HP8168E.cpp(581) : warning C4101: 'chSendBuf' : unreferenced local variable
+C:\Users\wwang89\OneDrive - kochind.com\WorkShop\Project\Platfrom\UDL\NetVersion\code\UDL_Client\TLSUDL\HP8168E.cpp(604) : warning C4101: 'dbStopWL' : unreferenced local variable
+C:\Users\wwang89\OneDrive - kochind.com\WorkShop\Project\Platfrom\UDL\NetVersion\code\UDL_Client\TLSUDL\HP8168E.cpp(603) : warning C4101: 'chSendBuf' : unreferenced local variable
+C:\Users\wwang89\OneDrive - kochind.com\WorkShop\Project\Platfrom\UDL\NetVersion\code\UDL_Client\TLSUDL\HP8168E.cpp(605) : warning C4101: 'dbReadStopWL' : unreferenced local variable
+C:\Users\wwang89\OneDrive - kochind.com\WorkShop\Project\Platfrom\UDL\NetVersion\code\UDL_Client\TLSUDL\HP8168E.cpp(604) : warning C4101: 'dbStartWL' : unreferenced local variable
+C:\Users\wwang89\OneDrive - kochind.com\WorkShop\Project\Platfrom\UDL\NetVersion\code\UDL_Client\TLSUDL\HP8168E.cpp(605) : warning C4101: 'dbReadStartWL' : unreferenced local variable
+C:\Users\wwang89\OneDrive - kochind.com\WorkShop\Project\Platfrom\UDL\NetVersion\code\UDL_Client\TLSUDL\HP8168E.cpp(633) : warning C4101: 'dbTemp' : unreferenced local variable
+C:\Users\wwang89\OneDrive - kochind.com\WorkShop\Project\Platfrom\UDL\NetVersion\code\UDL_Client\TLSUDL\HP8168E.cpp(631) : warning C4101: 'chSendBuf' : unreferenced local variable
+C:\Users\wwang89\OneDrive - kochind.com\WorkShop\Project\Platfrom\UDL\NetVersion\code\UDL_Client\TLSUDL\HP8168E.cpp(634) : warning C4101: 'nTemp' : unreferenced local variable
+iTLALaser.cpp
+Op816XCtl.cpp
+Op81960A.cpp
+SantecTLS.cpp
+TLSControl.cpp
+TLSControlDll.cpp
+Generating Code...
+Linking...
+   Creating library ../lib/UDL.TLS.lib and object ../lib/UDL.TLS.exp
+
+
+
+<h3>Results</h3>
+UDL.TLS.dll - 0 error(s), 15 warning(s)
+</pre>
+</body>
+</html>

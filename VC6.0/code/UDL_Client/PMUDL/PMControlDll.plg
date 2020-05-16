@@ -1,0 +1,145 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: PMControlDll - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x804 /fo"Debug/PMUDL.res" /d "_DEBUG" "C:\Users\wwang89\OneDrive - kochind.com\WorkShop\Project\Platfrom\UDL\NetVersion\code\UDL_Client\PMUDL\PMUDL.rc"" 
+Creating temporary file "C:\Users\wwang89\AppData\Local\Temp\RSP8427.tmp" with contents
+[
+/nologo /MTd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_MBCS" /D "PMCONTROLDLL_EXPORTS" /Fp"Debug/PMControlDll.pch" /Yu"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"C:\Users\wwang89\OneDrive - kochind.com\WorkShop\Project\Platfrom\UDL\NetVersion\code\UDL_Client\PMUDL\AQ2140.cpp"
+"C:\Users\wwang89\OneDrive - kochind.com\WorkShop\Project\Platfrom\UDL\NetVersion\code\UDL_Client\PMUDL\AQ2200_215.cpp"
+"C:\Users\wwang89\OneDrive - kochind.com\WorkShop\Project\Platfrom\UDL\NetVersion\code\UDL_Client\PMUDL\N7745PM.cpp"
+"C:\Users\wwang89\OneDrive - kochind.com\WorkShop\Project\Platfrom\UDL\NetVersion\code\UDL_Client\PMUDL\Op8153A.cpp"
+"C:\Users\wwang89\OneDrive - kochind.com\WorkShop\Project\Platfrom\UDL\NetVersion\code\UDL_Client\PMUDL\Op8163A.cpp"
+"C:\Users\wwang89\OneDrive - kochind.com\WorkShop\Project\Platfrom\UDL\NetVersion\code\UDL_Client\PMUDL\Oplink1830C.cpp"
+"C:\Users\wwang89\OneDrive - kochind.com\WorkShop\Project\Platfrom\UDL\NetVersion\code\UDL_Client\PMUDL\OplinkPM.cpp"
+"C:\Users\wwang89\OneDrive - kochind.com\WorkShop\Project\Platfrom\UDL\NetVersion\code\UDL_Client\PMUDL\PM1830C.cpp"
+"C:\Users\wwang89\OneDrive - kochind.com\WorkShop\Project\Platfrom\UDL\NetVersion\code\UDL_Client\PMUDL\PMControl.cpp"
+"C:\Users\wwang89\OneDrive - kochind.com\WorkShop\Project\Platfrom\UDL\NetVersion\code\UDL_Client\PMUDL\PMControlDll.cpp"
+"C:\Users\wwang89\OneDrive - kochind.com\WorkShop\Project\Platfrom\UDL\NetVersion\code\UDL_Client\PMUDL\PMJH.cpp"
+]
+Creating command line "cl.exe @C:\Users\wwang89\AppData\Local\Temp\RSP8427.tmp" 
+Creating temporary file "C:\Users\wwang89\AppData\Local\Temp\RSP8428.tmp" with contents
+[
+/nologo /MTd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_MBCS" /D "PMCONTROLDLL_EXPORTS" /Fp"Debug/PMControlDll.pch" /Yc"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"C:\Users\wwang89\OneDrive - kochind.com\WorkShop\Project\Platfrom\UDL\NetVersion\code\UDL_Client\PMUDL\StdAfx.cpp"
+]
+Creating command line "cl.exe @C:\Users\wwang89\AppData\Local\Temp\RSP8428.tmp" 
+Creating temporary file "C:\Users\wwang89\AppData\Local\Temp\RSP8429.tmp" with contents
+[
+kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /nologo /dll /incremental:yes /pdb:"../lib/UDL.PM.pdb" /debug /machine:I386 /out:"../bin/UDL.PM.dll" /implib:"../lib/UDL.PM.lib" /pdbtype:sept 
+".\Debug\AQ2140.obj"
+".\Debug\AQ2200_215.obj"
+".\Debug\N7745PM.obj"
+".\Debug\Op8153A.obj"
+".\Debug\Op8163A.obj"
+".\Debug\Oplink1830C.obj"
+".\Debug\OplinkPM.obj"
+".\Debug\PM1830C.obj"
+".\Debug\PMControl.obj"
+".\Debug\PMControlDll.obj"
+".\Debug\PMJH.obj"
+".\Debug\StdAfx.obj"
+".\Debug\PMUDL.res"
+]
+Creating command line "link.exe @C:\Users\wwang89\AppData\Local\Temp\RSP8429.tmp"
+<h3>Output Window</h3>
+Compiling resources...
+Compiling...
+StdAfx.cpp
+Compiling...
+AQ2140.cpp
+C:\Users\wwang89\OneDrive - kochind.com\WorkShop\Project\Platfrom\UDL\NetVersion\code\UDL_Client\PMUDL\AQ2140.cpp(207) : warning C4101: 'tszDataStream' : unreferenced local variable
+C:\Users\wwang89\OneDrive - kochind.com\WorkShop\Project\Platfrom\UDL\NetVersion\code\UDL_Client\PMUDL\AQ2140.cpp(208) : warning C4101: 'szCmdString' : unreferenced local variable
+C:\Users\wwang89\OneDrive - kochind.com\WorkShop\Project\Platfrom\UDL\NetVersion\code\UDL_Client\PMUDL\AQ2140.cpp(228) : warning C4101: 'tszDataStream' : unreferenced local variable
+C:\Users\wwang89\OneDrive - kochind.com\WorkShop\Project\Platfrom\UDL\NetVersion\code\UDL_Client\PMUDL\AQ2140.cpp(229) : warning C4101: 'szCmdString' : unreferenced local variable
+C:\Users\wwang89\OneDrive - kochind.com\WorkShop\Project\Platfrom\UDL\NetVersion\code\UDL_Client\PMUDL\AQ2140.cpp(275) : warning C4101: 'dblAddress' : unreferenced local variable
+C:\Users\wwang89\OneDrive - kochind.com\WorkShop\Project\Platfrom\UDL\NetVersion\code\UDL_Client\PMUDL\AQ2140.cpp(274) : warning C4101: 'tszDataStream' : unreferenced local variable
+C:\Users\wwang89\OneDrive - kochind.com\WorkShop\Project\Platfrom\UDL\NetVersion\code\UDL_Client\PMUDL\AQ2140.cpp(297) : warning C4101: 'tszDataStream' : unreferenced local variable
+C:\Users\wwang89\OneDrive - kochind.com\WorkShop\Project\Platfrom\UDL\NetVersion\code\UDL_Client\PMUDL\AQ2140.cpp(298) : warning C4101: 'szCmdString' : unreferenced local variable
+C:\Users\wwang89\OneDrive - kochind.com\WorkShop\Project\Platfrom\UDL\NetVersion\code\UDL_Client\PMUDL\AQ2140.cpp(365) : warning C4101: 'szCmdString' : unreferenced local variable
+C:\Users\wwang89\OneDrive - kochind.com\WorkShop\Project\Platfrom\UDL\NetVersion\code\UDL_Client\PMUDL\AQ2140.cpp(382) : warning C4101: 'tszDataStream' : unreferenced local variable
+C:\Users\wwang89\OneDrive - kochind.com\WorkShop\Project\Platfrom\UDL\NetVersion\code\UDL_Client\PMUDL\AQ2140.cpp(383) : warning C4101: 'szCmdString' : unreferenced local variable
+C:\Users\wwang89\OneDrive - kochind.com\WorkShop\Project\Platfrom\UDL\NetVersion\code\UDL_Client\PMUDL\AQ2140.cpp(409) : warning C4244: 'initializing' : conversion from 'double' to 'int', possible loss of data
+C:\Users\wwang89\OneDrive - kochind.com\WorkShop\Project\Platfrom\UDL\NetVersion\code\UDL_Client\PMUDL\AQ2140.cpp(577) : warning C4101: 'chReadBuf' : unreferenced local variable
+C:\Users\wwang89\OneDrive - kochind.com\WorkShop\Project\Platfrom\UDL\NetVersion\code\UDL_Client\PMUDL\AQ2140.cpp(601) : warning C4101: 'szBuf' : unreferenced local variable
+C:\Users\wwang89\OneDrive - kochind.com\WorkShop\Project\Platfrom\UDL\NetVersion\code\UDL_Client\PMUDL\AQ2140.cpp(606) : warning C4101: 'dbWL' : unreferenced local variable
+C:\Users\wwang89\OneDrive - kochind.com\WorkShop\Project\Platfrom\UDL\NetVersion\code\UDL_Client\PMUDL\AQ2140.cpp(628) : warning C4101: 'szBuf' : unreferenced local variable
+C:\Users\wwang89\OneDrive - kochind.com\WorkShop\Project\Platfrom\UDL\NetVersion\code\UDL_Client\PMUDL\AQ2140.cpp(654) : warning C4101: 'fPreTemp' : unreferenced local variable
+C:\Users\wwang89\OneDrive - kochind.com\WorkShop\Project\Platfrom\UDL\NetVersion\code\UDL_Client\PMUDL\AQ2140.cpp(655) : warning C4101: 'dbPMTemp' : unreferenced local variable
+C:\Users\wwang89\OneDrive - kochind.com\WorkShop\Project\Platfrom\UDL\NetVersion\code\UDL_Client\PMUDL\AQ2140.cpp(653) : warning C4101: 'pfPowerArray' : unreferenced local variable
+C:\Users\wwang89\OneDrive - kochind.com\WorkShop\Project\Platfrom\UDL\NetVersion\code\UDL_Client\PMUDL\AQ2140.cpp(651) : warning C4101: 'nTempLen' : unreferenced local variable
+C:\Users\wwang89\OneDrive - kochind.com\WorkShop\Project\Platfrom\UDL\NetVersion\code\UDL_Client\PMUDL\AQ2140.cpp(649) : warning C4101: 'chReadBuf' : unreferenced local variable
+C:\Users\wwang89\OneDrive - kochind.com\WorkShop\Project\Platfrom\UDL\NetVersion\code\UDL_Client\PMUDL\AQ2140.cpp(681) : warning C4101: 'chReadBuf' : unreferenced local variable
+C:\Users\wwang89\OneDrive - kochind.com\WorkShop\Project\Platfrom\UDL\NetVersion\code\UDL_Client\PMUDL\AQ2140.cpp(703) : warning C4101: 'chReadBuf' : unreferenced local variable
+AQ2200_215.cpp
+C:\Users\wwang89\OneDrive - kochind.com\WorkShop\Project\Platfrom\UDL\NetVersion\code\UDL_Client\PMUDL\AQ2200_215.cpp(1020) : warning C4101: 'szBuf' : unreferenced local variable
+C:\Users\wwang89\OneDrive - kochind.com\WorkShop\Project\Platfrom\UDL\NetVersion\code\UDL_Client\PMUDL\AQ2200_215.cpp(1025) : warning C4101: 'dbWL' : unreferenced local variable
+C:\Users\wwang89\OneDrive - kochind.com\WorkShop\Project\Platfrom\UDL\NetVersion\code\UDL_Client\PMUDL\AQ2200_215.cpp(1047) : warning C4101: 'szBuf' : unreferenced local variable
+C:\Users\wwang89\OneDrive - kochind.com\WorkShop\Project\Platfrom\UDL\NetVersion\code\UDL_Client\PMUDL\AQ2200_215.cpp(1073) : warning C4101: 'fPreTemp' : unreferenced local variable
+C:\Users\wwang89\OneDrive - kochind.com\WorkShop\Project\Platfrom\UDL\NetVersion\code\UDL_Client\PMUDL\AQ2200_215.cpp(1074) : warning C4101: 'dbPMTemp' : unreferenced local variable
+C:\Users\wwang89\OneDrive - kochind.com\WorkShop\Project\Platfrom\UDL\NetVersion\code\UDL_Client\PMUDL\AQ2200_215.cpp(1072) : warning C4101: 'pfPowerArray' : unreferenced local variable
+C:\Users\wwang89\OneDrive - kochind.com\WorkShop\Project\Platfrom\UDL\NetVersion\code\UDL_Client\PMUDL\AQ2200_215.cpp(1070) : warning C4101: 'nTempLen' : unreferenced local variable
+C:\Users\wwang89\OneDrive - kochind.com\WorkShop\Project\Platfrom\UDL\NetVersion\code\UDL_Client\PMUDL\AQ2200_215.cpp(1068) : warning C4101: 'chReadBuf' : unreferenced local variable
+C:\Users\wwang89\OneDrive - kochind.com\WorkShop\Project\Platfrom\UDL\NetVersion\code\UDL_Client\PMUDL\AQ2200_215.cpp(1100) : warning C4101: 'chReadBuf' : unreferenced local variable
+C:\Users\wwang89\OneDrive - kochind.com\WorkShop\Project\Platfrom\UDL\NetVersion\code\UDL_Client\PMUDL\AQ2200_215.cpp(1122) : warning C4101: 'chReadBuf' : unreferenced local variable
+C:\Users\wwang89\OneDrive - kochind.com\WorkShop\Project\Platfrom\UDL\NetVersion\code\UDL_Client\PMUDL\AQ2200_215.cpp(1148) : warning C4101: 'chReadBuf' : unreferenced local variable
+C:\Users\wwang89\OneDrive - kochind.com\WorkShop\Project\Platfrom\UDL\NetVersion\code\UDL_Client\PMUDL\AQ2200_215.cpp(1171) : warning C4101: 'chReadBuf' : unreferenced local variable
+C:\Users\wwang89\OneDrive - kochind.com\WorkShop\Project\Platfrom\UDL\NetVersion\code\UDL_Client\PMUDL\AQ2200_215.cpp(1225) : warning C4101: 'chReadBuf' : unreferenced local variable
+C:\Users\wwang89\OneDrive - kochind.com\WorkShop\Project\Platfrom\UDL\NetVersion\code\UDL_Client\PMUDL\AQ2200_215.cpp(1242) : warning C4101: 'chReadBuf' : unreferenced local variable
+N7745PM.cpp
+C:\Users\wwang89\OneDrive - kochind.com\WorkShop\Project\Platfrom\UDL\NetVersion\code\UDL_Client\PMUDL\N7745PM.cpp(1440) : warning C4101: 'chReadBuf' : unreferenced local variable
+Op8153A.cpp
+C:\Users\wwang89\OneDrive - kochind.com\WorkShop\Project\Platfrom\UDL\NetVersion\code\UDL_Client\PMUDL\Op8153A.cpp(103) : warning C4101: 'szBuf' : unreferenced local variable
+C:\Users\wwang89\OneDrive - kochind.com\WorkShop\Project\Platfrom\UDL\NetVersion\code\UDL_Client\PMUDL\Op8153A.cpp(108) : warning C4101: 'dbWL' : unreferenced local variable
+C:\Users\wwang89\OneDrive - kochind.com\WorkShop\Project\Platfrom\UDL\NetVersion\code\UDL_Client\PMUDL\Op8153A.cpp(130) : warning C4101: 'szBuf' : unreferenced local variable
+C:\Users\wwang89\OneDrive - kochind.com\WorkShop\Project\Platfrom\UDL\NetVersion\code\UDL_Client\PMUDL\Op8153A.cpp(156) : warning C4101: 'fPreTemp' : unreferenced local variable
+C:\Users\wwang89\OneDrive - kochind.com\WorkShop\Project\Platfrom\UDL\NetVersion\code\UDL_Client\PMUDL\Op8153A.cpp(157) : warning C4101: 'dbPMTemp' : unreferenced local variable
+C:\Users\wwang89\OneDrive - kochind.com\WorkShop\Project\Platfrom\UDL\NetVersion\code\UDL_Client\PMUDL\Op8153A.cpp(155) : warning C4101: 'pfPowerArray' : unreferenced local variable
+C:\Users\wwang89\OneDrive - kochind.com\WorkShop\Project\Platfrom\UDL\NetVersion\code\UDL_Client\PMUDL\Op8153A.cpp(153) : warning C4101: 'nTempLen' : unreferenced local variable
+C:\Users\wwang89\OneDrive - kochind.com\WorkShop\Project\Platfrom\UDL\NetVersion\code\UDL_Client\PMUDL\Op8153A.cpp(151) : warning C4101: 'chReadBuf' : unreferenced local variable
+C:\Users\wwang89\OneDrive - kochind.com\WorkShop\Project\Platfrom\UDL\NetVersion\code\UDL_Client\PMUDL\Op8153A.cpp(183) : warning C4101: 'chReadBuf' : unreferenced local variable
+C:\Users\wwang89\OneDrive - kochind.com\WorkShop\Project\Platfrom\UDL\NetVersion\code\UDL_Client\PMUDL\Op8153A.cpp(205) : warning C4101: 'chReadBuf' : unreferenced local variable
+C:\Users\wwang89\OneDrive - kochind.com\WorkShop\Project\Platfrom\UDL\NetVersion\code\UDL_Client\PMUDL\Op8153A.cpp(1094) : warning C4101: 'chReadBuf' : unreferenced local variable
+C:\Users\wwang89\OneDrive - kochind.com\WorkShop\Project\Platfrom\UDL\NetVersion\code\UDL_Client\PMUDL\Op8153A.cpp(1117) : warning C4101: 'chReadBuf' : unreferenced local variable
+C:\Users\wwang89\OneDrive - kochind.com\WorkShop\Project\Platfrom\UDL\NetVersion\code\UDL_Client\PMUDL\Op8153A.cpp(1135) : warning C4101: 'chReadBuf' : unreferenced local variable
+C:\Users\wwang89\OneDrive - kochind.com\WorkShop\Project\Platfrom\UDL\NetVersion\code\UDL_Client\PMUDL\Op8153A.cpp(1153) : warning C4101: 'chReadBuf' : unreferenced local variable
+Op8163A.cpp
+C:\Users\wwang89\OneDrive - kochind.com\WorkShop\Project\Platfrom\UDL\NetVersion\code\UDL_Client\PMUDL\Op8163A.cpp(690) : warning C4101: 'dblTemp' : unreferenced local variable
+C:\Users\wwang89\OneDrive - kochind.com\WorkShop\Project\Platfrom\UDL\NetVersion\code\UDL_Client\PMUDL\Op8163A.cpp(1490) : warning C4101: 'chReadBuf' : unreferenced local variable
+Oplink1830C.cpp
+C:\Users\wwang89\OneDrive - kochind.com\WorkShop\Project\Platfrom\UDL\NetVersion\code\UDL_Client\PMUDL\Oplink1830C.cpp(855) : warning C4101: 'chReadBuf' : unreferenced local variable
+C:\Users\wwang89\OneDrive - kochind.com\WorkShop\Project\Platfrom\UDL\NetVersion\code\UDL_Client\PMUDL\Oplink1830C.cpp(872) : warning C4101: 'chReadBuf' : unreferenced local variable
+OplinkPM.cpp
+C:\Users\wwang89\OneDrive - kochind.com\WorkShop\Project\Platfrom\UDL\NetVersion\code\UDL_Client\PMUDL\OplinkPM.cpp(576) : warning C4101: 'chReadBuf' : unreferenced local variable
+C:\Users\wwang89\OneDrive - kochind.com\WorkShop\Project\Platfrom\UDL\NetVersion\code\UDL_Client\PMUDL\OplinkPM.cpp(599) : warning C4101: 'chReadBuf' : unreferenced local variable
+C:\Users\wwang89\OneDrive - kochind.com\WorkShop\Project\Platfrom\UDL\NetVersion\code\UDL_Client\PMUDL\OplinkPM.cpp(617) : warning C4101: 'chReadBuf' : unreferenced local variable
+C:\Users\wwang89\OneDrive - kochind.com\WorkShop\Project\Platfrom\UDL\NetVersion\code\UDL_Client\PMUDL\OplinkPM.cpp(634) : warning C4101: 'chReadBuf' : unreferenced local variable
+PM1830C.cpp
+C:\Users\wwang89\OneDrive - kochind.com\WorkShop\Project\Platfrom\UDL\NetVersion\code\UDL_Client\PMUDL\PM1830C.cpp(773) : warning C4101: 'chReadBuf' : unreferenced local variable
+C:\Users\wwang89\OneDrive - kochind.com\WorkShop\Project\Platfrom\UDL\NetVersion\code\UDL_Client\PMUDL\PM1830C.cpp(796) : warning C4101: 'chReadBuf' : unreferenced local variable
+C:\Users\wwang89\OneDrive - kochind.com\WorkShop\Project\Platfrom\UDL\NetVersion\code\UDL_Client\PMUDL\PM1830C.cpp(814) : warning C4101: 'chReadBuf' : unreferenced local variable
+C:\Users\wwang89\OneDrive - kochind.com\WorkShop\Project\Platfrom\UDL\NetVersion\code\UDL_Client\PMUDL\PM1830C.cpp(832) : warning C4101: 'chReadBuf' : unreferenced local variable
+PMControl.cpp
+PMControlDll.cpp
+PMJH.cpp
+C:\Users\wwang89\OneDrive - kochind.com\WorkShop\Project\Platfrom\UDL\NetVersion\code\UDL_Client\PMUDL\PMJH.cpp(669) : warning C4101: 'chReadBuf' : unreferenced local variable
+C:\Users\wwang89\OneDrive - kochind.com\WorkShop\Project\Platfrom\UDL\NetVersion\code\UDL_Client\PMUDL\PMJH.cpp(692) : warning C4101: 'chReadBuf' : unreferenced local variable
+C:\Users\wwang89\OneDrive - kochind.com\WorkShop\Project\Platfrom\UDL\NetVersion\code\UDL_Client\PMUDL\PMJH.cpp(710) : warning C4101: 'chReadBuf' : unreferenced local variable
+C:\Users\wwang89\OneDrive - kochind.com\WorkShop\Project\Platfrom\UDL\NetVersion\code\UDL_Client\PMUDL\PMJH.cpp(727) : warning C4101: 'chReadBuf' : unreferenced local variable
+Generating Code...
+C:\Users\wwang89\OneDrive - kochind.com\WorkShop\Project\Platfrom\UDL\NetVersion\code\UDL_Client\PMUDL\AQ2140.cpp(78) : warning C4700: local variable 'dwErrorCode' used without having been initialized
+Linking...
+   Creating library ../lib/UDL.PM.lib and object ../lib/UDL.PM.exp
+
+
+
+<h3>Results</h3>
+UDL.PM.dll - 0 error(s), 69 warning(s)
+</pre>
+</body>
+</html>

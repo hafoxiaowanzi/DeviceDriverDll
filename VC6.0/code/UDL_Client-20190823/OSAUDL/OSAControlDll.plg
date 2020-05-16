@@ -1,0 +1,69 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: OSAControlDll - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x804 /fo"Debug/OSAUDL.res" /d "_DEBUG" "C:\Users\wwang89\OneDrive - kochind.com\WorkShop\Project\Platfrom\UDL\NetVersion\code\UDL_Client\OSAUDL\OSAUDL.rc"" 
+Creating temporary file "C:\Users\wwang89\AppData\Local\Temp\RSP73B9.tmp" with contents
+[
+/nologo /MTd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_MBCS" /D "OSACONTROLDLL_EXPORTS" /Fp"Debug/OSAControlDll.pch" /Yu"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"C:\Users\wwang89\OneDrive - kochind.com\WorkShop\Project\Platfrom\UDL\NetVersion\code\UDL_Client\OSAUDL\AgilentOSA.cpp"
+"C:\Users\wwang89\OneDrive - kochind.com\WorkShop\Project\Platfrom\UDL\NetVersion\code\UDL_Client\OSAUDL\OSA_AQ6317B.cpp"
+"C:\Users\wwang89\OneDrive - kochind.com\WorkShop\Project\Platfrom\UDL\NetVersion\code\UDL_Client\OSAUDL\OSA_AQ6370B.cpp"
+"C:\Users\wwang89\OneDrive - kochind.com\WorkShop\Project\Platfrom\UDL\NetVersion\code\UDL_Client\OSAUDL\OSAControl.cpp"
+"C:\Users\wwang89\OneDrive - kochind.com\WorkShop\Project\Platfrom\UDL\NetVersion\code\UDL_Client\OSAUDL\OSAControlDll.cpp"
+]
+Creating command line "cl.exe @C:\Users\wwang89\AppData\Local\Temp\RSP73B9.tmp" 
+Creating temporary file "C:\Users\wwang89\AppData\Local\Temp\RSP73BA.tmp" with contents
+[
+/nologo /MTd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_MBCS" /D "OSACONTROLDLL_EXPORTS" /Fp"Debug/OSAControlDll.pch" /Yc"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"C:\Users\wwang89\OneDrive - kochind.com\WorkShop\Project\Platfrom\UDL\NetVersion\code\UDL_Client\OSAUDL\StdAfx.cpp"
+]
+Creating command line "cl.exe @C:\Users\wwang89\AppData\Local\Temp\RSP73BA.tmp" 
+Creating temporary file "C:\Users\wwang89\AppData\Local\Temp\RSP73BB.tmp" with contents
+[
+kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /nologo /dll /incremental:yes /pdb:"../lib/UDL.OSA.pdb" /debug /machine:I386 /out:"../bin/UDL.OSA.dll " /implib:"../lib/UDL.OSA.lib" /pdbtype:sept 
+".\Debug\AgilentOSA.obj"
+".\Debug\OSA_AQ6317B.obj"
+".\Debug\OSA_AQ6370B.obj"
+".\Debug\OSAControl.obj"
+".\Debug\OSAControlDll.obj"
+".\Debug\StdAfx.obj"
+".\Debug\OSAUDL.res"
+]
+Creating command line "link.exe @C:\Users\wwang89\AppData\Local\Temp\RSP73BB.tmp"
+<h3>Output Window</h3>
+Compiling resources...
+Compiling...
+StdAfx.cpp
+Compiling...
+AgilentOSA.cpp
+OSA_AQ6317B.cpp
+C:\Users\wwang89\OneDrive - kochind.com\WorkShop\Project\Platfrom\UDL\NetVersion\code\UDL_Client\OSAUDL\OSA_AQ6317B.cpp(1587) : warning C4101: 'szCmdString' : unreferenced local variable
+C:\Users\wwang89\OneDrive - kochind.com\WorkShop\Project\Platfrom\UDL\NetVersion\code\UDL_Client\OSAUDL\OSA_AQ6317B.cpp(1643) : warning C4101: 'dwBytesReturned' : unreferenced local variable
+C:\Users\wwang89\OneDrive - kochind.com\WorkShop\Project\Platfrom\UDL\NetVersion\code\UDL_Client\OSAUDL\OSA_AQ6317B.cpp(1640) : warning C4101: 'iBit' : unreferenced local variable
+C:\Users\wwang89\OneDrive - kochind.com\WorkShop\Project\Platfrom\UDL\NetVersion\code\UDL_Client\OSAUDL\OSA_AQ6317B.cpp(1644) : warning C4101: 'chFileName' : unreferenced local variable
+C:\Users\wwang89\OneDrive - kochind.com\WorkShop\Project\Platfrom\UDL\NetVersion\code\UDL_Client\OSAUDL\OSA_AQ6317B.cpp(1638) : warning C4101: 'pchBMPData' : unreferenced local variable
+C:\Users\wwang89\OneDrive - kochind.com\WorkShop\Project\Platfrom\UDL\NetVersion\code\UDL_Client\OSAUDL\OSA_AQ6317B.cpp(1639) : warning C4101: 'iBmpLength' : unreferenced local variable
+C:\Users\wwang89\OneDrive - kochind.com\WorkShop\Project\Platfrom\UDL\NetVersion\code\UDL_Client\OSAUDL\OSA_AQ6317B.cpp(1642) : warning C4101: 'dwSpareCount' : unreferenced local variable
+C:\Users\wwang89\OneDrive - kochind.com\WorkShop\Project\Platfrom\UDL\NetVersion\code\UDL_Client\OSAUDL\OSA_AQ6317B.cpp(1645) : warning C4101: 'hFile' : unreferenced local variable
+C:\Users\wwang89\OneDrive - kochind.com\WorkShop\Project\Platfrom\UDL\NetVersion\code\UDL_Client\OSAUDL\OSA_AQ6317B.cpp(1641) : warning C4101: 'iReadCount' : unreferenced local variable
+C:\Users\wwang89\OneDrive - kochind.com\WorkShop\Project\Platfrom\UDL\NetVersion\code\UDL_Client\OSAUDL\OSA_AQ6317B.cpp(1635) : warning C4101: 'chSend' : unreferenced local variable
+C:\Users\wwang89\OneDrive - kochind.com\WorkShop\Project\Platfrom\UDL\NetVersion\code\UDL_Client\OSAUDL\OSA_AQ6317B.cpp(1865) : warning C4101: 'szDataStream' : unreferenced local variable
+OSA_AQ6370B.cpp
+OSAControl.cpp
+OSAControlDll.cpp
+Generating Code...
+Linking...
+   Creating library ../lib/UDL.OSA.lib and object ../lib/UDL.OSA.exp
+
+
+
+<h3>Results</h3>
+UDL.OSA.dll - 0 error(s), 11 warning(s)
+</pre>
+</body>
+</html>

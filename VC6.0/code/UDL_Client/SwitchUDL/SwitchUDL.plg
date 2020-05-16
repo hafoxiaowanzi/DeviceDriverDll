@@ -1,0 +1,51 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: SwitchUDL - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x804 /fo"Debug/SwitchUDL.res" /d "_DEBUG" "E:\Project\testgroup\UDLDriver\NetVersion\code\UDL_Client\SwitchUDL\SwitchUDL.rc"" 
+Creating temporary file "C:\Users\wanxin\AppData\Local\Temp\RSP2CCC.tmp" with contents
+[
+/nologo /MTd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_MBCS" /D "SWITCHUDL_EXPORTS" /Fp"Debug/SwitchUDL.pch" /YX /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"E:\Project\testgroup\UDLDriver\NetVersion\code\UDL_Client\SwitchUDL\IT_1X2SW.cpp"
+"E:\Project\testgroup\UDLDriver\NetVersion\code\UDL_Client\SwitchUDL\IT_1X8SW.cpp"
+"E:\Project\testgroup\UDLDriver\NetVersion\code\UDL_Client\SwitchUDL\OMS_1X64SW.cpp"
+"E:\Project\testgroup\UDLDriver\NetVersion\code\UDL_Client\SwitchUDL\StdAfx.cpp"
+"E:\Project\testgroup\UDLDriver\NetVersion\code\UDL_Client\SwitchUDL\SwitchControl.cpp"
+"E:\Project\testgroup\UDLDriver\NetVersion\code\UDL_Client\SwitchUDL\SwitchDll.cpp"
+]
+Creating command line "cl.exe @C:\Users\wanxin\AppData\Local\Temp\RSP2CCC.tmp" 
+Creating temporary file "C:\Users\wanxin\AppData\Local\Temp\RSP2CDD.tmp" with contents
+[
+kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /nologo /dll /incremental:yes /pdb:"../lib/UDL.Switch.pdb" /debug /machine:I386 /out:"../bin/UDL.Switch.dll" /implib:"../lib/UDL.Switch.lib" /pdbtype:sept 
+.\Debug\IT_1X2SW.obj
+.\Debug\IT_1X8SW.obj
+.\Debug\OMS_1X64SW.obj
+.\Debug\StdAfx.obj
+.\Debug\SwitchControl.obj
+.\Debug\SwitchDll.obj
+.\Debug\SwitchUDL.res
+]
+Creating command line "link.exe @C:\Users\wanxin\AppData\Local\Temp\RSP2CDD.tmp"
+<h3>Output Window</h3>
+Compiling resources...
+Compiling...
+IT_1X2SW.cpp
+IT_1X8SW.cpp
+OMS_1X64SW.cpp
+StdAfx.cpp
+SwitchControl.cpp
+SwitchDll.cpp
+Linking...
+   Creating library ../lib/UDL.Switch.lib and object ../lib/UDL.Switch.exp
+
+
+
+<h3>Results</h3>
+UDL.Switch.dll - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

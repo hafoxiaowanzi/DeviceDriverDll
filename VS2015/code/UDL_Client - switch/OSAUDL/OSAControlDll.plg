@@ -1,0 +1,33 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: OSAControlDll - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x804 /fo"Release/OSAUDL.res" /d "NDEBUG" "E:\Project\testgroup\UDLDriver\NetVersion\code\UDL_Client - switch\OSAUDL\OSAUDL.rc"" 
+Creating temporary file "C:\Users\wanxin\AppData\Local\Temp\RSPAA3A.tmp" with contents
+[
+kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /nologo /dll /incremental:no /pdb:"../lib/UDL.OSA.pdb" /machine:I386 /out:"../bin/UDL.OSA.dll " /implib:"../lib/UDL.OSA.lib" 
+".\Release\AgilentOSA.obj"
+".\Release\OSA_AQ6317B.obj"
+".\Release\OSA_AQ6370B.obj"
+".\Release\OSAControl.obj"
+".\Release\OSAControlDll.obj"
+".\Release\StdAfx.obj"
+".\Release\OSAUDL.res"
+]
+Creating command line "link.exe @C:\Users\wanxin\AppData\Local\Temp\RSPAA3A.tmp"
+<h3>Output Window</h3>
+Compiling resources...
+Linking...
+   Creating library ../lib/UDL.OSA.lib and object ../lib/UDL.OSA.exp
+
+
+
+<h3>Results</h3>
+UDL.OSA.dll - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

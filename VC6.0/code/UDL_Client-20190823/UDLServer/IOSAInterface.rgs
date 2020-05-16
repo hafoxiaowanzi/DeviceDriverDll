@@ -1,0 +1,26 @@
+HKCR
+{
+	UDLServer.IOSAInterface.1 = s 'IOSAInterface Class'
+	{
+		CLSID = s '{B4E0C31C-404B-41A6-843C-64770AA349B0}'
+	}
+	UDLServer.IOSAInterface = s 'IOSAInterface Class'
+	{
+		CLSID = s '{B4E0C31C-404B-41A6-843C-64770AA349B0}'
+		CurVer = s 'UDLServer.IOSAInterface.1'
+	}
+	NoRemove CLSID
+	{
+		ForceRemove {B4E0C31C-404B-41A6-843C-64770AA349B0} = s 'IOSAInterface Class'
+		{
+			ProgID = s 'UDLServer.IOSAInterface.1'
+			VersionIndependentProgID = s 'UDLServer.IOSAInterface'
+			ForceRemove 'Programmable'
+			InprocServer32 = s '%MODULE%'
+			{
+				val ThreadingModel = s 'Apartment'
+			}
+			'TypeLib' = s '{7FA750BF-178D-475A-9AA1-DEB556BB0E95}'
+		}
+	}
+}

@@ -1,0 +1,91 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: VOAControlDll - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x804 /fo"Release/VOAControlDll.res" /d "NDEBUG" "E:\Project\testgroup\UDLDriver\NetVersion\code\UDL_Client - switch\VOAUDL\VOAControlDll.rc"" 
+Creating temporary file "C:\Users\wanxin\AppData\Local\Temp\RSPBAC2.tmp" with contents
+[
+/nologo /MT /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_MBCS" /D "_USRDLL" /D "VOACONTROLDLL_EXPORTS" /FR"Release/" /Fp"Release/VOAControlDll.pch" /Yu"stdafx.h" /Fo"Release/" /Fd"Release/" /FD /c 
+"E:\Project\testgroup\UDLDriver\NetVersion\code\UDL_Client - switch\VOAUDL\Aglient8164VOA.cpp"
+"E:\Project\testgroup\UDLDriver\NetVersion\code\UDL_Client - switch\VOAUDL\AQ2200_311A.cpp"
+"E:\Project\testgroup\UDLDriver\NetVersion\code\UDL_Client - switch\VOAUDL\AQ3150.cpp"
+"E:\Project\testgroup\UDLDriver\NetVersion\code\UDL_Client - switch\VOAUDL\Hp8156A.cpp"
+"E:\Project\testgroup\UDLDriver\NetVersion\code\UDL_Client - switch\VOAUDL\OplkDulVOA .cpp"
+"E:\Project\testgroup\UDLDriver\NetVersion\code\UDL_Client - switch\VOAUDL\OplkMEMSVOA.cpp"
+"E:\Project\testgroup\UDLDriver\NetVersion\code\UDL_Client - switch\VOAUDL\OplkR153SVOA.cpp"
+"E:\Project\testgroup\UDLDriver\NetVersion\code\UDL_Client - switch\VOAUDL\SantecTLSVOA.cpp"
+"E:\Project\testgroup\UDLDriver\NetVersion\code\UDL_Client - switch\VOAUDL\VOAControl.cpp"
+"E:\Project\testgroup\UDLDriver\NetVersion\code\UDL_Client - switch\VOAUDL\VOAControlDll.cpp"
+]
+Creating command line "cl.exe @C:\Users\wanxin\AppData\Local\Temp\RSPBAC2.tmp" 
+Creating temporary file "C:\Users\wanxin\AppData\Local\Temp\RSPBAD2.tmp" with contents
+[
+/nologo /MT /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_MBCS" /D "_USRDLL" /D "VOACONTROLDLL_EXPORTS" /FR"Release/" /Fp"Release/VOAControlDll.pch" /Yc"stdafx.h" /Fo"Release/" /Fd"Release/" /FD /c 
+"E:\Project\testgroup\UDLDriver\NetVersion\code\UDL_Client - switch\VOAUDL\StdAfx.cpp"
+]
+Creating command line "cl.exe @C:\Users\wanxin\AppData\Local\Temp\RSPBAD2.tmp" 
+Creating temporary file "C:\Users\wanxin\AppData\Local\Temp\RSPBAE3.tmp" with contents
+[
+kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /nologo /dll /incremental:no /pdb:"../lib/UDL.VOA.pdb" /machine:I386 /out:"../bin/UDL.VOA.dll" /implib:"../lib/UDL.VOA.lib" 
+".\Release\Aglient8164VOA.obj"
+".\Release\AQ2200_311A.obj"
+".\Release\AQ3150.obj"
+".\Release\Hp8156A.obj"
+".\Release\OplkDulVOA .obj"
+".\Release\OplkMEMSVOA.obj"
+".\Release\OplkR153SVOA.obj"
+".\Release\SantecTLSVOA.obj"
+".\Release\StdAfx.obj"
+".\Release\VOAControl.obj"
+".\Release\VOAControlDll.obj"
+".\Release\VOAControlDll.res"
+]
+Creating command line "link.exe @C:\Users\wanxin\AppData\Local\Temp\RSPBAE3.tmp"
+<h3>Output Window</h3>
+Compiling resources...
+Compiling...
+StdAfx.cpp
+Compiling...
+Aglient8164VOA.cpp
+AQ2200_311A.cpp
+AQ3150.cpp
+Hp8156A.cpp
+OplkDulVOA .cpp
+OplkMEMSVOA.cpp
+OplkR153SVOA.cpp
+E:\Project\testgroup\UDLDriver\NetVersion\code\UDL_Client - switch\VOAUDL\OplkR153SVOA.cpp(342) : warning C4101: 'pchRxData' : unreferenced local variable
+E:\Project\testgroup\UDLDriver\NetVersion\code\UDL_Client - switch\VOAUDL\OplkR153SVOA.cpp(343) : warning C4101: 'pchTemp' : unreferenced local variable
+E:\Project\testgroup\UDLDriver\NetVersion\code\UDL_Client - switch\VOAUDL\OplkR153SVOA.cpp(342) : warning C4101: 'pchTxData' : unreferenced local variable
+E:\Project\testgroup\UDLDriver\NetVersion\code\UDL_Client - switch\VOAUDL\OplkR153SVOA.cpp(344) : warning C4101: 'bIndex' : unreferenced local variable
+E:\Project\testgroup\UDLDriver\NetVersion\code\UDL_Client - switch\VOAUDL\OplkR153SVOA.cpp(344) : warning C4101: 'bTxDataLength' : unreferenced local variable
+E:\Project\testgroup\UDLDriver\NetVersion\code\UDL_Client - switch\VOAUDL\OplkR153SVOA.cpp(409) : warning C4101: 'nTempValue' : unreferenced local variable
+E:\Project\testgroup\UDLDriver\NetVersion\code\UDL_Client - switch\VOAUDL\OplkR153SVOA.cpp(508) : warning C4101: 'pchRxData' : unreferenced local variable
+E:\Project\testgroup\UDLDriver\NetVersion\code\UDL_Client - switch\VOAUDL\OplkR153SVOA.cpp(509) : warning C4101: 'bIndex' : unreferenced local variable
+SantecTLSVOA.cpp
+E:\Project\testgroup\UDLDriver\NetVersion\code\UDL_Client - switch\VOAUDL\SantecTLSVOA.cpp(91) : warning C4101: 'pchTemp' : unreferenced local variable
+E:\Project\testgroup\UDLDriver\NetVersion\code\UDL_Client - switch\VOAUDL\SantecTLSVOA.cpp(222) : warning C4101: 'pchTemp' : unreferenced local variable
+E:\Project\testgroup\UDLDriver\NetVersion\code\UDL_Client - switch\VOAUDL\SantecTLSVOA.cpp(273) : warning C4101: 'pchTemp' : unreferenced local variable
+E:\Project\testgroup\UDLDriver\NetVersion\code\UDL_Client - switch\VOAUDL\SantecTLSVOA.cpp(326) : warning C4101: 'pchRxData' : unreferenced local variable
+E:\Project\testgroup\UDLDriver\NetVersion\code\UDL_Client - switch\VOAUDL\SantecTLSVOA.cpp(327) : warning C4101: 'pchTemp' : unreferenced local variable
+E:\Project\testgroup\UDLDriver\NetVersion\code\UDL_Client - switch\VOAUDL\SantecTLSVOA.cpp(328) : warning C4101: 'bIndex' : unreferenced local variable
+E:\Project\testgroup\UDLDriver\NetVersion\code\UDL_Client - switch\VOAUDL\SantecTLSVOA.cpp(375) : warning C4101: 'bRxData' : unreferenced local variable
+E:\Project\testgroup\UDLDriver\NetVersion\code\UDL_Client - switch\VOAUDL\SantecTLSVOA.cpp(376) : warning C4101: 'bIndex' : unreferenced local variable
+E:\Project\testgroup\UDLDriver\NetVersion\code\UDL_Client - switch\VOAUDL\SantecTLSVOA.cpp(485) : warning C4101: 'pchRxData' : unreferenced local variable
+E:\Project\testgroup\UDLDriver\NetVersion\code\UDL_Client - switch\VOAUDL\SantecTLSVOA.cpp(486) : warning C4101: 'bIndex' : unreferenced local variable
+VOAControl.cpp
+VOAControlDll.cpp
+Generating Code...
+Linking...
+   Creating library ../lib/UDL.VOA.lib and object ../lib/UDL.VOA.exp
+
+
+
+<h3>Results</h3>
+UDL.VOA.dll - 0 error(s), 18 warning(s)
+</pre>
+</body>
+</html>

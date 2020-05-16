@@ -1,0 +1,26 @@
+HKCR
+{
+	UDLServer.IComDevInterface.1 = s 'IComDevInterface Class'
+	{
+		CLSID = s '{CB4F7BD8-2FC4-40C9-8F8F-C2FF01E5EA63}'
+	}
+	UDLServer.IComDevInterface = s 'IComDevInterface Class'
+	{
+		CLSID = s '{CB4F7BD8-2FC4-40C9-8F8F-C2FF01E5EA63}'
+		CurVer = s 'UDLServer.IComDevInterface.1'
+	}
+	NoRemove CLSID
+	{
+		ForceRemove {CB4F7BD8-2FC4-40C9-8F8F-C2FF01E5EA63} = s 'IComDevInterface Class'
+		{
+			ProgID = s 'UDLServer.IComDevInterface.1'
+			VersionIndependentProgID = s 'UDLServer.IComDevInterface'
+			ForceRemove 'Programmable'
+			InprocServer32 = s '%MODULE%'
+			{
+				val ThreadingModel = s 'Apartment'
+			}
+			'TypeLib' = s '{7FA750BF-178D-475A-9AA1-DEB556BB0E95}'
+		}
+	}
+}

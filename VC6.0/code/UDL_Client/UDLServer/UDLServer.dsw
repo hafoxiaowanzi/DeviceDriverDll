@@ -1,0 +1,176 @@
+Microsoft Developer Studio Workspace File, Format Version 6.00
+# WARNING: DO NOT EDIT OR DELETE THIS WORKSPACE FILE!
+
+###############################################################################
+
+Project: "ChamberContrlDll"=..\ChamberContrlDll\ChamberContrlDll.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "CommunicationDLL"=..\CommunicationDLL\CommunicationDLL.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "DT0ASwitchBox"=..\DT0ASwitchBox\DT0ASwitchBox.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "OSAControlDll"=..\OSAUDL\OSAControlDll.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "PMControlDll"=..\PMUDL\PMControlDll.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "POCUDL"=..\POCUDL\PolControl.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "SwitchUDL"=..\SwitchUDL\SwitchUDL.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "TLSControlDll"=..\TLSUDL\TLSControlDll.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "TestUDL"=..\TestUDL\TestUDL.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+    Begin Project Dependency
+    Project_Dep_Name ChamberContrlDll
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name CommunicationDLL
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name OSAControlDll
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name PMControlDll
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name POCUDL
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name TLSControlDll
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name UDLServer
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name VOAControlDll
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name SwitchUDL
+    End Project Dependency
+}}}
+
+###############################################################################
+
+Project: "UDLServer"=.\UDLServer.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "VOAControlDll"=..\VOAUDL\VOAControlDll.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Global:
+
+Package=<5>
+{{{
+}}}
+
+Package=<3>
+{{{
+}}}
+
+###############################################################################
+

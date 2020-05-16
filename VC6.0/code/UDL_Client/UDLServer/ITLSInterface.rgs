@@ -1,0 +1,26 @@
+HKCR
+{
+	UDLServer.ITLSInterface.1 = s 'ITLSInterface Class'
+	{
+		CLSID = s '{82E74FAE-D809-47C0-8CD3-7F653CBB4FD8}'
+	}
+	UDLServer.ITLSInterface = s 'ITLSInterface Class'
+	{
+		CLSID = s '{82E74FAE-D809-47C0-8CD3-7F653CBB4FD8}'
+		CurVer = s 'UDLServer.ITLSInterface.1'
+	}
+	NoRemove CLSID
+	{
+		ForceRemove {82E74FAE-D809-47C0-8CD3-7F653CBB4FD8} = s 'ITLSInterface Class'
+		{
+			ProgID = s 'UDLServer.ITLSInterface.1'
+			VersionIndependentProgID = s 'UDLServer.ITLSInterface'
+			ForceRemove 'Programmable'
+			InprocServer32 = s '%MODULE%'
+			{
+				val ThreadingModel = s 'Apartment'
+			}
+			'TypeLib' = s '{7FA750BF-178D-475A-9AA1-DEB556BB0E95}'
+		}
+	}
+}

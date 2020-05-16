@@ -1,0 +1,91 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: VOAControlDll - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x804 /fo"Debug/VOAControlDll.res" /d "_DEBUG" "C:\Users\wwang89\OneDrive - kochind.com\WorkShop\Project\Platfrom\UDL\NetVersion\code\UDL_Client\VOAUDL\VOAControlDll.rc"" 
+Creating temporary file "C:\Users\wwang89\AppData\Local\Temp\RSPCEB7.tmp" with contents
+[
+/nologo /MTd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_MBCS" /D "VOACONTROLDLL_EXPORTS" /Fp"Debug/VOAControlDll.pch" /Yu"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"C:\Users\wwang89\OneDrive - kochind.com\WorkShop\Project\Platfrom\UDL\NetVersion\code\UDL_Client\VOAUDL\Aglient8164VOA.cpp"
+"C:\Users\wwang89\OneDrive - kochind.com\WorkShop\Project\Platfrom\UDL\NetVersion\code\UDL_Client\VOAUDL\AQ2200_311A.cpp"
+"C:\Users\wwang89\OneDrive - kochind.com\WorkShop\Project\Platfrom\UDL\NetVersion\code\UDL_Client\VOAUDL\AQ3150.cpp"
+"C:\Users\wwang89\OneDrive - kochind.com\WorkShop\Project\Platfrom\UDL\NetVersion\code\UDL_Client\VOAUDL\Hp8156A.cpp"
+"C:\Users\wwang89\OneDrive - kochind.com\WorkShop\Project\Platfrom\UDL\NetVersion\code\UDL_Client\VOAUDL\OplkDulVOA .cpp"
+"C:\Users\wwang89\OneDrive - kochind.com\WorkShop\Project\Platfrom\UDL\NetVersion\code\UDL_Client\VOAUDL\OplkMEMSVOA.cpp"
+"C:\Users\wwang89\OneDrive - kochind.com\WorkShop\Project\Platfrom\UDL\NetVersion\code\UDL_Client\VOAUDL\OplkR153SVOA.cpp"
+"C:\Users\wwang89\OneDrive - kochind.com\WorkShop\Project\Platfrom\UDL\NetVersion\code\UDL_Client\VOAUDL\SantecTLSVOA.cpp"
+"C:\Users\wwang89\OneDrive - kochind.com\WorkShop\Project\Platfrom\UDL\NetVersion\code\UDL_Client\VOAUDL\VOAControl.cpp"
+"C:\Users\wwang89\OneDrive - kochind.com\WorkShop\Project\Platfrom\UDL\NetVersion\code\UDL_Client\VOAUDL\VOAControlDll.cpp"
+]
+Creating command line "cl.exe @C:\Users\wwang89\AppData\Local\Temp\RSPCEB7.tmp" 
+Creating temporary file "C:\Users\wwang89\AppData\Local\Temp\RSPCEB8.tmp" with contents
+[
+/nologo /MTd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_MBCS" /D "VOACONTROLDLL_EXPORTS" /Fp"Debug/VOAControlDll.pch" /Yc"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"C:\Users\wwang89\OneDrive - kochind.com\WorkShop\Project\Platfrom\UDL\NetVersion\code\UDL_Client\VOAUDL\StdAfx.cpp"
+]
+Creating command line "cl.exe @C:\Users\wwang89\AppData\Local\Temp\RSPCEB8.tmp" 
+Creating temporary file "C:\Users\wwang89\AppData\Local\Temp\RSPCEB9.tmp" with contents
+[
+kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /nologo /dll /incremental:yes /pdb:"../lib/UDL.VOA.pdb" /debug /machine:I386 /out:"../bin/UDL.VOA.dll" /implib:"../lib/UDL.VOA.lib" /pdbtype:sept 
+".\Debug\Aglient8164VOA.obj"
+".\Debug\AQ2200_311A.obj"
+".\Debug\AQ3150.obj"
+".\Debug\Hp8156A.obj"
+".\Debug\OplkDulVOA .obj"
+".\Debug\OplkMEMSVOA.obj"
+".\Debug\OplkR153SVOA.obj"
+".\Debug\SantecTLSVOA.obj"
+".\Debug\StdAfx.obj"
+".\Debug\VOAControl.obj"
+".\Debug\VOAControlDll.obj"
+".\Debug\VOAControlDll.res"
+]
+Creating command line "link.exe @C:\Users\wwang89\AppData\Local\Temp\RSPCEB9.tmp"
+<h3>Output Window</h3>
+Compiling resources...
+Compiling...
+StdAfx.cpp
+Compiling...
+Aglient8164VOA.cpp
+AQ2200_311A.cpp
+AQ3150.cpp
+Hp8156A.cpp
+OplkDulVOA .cpp
+OplkMEMSVOA.cpp
+OplkR153SVOA.cpp
+C:\Users\wwang89\OneDrive - kochind.com\WorkShop\Project\Platfrom\UDL\NetVersion\code\UDL_Client\VOAUDL\OplkR153SVOA.cpp(342) : warning C4101: 'pchRxData' : unreferenced local variable
+C:\Users\wwang89\OneDrive - kochind.com\WorkShop\Project\Platfrom\UDL\NetVersion\code\UDL_Client\VOAUDL\OplkR153SVOA.cpp(343) : warning C4101: 'pchTemp' : unreferenced local variable
+C:\Users\wwang89\OneDrive - kochind.com\WorkShop\Project\Platfrom\UDL\NetVersion\code\UDL_Client\VOAUDL\OplkR153SVOA.cpp(342) : warning C4101: 'pchTxData' : unreferenced local variable
+C:\Users\wwang89\OneDrive - kochind.com\WorkShop\Project\Platfrom\UDL\NetVersion\code\UDL_Client\VOAUDL\OplkR153SVOA.cpp(344) : warning C4101: 'bIndex' : unreferenced local variable
+C:\Users\wwang89\OneDrive - kochind.com\WorkShop\Project\Platfrom\UDL\NetVersion\code\UDL_Client\VOAUDL\OplkR153SVOA.cpp(344) : warning C4101: 'bTxDataLength' : unreferenced local variable
+C:\Users\wwang89\OneDrive - kochind.com\WorkShop\Project\Platfrom\UDL\NetVersion\code\UDL_Client\VOAUDL\OplkR153SVOA.cpp(409) : warning C4101: 'nTempValue' : unreferenced local variable
+C:\Users\wwang89\OneDrive - kochind.com\WorkShop\Project\Platfrom\UDL\NetVersion\code\UDL_Client\VOAUDL\OplkR153SVOA.cpp(508) : warning C4101: 'pchRxData' : unreferenced local variable
+C:\Users\wwang89\OneDrive - kochind.com\WorkShop\Project\Platfrom\UDL\NetVersion\code\UDL_Client\VOAUDL\OplkR153SVOA.cpp(509) : warning C4101: 'bIndex' : unreferenced local variable
+SantecTLSVOA.cpp
+C:\Users\wwang89\OneDrive - kochind.com\WorkShop\Project\Platfrom\UDL\NetVersion\code\UDL_Client\VOAUDL\SantecTLSVOA.cpp(91) : warning C4101: 'pchTemp' : unreferenced local variable
+C:\Users\wwang89\OneDrive - kochind.com\WorkShop\Project\Platfrom\UDL\NetVersion\code\UDL_Client\VOAUDL\SantecTLSVOA.cpp(222) : warning C4101: 'pchTemp' : unreferenced local variable
+C:\Users\wwang89\OneDrive - kochind.com\WorkShop\Project\Platfrom\UDL\NetVersion\code\UDL_Client\VOAUDL\SantecTLSVOA.cpp(273) : warning C4101: 'pchTemp' : unreferenced local variable
+C:\Users\wwang89\OneDrive - kochind.com\WorkShop\Project\Platfrom\UDL\NetVersion\code\UDL_Client\VOAUDL\SantecTLSVOA.cpp(326) : warning C4101: 'pchRxData' : unreferenced local variable
+C:\Users\wwang89\OneDrive - kochind.com\WorkShop\Project\Platfrom\UDL\NetVersion\code\UDL_Client\VOAUDL\SantecTLSVOA.cpp(327) : warning C4101: 'pchTemp' : unreferenced local variable
+C:\Users\wwang89\OneDrive - kochind.com\WorkShop\Project\Platfrom\UDL\NetVersion\code\UDL_Client\VOAUDL\SantecTLSVOA.cpp(328) : warning C4101: 'bIndex' : unreferenced local variable
+C:\Users\wwang89\OneDrive - kochind.com\WorkShop\Project\Platfrom\UDL\NetVersion\code\UDL_Client\VOAUDL\SantecTLSVOA.cpp(375) : warning C4101: 'bRxData' : unreferenced local variable
+C:\Users\wwang89\OneDrive - kochind.com\WorkShop\Project\Platfrom\UDL\NetVersion\code\UDL_Client\VOAUDL\SantecTLSVOA.cpp(376) : warning C4101: 'bIndex' : unreferenced local variable
+C:\Users\wwang89\OneDrive - kochind.com\WorkShop\Project\Platfrom\UDL\NetVersion\code\UDL_Client\VOAUDL\SantecTLSVOA.cpp(485) : warning C4101: 'pchRxData' : unreferenced local variable
+C:\Users\wwang89\OneDrive - kochind.com\WorkShop\Project\Platfrom\UDL\NetVersion\code\UDL_Client\VOAUDL\SantecTLSVOA.cpp(486) : warning C4101: 'bIndex' : unreferenced local variable
+VOAControl.cpp
+VOAControlDll.cpp
+Generating Code...
+Linking...
+   Creating library ../lib/UDL.VOA.lib and object ../lib/UDL.VOA.exp
+
+
+
+<h3>Results</h3>
+UDL.VOA.dll - 0 error(s), 18 warning(s)
+</pre>
+</body>
+</html>

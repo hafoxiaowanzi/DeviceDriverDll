@@ -1,0 +1,931 @@
+// Created by Microsoft (R) C/C++ Compiler Version 12.00.9782.0 (b00b12eb).
+//
+// e:\project\testgroup\udldriver\netversion\code\udl_server\src\release\UDL.DLM.tlh
+//
+// C++ source equivalent of Win32 type library C:\\windows\\system32\\UDL.DLM.dll
+// compiler-generated file created 03/23/17 at 14:40:03 - DO NOT EDIT!
+
+#pragma once
+#pragma pack(push, 8)
+
+#include <comdef.h>
+
+namespace UDLSERVERLib {
+
+//
+// Forward references and typedefs
+//
+
+struct __declspec(uuid("f34ae487-9066-4f9e-af71-7c1cba2e9692"))
+/* dispinterface */ _IEngineMgrEvents;
+struct /* coclass */ EngineMgr;
+struct __declspec(uuid("9cebb9df-8ee5-42e8-bc16-38d0d22267a7"))
+/* dual interface */ IEngineMgr;
+struct __declspec(uuid("cdf068ab-a4f9-45fc-8742-c1272fc4f1b0"))
+/* dispinterface */ _IEnginePtrEvents;
+struct __declspec(uuid("0b50a5fa-6d5a-46d3-ba2b-3608fef0976a"))
+/* dual interface */ IITLSInterface;
+struct __declspec(uuid("a078cfde-41c1-45d2-adc9-20e8b128996b"))
+/* dual interface */ IIPMInterface;
+struct __declspec(uuid("a1b84183-a9ef-41d9-a894-d008cbb0d5e4"))
+/* dual interface */ IIVOAInterface;
+struct __declspec(uuid("104889a9-452e-419f-85e0-ea5aeb72dbca"))
+/* dual interface */ IIOSAInterface;
+struct __declspec(uuid("af1a856a-f3e6-4461-9dc4-f1f87ea61f37"))
+/* dual interface */ IIPolInterface;
+struct __declspec(uuid("7cde6be4-4b5c-46dc-99c5-1b680178713f"))
+/* dual interface */ IScanInterface;
+struct __declspec(uuid("89a6fde2-516b-4432-af08-1dce005d0b1e"))
+/* dual interface */ IChamberInterface;
+struct __declspec(uuid("309343a5-a079-4f81-9da2-fe2d0538dc2d"))
+/* dual interface */ IIComDevInterface;
+struct /* coclass */ ITLSInterface;
+struct /* coclass */ IPMInterface;
+struct /* coclass */ IVOAInterface;
+struct /* coclass */ IOSAInterface;
+struct /* coclass */ IPolInterface;
+struct /* coclass */ ScanInterface;
+struct /* coclass */ ChamberInterface;
+struct /* coclass */ IComDevInterface;
+
+//
+// Smart pointer typedef declarations
+//
+
+_COM_SMARTPTR_TYPEDEF(_IEngineMgrEvents, __uuidof(IDispatch));
+_COM_SMARTPTR_TYPEDEF(IEngineMgr, __uuidof(IEngineMgr));
+_COM_SMARTPTR_TYPEDEF(_IEnginePtrEvents, __uuidof(IDispatch));
+_COM_SMARTPTR_TYPEDEF(IITLSInterface, __uuidof(IITLSInterface));
+_COM_SMARTPTR_TYPEDEF(IIPMInterface, __uuidof(IIPMInterface));
+_COM_SMARTPTR_TYPEDEF(IIVOAInterface, __uuidof(IIVOAInterface));
+_COM_SMARTPTR_TYPEDEF(IIOSAInterface, __uuidof(IIOSAInterface));
+_COM_SMARTPTR_TYPEDEF(IIPolInterface, __uuidof(IIPolInterface));
+_COM_SMARTPTR_TYPEDEF(IScanInterface, __uuidof(IScanInterface));
+_COM_SMARTPTR_TYPEDEF(IChamberInterface, __uuidof(IChamberInterface));
+_COM_SMARTPTR_TYPEDEF(IIComDevInterface, __uuidof(IIComDevInterface));
+
+//
+// Type library items
+//
+
+struct __declspec(uuid("f34ae487-9066-4f9e-af71-7c1cba2e9692"))
+_IEngineMgrEvents : IDispatch
+{};
+
+struct __declspec(uuid("b73f2e4c-a43f-48bb-ba61-e25b4d2b96af"))
+EngineMgr;
+    // [ default ] interface IEngineMgr
+    // [ default, source ] dispinterface _IEngineMgrEvents
+
+struct __declspec(uuid("9cebb9df-8ee5-42e8-bc16-38d0d22267a7"))
+IEngineMgr : IDispatch
+{
+    //
+    // Property data
+    //
+
+    __declspec(property(get=GetGetVersion,put=PutGetVersion))
+    _bstr_t GetVersion;
+    __declspec(property(get=GetGetLastMessage,put=PutGetLastMessage))
+    _bstr_t GetLastMessage;
+
+    //
+    // Wrapper methods for error-handling
+    //
+
+    _bstr_t GetGetVersion ( );
+    void PutGetVersion (
+        _bstr_t pVal );
+    _bstr_t GetGetLastMessage ( );
+    void PutGetLastMessage (
+        _bstr_t pVal );
+    HRESULT OpenEngine ( );
+    HRESULT LoadConfiguration (
+        _bstr_t FileName );
+    HRESULT RegisterUDL ( );
+    HRESULT SetUDLNET (
+        long bIsNet );
+    HRESULT ConnectToServer (
+        _bstr_t pstrIPAddress );
+
+    //
+    // Raw methods provided by interface
+    //
+
+    virtual HRESULT __stdcall get_GetVersion (
+        BSTR * pVal ) = 0;
+    virtual HRESULT __stdcall put_GetVersion (
+        BSTR pVal ) = 0;
+    virtual HRESULT __stdcall get_GetLastMessage (
+        BSTR * pVal ) = 0;
+    virtual HRESULT __stdcall put_GetLastMessage (
+        BSTR pVal ) = 0;
+    virtual HRESULT __stdcall raw_OpenEngine ( ) = 0;
+    virtual HRESULT __stdcall raw_LoadConfiguration (
+        BSTR FileName ) = 0;
+    virtual HRESULT __stdcall raw_RegisterUDL ( ) = 0;
+    virtual HRESULT __stdcall raw_SetUDLNET (
+        long bIsNet ) = 0;
+    virtual HRESULT __stdcall raw_ConnectToServer (
+        BSTR pstrIPAddress ) = 0;
+};
+
+struct __declspec(uuid("cdf068ab-a4f9-45fc-8742-c1272fc4f1b0"))
+_IEnginePtrEvents : IDispatch
+{};
+
+struct __declspec(uuid("0b50a5fa-6d5a-46d3-ba2b-3608fef0976a"))
+IITLSInterface : IDispatch
+{
+    //
+    // Property data
+    //
+
+    __declspec(property(get=GetLastMessage))
+    _bstr_t LastMessage;
+
+    //
+    // Wrapper methods for error-handling
+    //
+
+    HRESULT SetTLSWavelength (
+        long lChIndex,
+        double dblWL );
+    HRESULT SetTLSSourcePower (
+        long lChIndex,
+        double dblPW );
+    HRESULT SetTLSCoherenceControl (
+        long lChIndex,
+        long bEnable );
+    HRESULT SetTLSSourceUnit (
+        long lChIndex,
+        long lUnit );
+    HRESULT SetTLSParameters (
+        long lChIndex,
+        long lLowSSE,
+        double dblPower,
+        double dblWavelength );
+    HRESULT SetTLSOutputEnable (
+        long lChIndex,
+        long bEnable );
+    HRESULT CloseTLSDevice (
+        long lChIndex );
+    _bstr_t GetLastMessage ( );
+
+    //
+    // Raw methods provided by interface
+    //
+
+    virtual HRESULT __stdcall raw_SetTLSWavelength (
+        long lChIndex,
+        double dblWL ) = 0;
+    virtual HRESULT __stdcall raw_SetTLSSourcePower (
+        long lChIndex,
+        double dblPW ) = 0;
+    virtual HRESULT __stdcall raw_SetTLSCoherenceControl (
+        long lChIndex,
+        long bEnable ) = 0;
+    virtual HRESULT __stdcall raw_SetTLSSourceUnit (
+        long lChIndex,
+        long lUnit ) = 0;
+    virtual HRESULT __stdcall raw_SetTLSParameters (
+        long lChIndex,
+        long lLowSSE,
+        double dblPower,
+        double dblWavelength ) = 0;
+    virtual HRESULT __stdcall raw_SetTLSOutputEnable (
+        long lChIndex,
+        long bEnable ) = 0;
+    virtual HRESULT __stdcall raw_CloseTLSDevice (
+        long lChIndex ) = 0;
+    virtual HRESULT __stdcall get_LastMessage (
+        BSTR * pVal ) = 0;
+};
+
+struct __declspec(uuid("a078cfde-41c1-45d2-adc9-20e8b128996b"))
+IIPMInterface : IDispatch
+{
+    //
+    // Property data
+    //
+
+    __declspec(property(get=GetLastMessage))
+    _bstr_t LastMessage;
+
+    //
+    // Wrapper methods for error-handling
+    //
+
+    HRESULT GetUnit (
+        long lChan,
+        long * pVal );
+    HRESULT SetUnit (
+        long lChan,
+        long newVal );
+    HRESULT GetAverageTime (
+        long lChan,
+        double * pVal );
+    HRESULT SetAverageTime (
+        long lChan,
+        double newVal );
+    HRESULT GetWavelength (
+        long lChan,
+        double * pVal );
+    HRESULT SetWavelength (
+        long lChan,
+        double newVal );
+    HRESULT GetPower (
+        long lChan,
+        double * pVal );
+    HRESULT GetRangeMode (
+        long lChan,
+        long * pVal );
+    HRESULT SetRangeMode (
+        long lChan,
+        long newVal );
+    HRESULT SetParameters (
+        long lChan,
+        long bAutoRange,
+        double dblWL,
+        double dblAvgTime,
+        double dblPMRange );
+    HRESULT SetZero (
+        long lChan );
+    _bstr_t GetLastMessage ( );
+    HRESULT CloseDevice (
+        long lChan );
+    HRESULT SetPMMaxMinPowerStart (
+        long lChan );
+    HRESULT GetPMMaxMinPower (
+        long lChIndex,
+        double * pdbGetMax,
+        double * pdbGetMin );
+    HRESULT SetPMMaxMinPowerStop (
+        long lChan );
+
+    //
+    // Raw methods provided by interface
+    //
+
+    virtual HRESULT __stdcall raw_GetUnit (
+        long lChan,
+        long * pVal ) = 0;
+    virtual HRESULT __stdcall raw_SetUnit (
+        long lChan,
+        long newVal ) = 0;
+    virtual HRESULT __stdcall raw_GetAverageTime (
+        long lChan,
+        double * pVal ) = 0;
+    virtual HRESULT __stdcall raw_SetAverageTime (
+        long lChan,
+        double newVal ) = 0;
+    virtual HRESULT __stdcall raw_GetWavelength (
+        long lChan,
+        double * pVal ) = 0;
+    virtual HRESULT __stdcall raw_SetWavelength (
+        long lChan,
+        double newVal ) = 0;
+    virtual HRESULT __stdcall raw_GetPower (
+        long lChan,
+        double * pVal ) = 0;
+    virtual HRESULT __stdcall raw_GetRangeMode (
+        long lChan,
+        long * pVal ) = 0;
+    virtual HRESULT __stdcall raw_SetRangeMode (
+        long lChan,
+        long newVal ) = 0;
+    virtual HRESULT __stdcall raw_SetParameters (
+        long lChan,
+        long bAutoRange,
+        double dblWL,
+        double dblAvgTime,
+        double dblPMRange ) = 0;
+    virtual HRESULT __stdcall raw_SetZero (
+        long lChan ) = 0;
+    virtual HRESULT __stdcall get_LastMessage (
+        BSTR * pVal ) = 0;
+    virtual HRESULT __stdcall raw_CloseDevice (
+        long lChan ) = 0;
+    virtual HRESULT __stdcall raw_SetPMMaxMinPowerStart (
+        long lChan ) = 0;
+    virtual HRESULT __stdcall raw_GetPMMaxMinPower (
+        long lChIndex,
+        double * pdbGetMax,
+        double * pdbGetMin ) = 0;
+    virtual HRESULT __stdcall raw_SetPMMaxMinPowerStop (
+        long lChan ) = 0;
+};
+
+struct __declspec(uuid("a1b84183-a9ef-41d9-a894-d008cbb0d5e4"))
+IIVOAInterface : IDispatch
+{
+    //
+    // Property data
+    //
+
+    __declspec(property(get=GetLastMessage))
+    _bstr_t LastMessage;
+
+    //
+    // Wrapper methods for error-handling
+    //
+
+    HRESULT CloseVOADevice (
+        long lChIndex );
+    HRESULT ResetVOADevice (
+        long lChIndex );
+    HRESULT SetVOAWavelength (
+        long lChIndex,
+        double dblWL );
+    HRESULT GetVOAWavelength (
+        long lChIndex,
+        double * pVal );
+    HRESULT SetVOAAttenuation (
+        long lChIndex,
+        double dblAtten );
+    HRESULT GetVOAAttenuation (
+        long lChIndex,
+        double * pVal );
+    HRESULT SetVOAEnableOutput (
+        long lChIndex,
+        long bEanble );
+    HRESULT SetVOAInputOffset (
+        long lChIndex,
+        double dblOffset );
+    HRESULT GetVOAStatus (
+        long lChIndex,
+        long * pVal );
+    _bstr_t GetLastMessage ( );
+
+    //
+    // Raw methods provided by interface
+    //
+
+    virtual HRESULT __stdcall raw_CloseVOADevice (
+        long lChIndex ) = 0;
+    virtual HRESULT __stdcall raw_ResetVOADevice (
+        long lChIndex ) = 0;
+    virtual HRESULT __stdcall raw_SetVOAWavelength (
+        long lChIndex,
+        double dblWL ) = 0;
+    virtual HRESULT __stdcall raw_GetVOAWavelength (
+        long lChIndex,
+        double * pVal ) = 0;
+    virtual HRESULT __stdcall raw_SetVOAAttenuation (
+        long lChIndex,
+        double dblAtten ) = 0;
+    virtual HRESULT __stdcall raw_GetVOAAttenuation (
+        long lChIndex,
+        double * pVal ) = 0;
+    virtual HRESULT __stdcall raw_SetVOAEnableOutput (
+        long lChIndex,
+        long bEanble ) = 0;
+    virtual HRESULT __stdcall raw_SetVOAInputOffset (
+        long lChIndex,
+        double dblOffset ) = 0;
+    virtual HRESULT __stdcall raw_GetVOAStatus (
+        long lChIndex,
+        long * pVal ) = 0;
+    virtual HRESULT __stdcall get_LastMessage (
+        BSTR * pVal ) = 0;
+};
+
+struct __declspec(uuid("104889a9-452e-419f-85e0-ea5aeb72dbca"))
+IIOSAInterface : IDispatch
+{
+    //
+    // Property data
+    //
+
+    __declspec(property(get=GetLastMessage))
+    _bstr_t LastMessage;
+
+    //
+    // Wrapper methods for error-handling
+    //
+
+    HRESULT CloseDevice (
+        long lChIndex );
+    HRESULT ResetDevice (
+        long lChIndex );
+    HRESULT SetOSALocalCtrl (
+        long lChIndex );
+    HRESULT SetOSARBW (
+        long lChIndex,
+        double dblRBW );
+    HRESULT GetOSARBW (
+        long lChIndex,
+        double * pVal );
+    HRESULT InitOSAAmpTest (
+        long lChIndex,
+        double dblStartWL,
+        double dblStopWL,
+        double dblRBW );
+    HRESULT MeasureSource (
+        long lChIndex );
+    HRESULT MeasureAmplifier (
+        long lChIndex,
+        long bScanSrcOnly );
+    HRESULT GetOSAChannelCount (
+        long lChIndex,
+        long * pVal );
+    HRESULT SetOSAAmpOffset (
+        long lChIndex,
+        double dblSourceOffset,
+        double dblAmpOffset );
+    HRESULT GetOSAAmpOffset (
+        long lChIndex,
+        double * pdblSourceOffSet,
+        double * pdblAmpOffset );
+    HRESULT GetOSAEDFAResult (
+        long lChIndex,
+        double * pdblSumSrcSigPwr,
+        double * pdblSumAmpSigPwr,
+        double * pdblSumGain );
+    HRESULT GetOSAEDFAChResult (
+        long lChIndex,
+        long * pwChCount,
+        double * pdblChWL,
+        double * pdblSrcpwr,
+        double * pdblChGain,
+        double * pdblChNF,
+        double * pdblChAse,
+        double * pdbGainFlatness,
+        double * pdblMaxNF,
+        double * pdblMaxGain,
+        double * pdblMinGain );
+    HRESULT InitOSASingleSweep (
+        long lChIndex,
+        double dblStartWL,
+        double dblStopWL,
+        double dblRBW,
+        long lSweepPointCount );
+    HRESULT RunOSASweep (
+        long lChIndex,
+        double * pdblWL,
+        double * pdblPower,
+        _bstr_t szSelTrace );
+    HRESULT GetOSASweepData (
+        long lChIndex,
+        double * pdblWL,
+        double * pdblPower,
+        _bstr_t szSelTrace );
+    HRESULT SetOSACalibration (
+        long lChIndex,
+        long lCalibrationType );
+    HRESULT SaveOSADataToPC (
+        long lChIndex,
+        _bstr_t lpSavePath,
+        _bstr_t lpDataType,
+        _bstr_t lpFileType,
+        _bstr_t szSelTrace );
+    _bstr_t GetLastMessage ( );
+    HRESULT GetChannelWaveLens (
+        long lChanIndex,
+        double * pdblWL,
+        unsigned long * pdwlChanneCount );
+    HRESULT GetChannelNF (
+        long lChIndex,
+        double * pdblNF,
+        unsigned long * pdwChannelCount );
+    HRESULT GetChannelGain (
+        long lChIndex,
+        double * pdblGain,
+        unsigned long * pdwChannelCount );
+    HRESULT GetChannelSNR (
+        long lChIndex,
+        double * pdblSNR,
+        unsigned long * pdwChannelCount );
+    HRESULT GetChannelSourcePower (
+        long lChIndex,
+        double * pdblSourcePower,
+        unsigned long * pdwChannelCount );
+    HRESULT GetOSAZoomValue (
+        long lChIndex,
+        double dbWLNM,
+        double dbBWNM,
+        double * pdbGetValue );
+    HRESULT GetOSASingleSweepPoint (
+        long lChIndex,
+        long * pVal );
+
+    //
+    // Raw methods provided by interface
+    //
+
+    virtual HRESULT __stdcall raw_CloseDevice (
+        long lChIndex ) = 0;
+    virtual HRESULT __stdcall raw_ResetDevice (
+        long lChIndex ) = 0;
+    virtual HRESULT __stdcall raw_SetOSALocalCtrl (
+        long lChIndex ) = 0;
+    virtual HRESULT __stdcall raw_SetOSARBW (
+        long lChIndex,
+        double dblRBW ) = 0;
+    virtual HRESULT __stdcall raw_GetOSARBW (
+        long lChIndex,
+        double * pVal ) = 0;
+    virtual HRESULT __stdcall raw_InitOSAAmpTest (
+        long lChIndex,
+        double dblStartWL,
+        double dblStopWL,
+        double dblRBW ) = 0;
+    virtual HRESULT __stdcall raw_MeasureSource (
+        long lChIndex ) = 0;
+    virtual HRESULT __stdcall raw_MeasureAmplifier (
+        long lChIndex,
+        long bScanSrcOnly ) = 0;
+    virtual HRESULT __stdcall raw_GetOSAChannelCount (
+        long lChIndex,
+        long * pVal ) = 0;
+    virtual HRESULT __stdcall raw_SetOSAAmpOffset (
+        long lChIndex,
+        double dblSourceOffset,
+        double dblAmpOffset ) = 0;
+    virtual HRESULT __stdcall raw_GetOSAAmpOffset (
+        long lChIndex,
+        double * pdblSourceOffSet,
+        double * pdblAmpOffset ) = 0;
+    virtual HRESULT __stdcall raw_GetOSAEDFAResult (
+        long lChIndex,
+        double * pdblSumSrcSigPwr,
+        double * pdblSumAmpSigPwr,
+        double * pdblSumGain ) = 0;
+    virtual HRESULT __stdcall raw_GetOSAEDFAChResult (
+        long lChIndex,
+        long * pwChCount,
+        double * pdblChWL,
+        double * pdblSrcpwr,
+        double * pdblChGain,
+        double * pdblChNF,
+        double * pdblChAse,
+        double * pdbGainFlatness,
+        double * pdblMaxNF,
+        double * pdblMaxGain,
+        double * pdblMinGain ) = 0;
+    virtual HRESULT __stdcall raw_InitOSASingleSweep (
+        long lChIndex,
+        double dblStartWL,
+        double dblStopWL,
+        double dblRBW,
+        long lSweepPointCount ) = 0;
+    virtual HRESULT __stdcall raw_RunOSASweep (
+        long lChIndex,
+        double * pdblWL,
+        double * pdblPower,
+        BSTR szSelTrace ) = 0;
+    virtual HRESULT __stdcall raw_GetOSASweepData (
+        long lChIndex,
+        double * pdblWL,
+        double * pdblPower,
+        BSTR szSelTrace ) = 0;
+    virtual HRESULT __stdcall raw_SetOSACalibration (
+        long lChIndex,
+        long lCalibrationType ) = 0;
+    virtual HRESULT __stdcall raw_SaveOSADataToPC (
+        long lChIndex,
+        BSTR lpSavePath,
+        BSTR lpDataType,
+        BSTR lpFileType,
+        BSTR szSelTrace ) = 0;
+    virtual HRESULT __stdcall get_LastMessage (
+        BSTR * pVal ) = 0;
+    virtual HRESULT __stdcall raw_GetChannelWaveLens (
+        long lChanIndex,
+        double * pdblWL,
+        unsigned long * pdwlChanneCount ) = 0;
+    virtual HRESULT __stdcall raw_GetChannelNF (
+        long lChIndex,
+        double * pdblNF,
+        unsigned long * pdwChannelCount ) = 0;
+    virtual HRESULT __stdcall raw_GetChannelGain (
+        long lChIndex,
+        double * pdblGain,
+        unsigned long * pdwChannelCount ) = 0;
+    virtual HRESULT __stdcall raw_GetChannelSNR (
+        long lChIndex,
+        double * pdblSNR,
+        unsigned long * pdwChannelCount ) = 0;
+    virtual HRESULT __stdcall raw_GetChannelSourcePower (
+        long lChIndex,
+        double * pdblSourcePower,
+        unsigned long * pdwChannelCount ) = 0;
+    virtual HRESULT __stdcall raw_GetOSAZoomValue (
+        long lChIndex,
+        double dbWLNM,
+        double dbBWNM,
+        double * pdbGetValue ) = 0;
+    virtual HRESULT __stdcall raw_GetOSASingleSweepPoint (
+        long lChIndex,
+        long * pVal ) = 0;
+};
+
+struct __declspec(uuid("af1a856a-f3e6-4461-9dc4-f1f87ea61f37"))
+IIPolInterface : IDispatch
+{
+    //
+    // Property data
+    //
+
+    __declspec(property(get=GetLastMessage))
+    _bstr_t LastMessage;
+
+    //
+    // Wrapper methods for error-handling
+    //
+
+    HRESULT ClosePolDevice (
+        long lChIndex );
+    HRESULT ResetPolDevice (
+        long lChIndex );
+    HRESULT GetPolCurrentPOSPolarizer (
+        long lChIndex,
+        double * pdblAlphaP,
+        double * pdblAlphaQ,
+        double * pdblAlphaH );
+    HRESULT SetPolALL (
+        long lChIndex,
+        double alphaP,
+        double alphaQ,
+        double alp );
+    HRESULT SetPolDiagonalAngles (
+        long lChIndex,
+        double AlphaPMax,
+        double Wavelength );
+    HRESULT SetPolHorizontalAngles (
+        long lChIndex,
+        double AlphaPMax,
+        double Wavelength );
+    HRESULT SetPolPOSHalf (
+        long lChIndex,
+        double alpha );
+    HRESULT SetPolPOSPolarizer (
+        long lChIndex,
+        double alpha );
+    HRESULT SetPolPOSQuarter (
+        long lChIndex,
+        double alpha );
+    HRESULT SetPolRightHandCircularAngles (
+        long lChIndex,
+        double AlphaPMax,
+        double Wavelength );
+    HRESULT SetPolVerticalAngles (
+        long lChIndex,
+        double AlphaPMax,
+        double Wavelength );
+    _bstr_t GetLastMessage ( );
+
+    //
+    // Raw methods provided by interface
+    //
+
+    virtual HRESULT __stdcall raw_ClosePolDevice (
+        long lChIndex ) = 0;
+    virtual HRESULT __stdcall raw_ResetPolDevice (
+        long lChIndex ) = 0;
+    virtual HRESULT __stdcall raw_GetPolCurrentPOSPolarizer (
+        long lChIndex,
+        double * pdblAlphaP,
+        double * pdblAlphaQ,
+        double * pdblAlphaH ) = 0;
+    virtual HRESULT __stdcall raw_SetPolALL (
+        long lChIndex,
+        double alphaP,
+        double alphaQ,
+        double alp ) = 0;
+    virtual HRESULT __stdcall raw_SetPolDiagonalAngles (
+        long lChIndex,
+        double AlphaPMax,
+        double Wavelength ) = 0;
+    virtual HRESULT __stdcall raw_SetPolHorizontalAngles (
+        long lChIndex,
+        double AlphaPMax,
+        double Wavelength ) = 0;
+    virtual HRESULT __stdcall raw_SetPolPOSHalf (
+        long lChIndex,
+        double alpha ) = 0;
+    virtual HRESULT __stdcall raw_SetPolPOSPolarizer (
+        long lChIndex,
+        double alpha ) = 0;
+    virtual HRESULT __stdcall raw_SetPolPOSQuarter (
+        long lChIndex,
+        double alpha ) = 0;
+    virtual HRESULT __stdcall raw_SetPolRightHandCircularAngles (
+        long lChIndex,
+        double AlphaPMax,
+        double Wavelength ) = 0;
+    virtual HRESULT __stdcall raw_SetPolVerticalAngles (
+        long lChIndex,
+        double AlphaPMax,
+        double Wavelength ) = 0;
+    virtual HRESULT __stdcall get_LastMessage (
+        BSTR * pVal ) = 0;
+};
+
+struct __declspec(uuid("7cde6be4-4b5c-46dc-99c5-1b680178713f"))
+IScanInterface : IDispatch
+{
+    //
+    // Property data
+    //
+
+    __declspec(property(get=GetLastMessage))
+    _bstr_t LastMessage;
+
+    //
+    // Wrapper methods for error-handling
+    //
+
+    HRESULT PrepareScan (
+        long lTLSChIndex,
+        long lpScanParam );
+    HRESULT ExecuteScan (
+        long lTLSChIndex,
+        long lpScanRawDataPtr );
+    HRESULT ReleaseScan (
+        long lTLSChIndex );
+    HRESULT DoScanRef (
+        long lTLSChIndex,
+        long lpScanRawData );
+    HRESULT DoScan (
+        long lTLSChIndex,
+        long lpScanRawData );
+    HRESULT GetCalILResult (
+        long lpScanResult );
+    HRESULT GetCalILAndPDLResult (
+        long lpScanResult );
+    HRESULT ReleaseAllocStruct (
+        long lpStructPtr );
+    _bstr_t GetLastMessage ( );
+
+    //
+    // Raw methods provided by interface
+    //
+
+    virtual HRESULT __stdcall raw_PrepareScan (
+        long lTLSChIndex,
+        long lpScanParam ) = 0;
+    virtual HRESULT __stdcall raw_ExecuteScan (
+        long lTLSChIndex,
+        long lpScanRawDataPtr ) = 0;
+    virtual HRESULT __stdcall raw_ReleaseScan (
+        long lTLSChIndex ) = 0;
+    virtual HRESULT __stdcall raw_DoScanRef (
+        long lTLSChIndex,
+        long lpScanRawData ) = 0;
+    virtual HRESULT __stdcall raw_DoScan (
+        long lTLSChIndex,
+        long lpScanRawData ) = 0;
+    virtual HRESULT __stdcall raw_GetCalILResult (
+        long lpScanResult ) = 0;
+    virtual HRESULT __stdcall raw_GetCalILAndPDLResult (
+        long lpScanResult ) = 0;
+    virtual HRESULT __stdcall raw_ReleaseAllocStruct (
+        long lpStructPtr ) = 0;
+    virtual HRESULT __stdcall get_LastMessage (
+        BSTR * pVal ) = 0;
+};
+
+struct __declspec(uuid("89a6fde2-516b-4432-af08-1dce005d0b1e"))
+IChamberInterface : IDispatch
+{
+    //
+    // Property data
+    //
+
+    __declspec(property(get=GetLastMessage))
+    _bstr_t LastMessage;
+
+    //
+    // Wrapper methods for error-handling
+    //
+
+    HRESULT CloseChamberDevice (
+        long lChIndex );
+    HRESULT SetChamberRunStop (
+        long lChIndex );
+    HRESULT SetChamberRunStart (
+        long lChIndex );
+    HRESULT SetChamberSetPoint (
+        long lChIndex,
+        double dbSetPoint );
+    HRESULT GetChamberSetPoint (
+        long lChIndex,
+        double * dbSetPoint );
+    HRESULT GetChamberCurrentTemp (
+        long lChIndex,
+        double * dbCurrTemp );
+    _bstr_t GetLastMessage ( );
+
+    //
+    // Raw methods provided by interface
+    //
+
+    virtual HRESULT __stdcall raw_CloseChamberDevice (
+        long lChIndex ) = 0;
+    virtual HRESULT __stdcall raw_SetChamberRunStop (
+        long lChIndex ) = 0;
+    virtual HRESULT __stdcall raw_SetChamberRunStart (
+        long lChIndex ) = 0;
+    virtual HRESULT __stdcall raw_SetChamberSetPoint (
+        long lChIndex,
+        double dbSetPoint ) = 0;
+    virtual HRESULT __stdcall raw_GetChamberSetPoint (
+        long lChIndex,
+        double * dbSetPoint ) = 0;
+    virtual HRESULT __stdcall raw_GetChamberCurrentTemp (
+        long lChIndex,
+        double * dbCurrTemp ) = 0;
+    virtual HRESULT __stdcall get_LastMessage (
+        BSTR * pVal ) = 0;
+};
+
+struct __declspec(uuid("309343a5-a079-4f81-9da2-fe2d0538dc2d"))
+IIComDevInterface : IDispatch
+{
+    //
+    // Property data
+    //
+
+    __declspec(property(get=GetLastMessage))
+    _bstr_t LastMessage;
+
+    //
+    // Wrapper methods for error-handling
+    //
+
+    HRESULT WriteBuffer (
+        long lChIndex,
+        _bstr_t pBuffer,
+        unsigned long dwBufferSize );
+    HRESULT ReadBuffer (
+        long lChIndex,
+        BSTR * pBuffer,
+        unsigned long dwBufferSize );
+    HRESULT CloseSerial (
+        long lChIndex );
+    HRESULT OpenSerial (
+        long lChIndex );
+    _bstr_t GetLastMessage ( );
+
+    //
+    // Raw methods provided by interface
+    //
+
+    virtual HRESULT __stdcall raw_WriteBuffer (
+        long lChIndex,
+        BSTR pBuffer,
+        unsigned long dwBufferSize ) = 0;
+    virtual HRESULT __stdcall raw_ReadBuffer (
+        long lChIndex,
+        BSTR * pBuffer,
+        unsigned long dwBufferSize ) = 0;
+    virtual HRESULT __stdcall raw_CloseSerial (
+        long lChIndex ) = 0;
+    virtual HRESULT __stdcall raw_OpenSerial (
+        long lChIndex ) = 0;
+    virtual HRESULT __stdcall get_LastMessage (
+        BSTR * pVal ) = 0;
+};
+
+struct __declspec(uuid("82e74fae-d809-47c0-8cd3-7f653cbb4fd8"))
+ITLSInterface;
+    // [ default ] interface IITLSInterface
+
+struct __declspec(uuid("2aa6f3fa-6507-49df-8791-971f31301992"))
+IPMInterface;
+    // [ default ] interface IIPMInterface
+
+struct __declspec(uuid("e5b0d9e8-e9f9-4c14-9e48-a60c4ec74252"))
+IVOAInterface;
+    // [ default ] interface IIVOAInterface
+
+struct __declspec(uuid("b4e0c31c-404b-41a6-843c-64770aa349b0"))
+IOSAInterface;
+    // [ default ] interface IIOSAInterface
+
+struct __declspec(uuid("17b09d77-2e06-4678-98e3-23dfea8262f9"))
+IPolInterface;
+    // [ default ] interface IIPolInterface
+
+struct __declspec(uuid("5b3b1877-867f-4742-b3d7-302f08ce032b"))
+ScanInterface;
+    // [ default ] interface IScanInterface
+
+struct __declspec(uuid("90321366-d7cc-4f21-94f4-756ca1db1b34"))
+ChamberInterface;
+    // [ default ] interface IChamberInterface
+
+struct __declspec(uuid("cb4f7bd8-2fc4-40c9-8f8f-c2ff01e5ea63"))
+IComDevInterface;
+    // [ default ] interface IIComDevInterface
+
+//
+// Wrapper method implementations
+//
+
+#include "e:\project\testgroup\udldriver\netversion\code\udl_server\src\release\UDL.DLM.tli"
+
+} // namespace UDLSERVERLib
+
+#pragma pack(pop)

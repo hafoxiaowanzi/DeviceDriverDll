@@ -1,0 +1,57 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: TestUDL - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x804 /fo"Debug/TestUDL.res" /d "_DEBUG" /d "_AFXDLL" "E:\Project\testgroup\UDLDriver\NetVersion\code\UDL_Client - switch\TestUDL\TestUDL.rc"" 
+Creating temporary file "C:\Users\wanxin\AppData\Local\Temp\RSP8929.tmp" with contents
+[
+/nologo /MDd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_AFXDLL" /FR"Debug/" /Fp"Debug/TestUDL.pch" /Yu"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"E:\Project\testgroup\UDLDriver\NetVersion\code\UDL_Client - switch\TestUDL\TestUDL.cpp"
+"E:\Project\testgroup\UDLDriver\NetVersion\code\UDL_Client - switch\TestUDL\TestUDLDlg.cpp"
+]
+Creating command line "cl.exe @C:\Users\wanxin\AppData\Local\Temp\RSP8929.tmp" 
+Creating temporary file "C:\Users\wanxin\AppData\Local\Temp\RSP8939.tmp" with contents
+[
+/nologo /MDd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_AFXDLL" /FR"Debug/" /Fp"Debug/TestUDL.pch" /Yc"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"E:\Project\testgroup\UDLDriver\NetVersion\code\UDL_Client - switch\TestUDL\StdAfx.cpp"
+]
+Creating command line "cl.exe @C:\Users\wanxin\AppData\Local\Temp\RSP8939.tmp" 
+Creating temporary file "C:\Users\wanxin\AppData\Local\Temp\RSP893A.tmp" with contents
+[
+/nologo /subsystem:windows /incremental:yes /pdb:"Debug/TestUDL.pdb" /debug /machine:I386 /out:"../bin/TestUDL.exe" /pdbtype:sept 
+".\Debug\StdAfx.obj"
+".\Debug\TestUDL.obj"
+".\Debug\TestUDLDlg.obj"
+".\Debug\TestUDL.res"
+"\Project\testgroup\UDLDriver\NetVersion\code\UDL_Client - switch\lib\UDL.Chamber.lib"
+"\Project\testgroup\UDLDriver\NetVersion\code\UDL_Client - switch\lib\UDL.Communication.lib"
+"\Project\testgroup\UDLDriver\NetVersion\code\UDL_Client - switch\lib\UDL.OSA.lib"
+"\Project\testgroup\UDLDriver\NetVersion\code\UDL_Client - switch\lib\UDL.PM.lib"
+"\Project\testgroup\UDLDriver\NetVersion\code\UDL_Client - switch\lib\UDL.Pol.lib"
+"\Project\testgroup\UDLDriver\NetVersion\code\UDL_Client - switch\lib\UDL.TLS.lib"
+"\Project\testgroup\UDLDriver\NetVersion\code\UDL_Client - switch\UDLServer\Debug\UDL.DLM.lib"
+"\Project\testgroup\UDLDriver\NetVersion\code\UDL_Client - switch\lib\UDL.VOA.lib"
+"\Project\testgroup\UDLDriver\NetVersion\code\UDL_Client - switch\lib\UDL.Switch.lib"
+]
+Creating command line "link.exe @C:\Users\wanxin\AppData\Local\Temp\RSP893A.tmp"
+<h3>Output Window</h3>
+Compiling resources...
+Compiling...
+StdAfx.cpp
+Compiling...
+TestUDL.cpp
+TestUDLDlg.cpp
+Generating Code...
+Linking...
+
+
+
+<h3>Results</h3>
+TestUDL.exe - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

@@ -1,0 +1,26 @@
+HKCR
+{
+	UDLServer.IPMInterface.1 = s 'IPMInterface Class'
+	{
+		CLSID = s '{2AA6F3FA-6507-49DF-8791-971F31301992}'
+	}
+	UDLServer.IPMInterface = s 'IPMInterface Class'
+	{
+		CLSID = s '{2AA6F3FA-6507-49DF-8791-971F31301992}'
+		CurVer = s 'UDLServer.IPMInterface.1'
+	}
+	NoRemove CLSID
+	{
+		ForceRemove {2AA6F3FA-6507-49DF-8791-971F31301992} = s 'IPMInterface Class'
+		{
+			ProgID = s 'UDLServer.IPMInterface.1'
+			VersionIndependentProgID = s 'UDLServer.IPMInterface'
+			ForceRemove 'Programmable'
+			InprocServer32 = s '%MODULE%'
+			{
+				val ThreadingModel = s 'Apartment'
+			}
+			'TypeLib' = s '{7FA750BF-178D-475A-9AA1-DEB556BB0E95}'
+		}
+	}
+}

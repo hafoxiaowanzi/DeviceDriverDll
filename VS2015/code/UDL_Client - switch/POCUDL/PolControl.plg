@@ -1,0 +1,61 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: POCUDL - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x804 /fo"Release/PolControl.res" /d "NDEBUG" "E:\Project\testgroup\UDLDriver\NetVersion\code\UDL_Client - switch\POCUDL\PolControl.rc"" 
+Creating temporary file "C:\Users\wanxin\AppData\Local\Temp\RSP8558.tmp" with contents
+[
+/nologo /MT /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_MBCS" /D "POCUDL_EXPORTS" /FR"Release/" /Fp"Release/PolControl.pch" /Yu"stdafx.h" /Fo"Release/" /Fd"Release/" /FD /c 
+"E:\Project\testgroup\UDLDriver\NetVersion\code\UDL_Client - switch\POCUDL\MuellerAlpahaPCompensate.cpp"
+"E:\Project\testgroup\UDLDriver\NetVersion\code\UDL_Client - switch\POCUDL\Op8169.cpp"
+"E:\Project\testgroup\UDLDriver\NetVersion\code\UDL_Client - switch\POCUDL\OpR181.cpp"
+"E:\Project\testgroup\UDLDriver\NetVersion\code\UDL_Client - switch\POCUDL\PolControl.cpp"
+"E:\Project\testgroup\UDLDriver\NetVersion\code\UDL_Client - switch\POCUDL\PolDll.cpp"
+]
+Creating command line "cl.exe @C:\Users\wanxin\AppData\Local\Temp\RSP8558.tmp" 
+Creating temporary file "C:\Users\wanxin\AppData\Local\Temp\RSP8569.tmp" with contents
+[
+/nologo /MT /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_MBCS" /D "POCUDL_EXPORTS" /FR"Release/" /Fp"Release/PolControl.pch" /Yc"stdafx.h" /Fo"Release/" /Fd"Release/" /FD /c 
+"E:\Project\testgroup\UDLDriver\NetVersion\code\UDL_Client - switch\POCUDL\StdAfx.cpp"
+]
+Creating command line "cl.exe @C:\Users\wanxin\AppData\Local\Temp\RSP8569.tmp" 
+Creating temporary file "C:\Users\wanxin\AppData\Local\Temp\RSP856A.tmp" with contents
+[
+kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /nologo /dll /incremental:no /pdb:"../lib/UDL.Pol.pdb" /machine:I386 /out:"../bin/UDL.Pol.dll" /implib:"../lib/UDL.Pol.lib" 
+".\Release\MuellerAlpahaPCompensate.obj"
+".\Release\Op8169.obj"
+".\Release\OpR181.obj"
+".\Release\PolControl.obj"
+".\Release\PolDll.obj"
+".\Release\StdAfx.obj"
+".\Release\PolControl.res"
+]
+Creating command line "link.exe @C:\Users\wanxin\AppData\Local\Temp\RSP856A.tmp"
+<h3>Output Window</h3>
+Compiling resources...
+Compiling...
+StdAfx.cpp
+Compiling...
+MuellerAlpahaPCompensate.cpp
+Op8169.cpp
+OpR181.cpp
+PolControl.cpp
+PolDll.cpp
+Generating Code...
+Linking...
+   Creating library ../lib/UDL.Pol.lib and object ../lib/UDL.Pol.exp
+LINK : warning LNK4089: all references to "ADVAPI32.dll" discarded by /OPT:REF
+LINK : warning LNK4089: all references to "SHELL32.dll" discarded by /OPT:REF
+LINK : warning LNK4089: all references to "comdlg32.dll" discarded by /OPT:REF
+
+
+
+<h3>Results</h3>
+UDL.Pol.dll - 0 error(s), 3 warning(s)
+</pre>
+</body>
+</html>

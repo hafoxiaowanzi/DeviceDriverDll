@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<MIMSUDL language="en"><Property Name="DeviceConfig" DeviceCount="1"><Device MainFrame="OPLINK VOA" code="NA" HWVesion="NA" FWVersion="NA" SN="NA" nIndex="0"><Item Online="1" ComType="SERIAL" ComID="0" Address="1,9600,8,0,0"/><Item SlotCount="1" BeginSlot="0"/><Slot Index="0" Used="1" UseType="VOA" Caption="OPlink VOA" ChannelCount="1" HWVesino="NA" FWVesion="NA" SN="NA"><Channel Index="1" Type="VOA" Used="1"/></Slot></Device></Property></MIMSUDL>
